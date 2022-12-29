@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabits - Financial Habits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="script.js" defer></script>
+
+
+<body>
+    <header class="display__mobile mh">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="FabitsAssets/Images/Hamburger.svg" alt="logo" class="pt-2 hamburger  open">
+                <ion-icon name="close-outline" size="large" class=" close d-none pt-3 pe-2"></ion-icon>
+            </div>
+        </div>
+        <div class="mt-2 bg-light navs d-none">
+            <div class="p-5 pt-3 ">
+                <hr>
+                <div class="">
+                    <div class="text-center">
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="index.html" class="nav__link">
+                                    <h5>
+                                        Home
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Pricing.html" class="nav__link">
+                                    <h5>
+                                        Pricing
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item cp py-2 product__nav">
+                                <!-- <a href="Product.html" class="nav__link"> -->
+                                <h5>
+                                    Product
+                                    <ion-icon name="caret-down-outline" class=" ms-2"
+                                        style="margin-bottom: -2px;"></ion-icon>
+                                </h5>
+                                <!-- </a> -->
+                                <div class="product__nav__dropdown d-none ">
+                                    <div class="nav__item py-2">
+                                        <a href="SIBs.html" class="nav__link font__green">
+                                            <h5>
+                                                SIBs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="AI.html" class="nav__link font__green">
+                                            <h5>
+                                                AIAS
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="ETFs.html" class="nav__link font__green">
+                                            <h5>
+                                                ETFs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="Planning.html" class="nav__link font__green">
+                                            <h5>
+                                                Planning
+                                            </h5>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Team.html" class="nav__link">
+                                    <h5>
+                                        About Us
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Contact.html" class="nav__link">
+                                    <h5>
+                                        Contact
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="#" class="nav__link">
+                                    <button class="sb w-50 bg__green boxshadow text-white">
+                                        Let's get started
+                                    </button>
+                                </a>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progress" style="margin-top: 13.5px;"></div>
+
+    </header>
+    <header class="display__desktop dh py-3">
+        <div class="d-flex justify-content-between ">
+            <div>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                </a>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+                </a>
+            </div>
+            <div class="d-flex justify-content-end pt-4 desk__head">
+                <div class="nav__item mx-3 ">
+                    <a href="index.html" class="nav__link">
+                        <h5>
+                            Home
+                        </h5>
+                    </a>
+                </div>
+                
+                <div class="nav__item mx-3 cp  product__nav">
+                    <h5>
+                        Product
+                    </h5>
+
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Team.html" class="nav__link">
+                        <h5>
+                            About Us
+                        </h5>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Pricing.html" class="nav__link">
+                        <h5>
+                            Pricing
+                        </h5>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Contact.html" class="nav__link">
+                        <h5>
+                            Contact 
+                        </h5>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ms-5 " >
+                    <a href="#" class="nav__link" >
+                        <button class="sb bg__green boxshadow text-white start px-4" style="width: fit-content; margin-top: -10px;">
+                            Let's get started
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progresss" class="mt-3"></div>
+    </header>
+    <!-- <div style="height: 60px;"></div> -->
+    <div class="container-fluid p-0 first display__mobile f1_s1_mob">
+        <section class="first__slide f__slide position-relative fw " style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fhh first__content m-auto w-100"
+                style="overflow-x: hidden; overflow-y: hidden; ">
+                <div class="container fhh d-flex justify-content-start ">
+                    <div class="first__container max__width w-100 pe-3 firstcontent ">
+                        <div class="h-10 "></div>
+                        <div class="h-25">
+                            <h1 class="heading ">
+                                Financial<br />
+                                habits is a<br />
+                                <span class="font__yellow">matter of <br />discipline</span>
+                            </h1>
+                        </div>
+                        <div class="h-10">
+                            <p class="font__white  paragraph mt-2">
+                                Quite like your wellness habits!
+                            </p>
+                        </div>
+                        <div class="h-15"></div>
+                        <div class="h-20">
+                            <p class="font__white paragraph">
+                                Discipline and passion got<br /> me awesome result in my <br />fitness journey!
+                            </p>
+                        </div>
+                        <div class="h-20 ">
+                            <button class="about__fabits w-100">About Fabits > ></button>
+                            <div class="d-flex justify-content-center pt-2">
+                                <div class="nav__slide__active">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" position-relative s__slide fw" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fhh second__content m-auto w-100"
+                style="overflow-x: hidden; overflow-y: hidden; ">
+                <div class="container fhh d-flex justify-content-start  ">
+                    <div class="first__container max__width w-100 pe-3 secondcontent">
+                        <div class="h-10"></div>
+                        <div class="h-30">
+                            <h1 class="heading">
+                                Supercharge<br />
+                                <span class="font__yellow">Your Journey<br /></span>
+                                To Financial <br />
+                                Freedom
+                            </h1>
+                        </div>
+                        <div class="h-40">
+                            <p class="font__white paragraph">
+                                Traditional Financial wisdom to <br /> get you started; cool new tech <br /> that
+                                monitors
+                                and realigns your <br /> investments...
+                            </p>
+                            <p class="font__white paragraph">
+                                <b>Get help anytime. Of course.</b>
+                            </p>
+                        </div>
+                        <div class="h-25 ">
+                            <button class="about__fabits w-100">Explore > ></button>
+                            <div class="d-flex justify-content-center pt-2">
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide__active">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" position-relative t__slide fw" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fhh third__content m-auto w-100">
+                <div class="container  fhh d-flex justify-content-start ">
+                    <div class="first__container max__width w-100 pe-3 thirdcontent">
+                        <div class="h-10"></div>
+                        <div class="h-30">
+                            <h1 class="heading">
+                                You're <span class="font__yellow">in </span><br />
+                                <span class="font__yellow">Control.</span><br />
+                            </h1>
+                            <p class="font__white paragraph ">
+                                Get curising with<br /> investment decisions<br />effortlessly.
+                            </p>
+                        </div>
+                        <div class="h-10">
+
+                        </div>
+                        <div class="h-25">
+
+                            <p class="font__white paragraph">
+                                Advanced Driver Assistance<br />System for your investment<br />journey...
+                            </p>
+
+                            <p class="font__white paragraph ">
+                                <b>We’re watching. Of course.</b>
+                            </p>
+                        </div>
+                        <div class="h-25">
+                            <button class="about__fabits w-100">Get Started > ></button>
+                            <div class="d-flex justify-content-center pt-2">
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide__active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 first display__desktop f1_s1_pc">
+        <section class="first__slide f__slide position-relative w-100" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fhh first__content">
+                <div class="container d-flex justify-content-center text-center">
+                    <div class="desktop__container ">
+                        <h1 class="heading pb-3">
+                            Financial
+                            habits is a<br />
+                            <span class="font__yellow">matter of discipline</span>
+                        </h1>
+                        <p class="font__white  paragraph pb-5 mb-5 ">
+                            Quite like your wellness habits!
+                        </p>
+                        <div class="d-flex justify-content-center w-100 mb-5">
+                            <button class="about__fabits button__width w-50">About Fabits > ></button>
+                        </div>
+                        <div class="d-flex justify-content-center pt-2">
+                            <div class="nav__slide__active">
+                            </div>
+                            <div class="nav__slide">
+                            </div>
+                            <div class="nav__slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class=" position-relative s__slide fw " style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fhh second__content m-auto w-100 "
+                style="overflow-x: hidden; overflow-y: hidden;">
+                <div class="container-fluid p-0 m-0 grad">
+                    <div class="container fhh d-flex justify-content-center  ">
+                        <div
+                            class="first__container  w-100 pe-3 secondcontent d-flex justify-content-center text-center">
+                            <div>
+                                <div class="h-25"></div>
+                                <div class="h-20">
+                                    <h1 class="heading">
+                                        Supercharge
+                                        Your Journey
+                                        To<br />
+                                        <span class="font__yellow">
+                                            Financial
+                                            Freedom</span>
+                                    </h1>
+                                </div>
+                                <div class="h-5"></div>
+                                <div class="h-25">
+                                    <p class="font__white paragraph2">
+                                        Traditional Financial wisdom to get you started;<br /> cool new tech that
+                                        monitors
+                                        and realigns your <br /> investments...
+                                    </p>
+                                    <p class="font__white paragraph">
+                                        <b>Get help anytime. Of course.</b>
+                                    </p>
+                                </div>
+                                <div class="h-25 ">
+                                    <div class="d-flex justify-content-center w-100 mb-5">
+                                        <button class="about__fabits  button__width w-50">Explore > ></button>
+                                    </div>
+                                    <div class="d-flex justify-content-center pt-2">
+
+                                        <div class="nav__slide">
+                                        </div>
+                                        <div class="nav__slide__active">
+                                        </div>
+                                        <div class="nav__slide">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class=" position-relative t__slide fw" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fhh third__content m-auto w-100">
+                <div class="container-fluid m-0 p-0 grad grad">
+                    <div class="container  fhh d-flex justify-content-center text-center ">
+                        <div class="first__container w-100 pe-3 thirdcontent">
+                            <div class="h-25"></div>
+                            <div class="h-25">
+                                <h1 class="heading">
+                                    You're <span class="font__yellow">in </span>
+                                    <span class="font__yellow">Control.</span>
+                                </h1>
+                                <p class="font__white paragraph ">
+                                    Get curising with investment decisions effortlessly.
+                                </p>
+                            </div>
+                            <div class="h-25">
+                                <p class="font__white paragraph2">
+                                    Advanced Driver Assistance System for your investment<br />journey...
+                                </p>
+                                <p class="font__white paragraph2 ">
+                                    <b>We’re watching. Of course.</b>
+                                </p>
+                            </div>
+                            <div class="h-25">
+                                <div class="d-flex justify-content-center w-100 mb-5">
+                                    <button class="about__fabits button__width w-100">Get Started > ></button>
+                                </div>
+                                <div class="d-flex justify-content-center pt-2">
+                                    <div class="nav__slide">
+                                    </div>
+                                    <div class="nav__slide">
+                                    </div>
+                                    <div class="nav__slide__active">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- <div class="container-fluid p-0 first">
+        <section class="first__slide f__slide position-relative fw " style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fh first__content m-auto w-100"
+                style="overflow-x: hidden; overflow-y: hidden; ">
+                <div class="container fh d-flex justify-content-start ">
+                    <div class="first__container max__width w-100 pe-3 firstcontent ">
+                        <div class="h-10 "></div>
+                        <div class="h-30">
+                            <h1 class="heading ">
+                                Financial<br />
+                                habits is a<br />
+                                <span class="font__yellow">matter of <br />discipline</span>
+                            </h1>
+                        </div>
+                        <div class="h-5">
+                            <p class="font__white  paragraph ">
+                                Quite like your wellness habits!
+                            </p>
+                        </div>
+                        <div class="h-15"></div>
+                        <div class="h-15">
+                            <p class="font__white paragraph">
+                                Discipline and passion got<br /> me awesome result in my <br />fitness journey!
+                            </p>
+                        </div>
+                        <div class="h-25 ">
+                            <button class="about__fabits w-100">About Fabits > ></button>
+                            <div class="d-flex justify-content-center pt-2">
+                                <div class="nav__slide__active">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first__container max__width w-100 pe-3 secondcontent">
+                        <div class="h-10"></div>
+                        <div class="h-35">
+                            <h1 class="heading">
+                                Supercharge<br />
+                                <span class="font__yellow">Your Journey<br /></span>
+                                To Financial <br />
+                                Freedom
+                            </h1>
+                        </div>
+                        <div class="h-5"></div>
+                        <div class="h-25">
+                            <p class="font__white paragraph">
+                                Traditional Financial wisdom to <br /> get you started; cool new tech <br /> that
+                                monitors
+                                and realigns your <br /> investments...
+                            </p>
+                            <p class="font__white paragraph">
+                                <b>Get help anytime. of course.</b>
+                            </p>
+                        </div>
+                        <div class="h-25 ">
+                            <button class="about__fabits w-100">Explore > ></button>
+                            <div class="d-flex justify-content-center pt-2">
+
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide__active">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first__container max__width w-100 pe-3 thirdcontent">
+                        <div class="h-10"></div>
+                        <div class="h-30">
+                            <h1 class="heading">
+                                You're <span class="font__yellow">in </span><br />
+                                <span class="font__yellow">Control.</span><br />
+                            </h1>
+                            <p class="font__white paragraph ">
+                                Get curising with<br /> investment decisions<br />effortlessly.
+                            </p>
+                        </div>
+                        <div class="h-10">
+
+                        </div>
+                        <div class="h-25">
+
+                            <p class="font__white paragraph">
+                                Advanced Driver Assistance<br />System for your investment<br />journey...
+                            </p>
+
+                            <p class="font__white paragraph ">
+                                <b>We’re watching. Of course.</b>
+                            </p>
+                        </div>
+                        <div class="h-25">
+                            <button class="about__fabits w-100">Get Started > ></button>
+                            <div class="d-flex justify-content-center pt-2">
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide">
+                                </div>
+                                <div class="nav__slide__active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div> -->
+    <div class="container-fluid p-0 secc display__mobile second__slide__mob">
+        <section class="second__slide fhh p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fhh second__content w-100">
+                <div class="container fhh d-flex justify-content-start ">
+                    <div class="second__container max__width w-100 h-100 pe-3">
+                        <div class="h-10"></div>
+                        <div class="h-30">
+                            <h1 class="heading">
+                                Have you<br />
+                                <span class="font__yellow">planned</span>
+                                <br />
+                                <span class="font__yellow">enough</span>
+                                for<br />
+                                your needs?
+                            </h1>
+                        </div>
+                        <div class="h-25">
+                            <div class="container d-flex justify-content-center position-reative  ">
+                                <div class="white__round d-flex justify-content-center px-2 h-75 position-absolute s11"
+                                    style="overflow: hidden;">
+                                    <img src="FabitsAssets/Images/Car.png" alt="" style="width: 90%;">
+                                </div>
+                                <div class="white__round d-flex justify-content-center px-2 h-75 position-absolute s22"
+                                    style="overflow: hidden;">
+                                    <img src="FabitsAssets/Images/House.png" alt="" style="width: 90%;">
+                                </div>
+                                <div class="white__round d-flex justify-content-center px-2 h-75 position-absolute s33"
+                                    style="overflow: hidden;">
+                                    <img src="FabitsAssets/Images/Man.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-10">
+                            <p class="font__white pt-4">
+                                Discipline and passion got me<br />awesome result in my fitness<br />journey!
+                            </p>
+                        </div>
+                        <div class="h-25 pt-5">
+
+
+                            <button class="about__fabits  w-100 getstarted">Get Started > ></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 secc display__desktop second_slide_pc">
+        <section class=" fhh p-0 w-100 m-0 position-relative" style="overflow-x: hidden; overflow-y: hidden;">
+            <div class="  position-absolute w-100 fhh d-flex justify-content-center h-100 pb-3 notz">
+                <div class="container-fluid position-relative fhh d-flex justify-content-center">
+                    <div class="container desktop__container fhh ">
+                        <div class="row w-100 h-100  p-0 m-0 fhh ">
+                            <div class="col-4 d-flex justify-content-center ">
+                                <img src="FabitsAssets/Images/cartoon_car.png" alt="" class="bgimage a1 ">
+                            </div>
+                            <div class="col-4 d-flex justify-content-center ">
+                                <img src="FabitsAssets/Images/boattt.png" alt="" class="bgimage a2">
+                            </div>
+                            <div class="col-4 d-flex justify-content-center ">
+                                <img src="FabitsAssets/Images/cartoon_car.png" alt="" class="bgimage a3">
+                            </div>
+                            <div class="col-4 d-flex justify-content-center ">
+                                <img src="FabitsAssets/Images/cartoon_car.png" alt="" class="bgimage a4">
+                            </div>
+                            <div class="col-4 d-flex justify-content-center ">
+                                <img src="FabitsAssets/Images/cartoon_car.png" alt="" class="bgimage a5">
+                            </div>
+                            <div class="col-4 d-flex justify-content-center ">
+                                <img src="FabitsAssets/Images/cartoon_car.png" alt="" class="bgimage a6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-0 m-0 fh second__content m-auto w-100">
+                <div class="container fh d-flex justify-content-center text-center ">
+                    <div class="second__container w-100 pe-3">
+                        <div class="h-15"></div>
+                        <div class="h-20 pt-4">
+                            <h1 class="heading">
+                                Have you
+                                <span class="font__yellow">planned</span>
+
+                                <span class="font__yellow">enough</span>
+                                <br /> for
+                                your needs?
+                            </h1>
+                        </div>
+                        <div class="h-35 pt-3">
+                            <div class="container d-flex justify-content-center   ">
+                                <div class="white__round d-flex justify-content-center px-2 h-75"
+                                    style="overflow: hidden;">
+                                    <img src="FabitsAssets/Images/Car.png" alt="" style="width: 90%;">
+                                </div>
+                                <div class="white__round d-flex justify-content-center px-2 h-75"
+                                    style="overflow: hidden;">
+                                    <img src="FabitsAssets/Images/House.png" alt="" style="width: 90%;">
+                                </div>
+                                <div class="white__round d-flex justify-content-center px-2 h-75"
+                                    style="overflow: hidden;">
+                                    <img src="FabitsAssets/Images/Man.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-10">
+                            <p class="font__white">
+                                Use our free Financial planner to set your <br />
+                                goals and create plans to fund it.
+                            </p>
+                        </div>
+                        <div class="h-20">
+                            <div class="d-flex justify-content-center w-100 mb-5">
+
+                                <button class="about__fabits button__width w-100 getstarted">Get Started > ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 display__mobile thegiftboxes__mob">
+        <section class=" p-0 w-100 m-0 position-relative" style="overflow-x: hidden; height: fit-content;">
+            <div class="container-fluid p-0 m-0 third__content w-100" style="overflow-x: hidden; height: fit-content;">
+                <div class="container d-flex justify-content-start " style="overflow-x: hidden; height: fit-content;">
+                    <div class=" max__width w-100 pe-3 pt-5" style="overflow-x: hidden; height: fit-content;">
+                        <div class="py-3"></div>
+                        <h1 class="heading2 font__black">
+                            <span class="font__black">Smart</span><br />
+                            <span class="font__black">Investment</span><br />
+                            <span class="font__black">Boxes (SIBs).</span><br />
+                        </h1>
+                        <p class="font__black pt-3 pb-3 paragraph2">
+                            Curated by our panel of<br /> Financial advisors.
+                        </p>
+                        <div class="container d-flex justify-content-center position-relative pb-5  ">
+                            <div class=" d-flex justify-content-center position-absolute gg3" style="overflow: hidden;">
+                                <img src="FabitsAssets/Images/g3.png" alt="" style="width: 50%;">
+                            </div>
+                            <div class=" d-flex justify-content-center position-absolute gg1" style="overflow: hidden;">
+                                <img src="FabitsAssets/Images/g1.png" alt="" style="width: 50%;">
+                            </div>
+                            <div class=" d-flex justify-content-center position-absolute gg2" style="overflow: hidden;">
+                                <img src="FabitsAssets/Images/g2.png" alt="" style="width: 50%;">
+                            </div>
+
+                        </div>
+                        <div class="py-3"></div>
+
+                        <p class="font__black paragraph3 pt-5 mt-5">
+                            Years of HNI advisory <br /> experience now <br /> accessible to you via SIBs.
+                        </p>
+                        <p class="font__black paragraph2">
+                            Crafted with specific goals and<br />habits of successful investors,<br />helping you build
+                            a confident<br />wealth foundation
+                        </p>
+                        <button class="about__fabits2 w-100 mb-5">Get started > ></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 display__desktop thegiftboxes">
+        <section class=" p-0 w-100 m-0 position-relative fhh gift__section "
+            style="overflow-x: hidden; height: fit-content;">
+            <div class="container-fluid p-0 m-0  w-100" style="overflow-x: hidden; height: fit-content;">
+                <div class="container d-flex justify-content-center text-center fhh  "
+                    style="overflow-x: hidden; height: fit-content;">
+                    <div class="  w-100 pe-3 pt-5 m-auto" style="overflow-x: hidden; height: fit-content;">
+
+                        <h1 class="heading2 font__black pt-5">
+                            <span class="font__black">Smart</span>
+                            <span class="font__black">Investment</span>
+                            <span class="font__black">Boxes (SIBs).</span>
+                        </h1>
+                        <p class="font__black pt-3 paragraph2">
+                            Curated by our panel of Financial advisors.
+                        </p>
+                        <div class="container d-flex justify-content-center pb-5 ">
+                            <div class=" d-flex justify-content-center" style="overflow: hidden;">
+                                <img src="FabitsAssets/Images/g1.png" alt="" class="  giftbox g1  pt-4 mx-3">
+                                <img src="FabitsAssets/Images/g3.png" alt="" class="  giftboxmain  g2">
+                                <img src="FabitsAssets/Images/g2.png" alt="" class="  giftbox pt-4 g3 mx-3">
+                            </div>
+                        </div>
+                        <p class="font__black  ">
+                            <b>
+                                Years of HNI advisory experience now accessible to you via SIBs.
+                            </b>
+                        </p>
+                        <p class="font__black ">
+                            Crafted with specific goals and habits of successful investors, helping<br /> you build
+                            a confident wealth foundation
+                        </p>
+                        <div class="d-flex justify-content-center w-100 ">
+                            <button class="about__fabits2 button__width w-100 mb-5">Get started > ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid p-0 display__mobile hand__section__mob">
+        <section class="fourth__slide fh p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fh fourth__content m-auto w-100">
+                <div class="container  fh d-flex justify-content-start ">
+                    <div class="fourth__container max__width w-100 pe-3">
+                        <h1 class="heading handhh">
+                            Get a feel<br /> for <span class="font__yellow">your<br />investment</span><br /> journey
+                        </h1>
+                        <div class="container d-flex justify-content-center pt-2">
+                            <div class=" d-flex justify-content-center handimgg" style="overflow: hidden;">
+                                <img src="FabitsAssets/Images/Hold_Phone.svg" alt="" class="w-75">
+                            </div>
+                        </div>
+                        <div class="handpp">
+                            <p class="font__white paragraph2 ">
+                                Dirty your hand with our advanced<br /> investment and and monitoring<br /> tools. See
+                                how
+                                it works.
+                            </p>
+                            <button class="about__fabits3 w-100">Get started > ></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 display__desktop hand__section__dd">
+        <section class="fourth__slide fh p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fh fourth__content m-auto w-100">
+                <div class="container  fh d-flex justify-content-center ">
+                    <div class="fourth__container w-100 pe-3 text-center">
+                        <h1 class="heading handh">
+                            Get a feel for <span class="font__yellow">your<br />investment</span> journey
+                        </h1>
+                        <div class="container d-flex justify-content-center pt-2">
+                            <div class=" d-flex justify-content-center" style="overflow: hidden;">
+                                <img src="FabitsAssets/Images/Hold_Phone.svg" alt="" class="w-75 handimg">
+                            </div>
+                        </div>
+                        <div class="handp">
+                            <p class="font__white pt-2 ">
+                                Dirty your hand with our advanced investment and <br /> monitoring tools. See how
+                                it works.
+                            </p>
+                            <div class="d-flex justify-content-center w-100 mt-3">
+                                <button class="about__fabits3 button__width w-100">Get started > ></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 display__mobile grad__mob">
+        <section class="fifth__slide" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 fh fifth__content">
+                <div class="container">
+                    <h1 class="heading font__black pt-5" style="opacity: 0.9;">
+                        Why Fabits
+                    </h1>
+                    <p class="font__black paragraph2 ">
+                        Our customers love us for <br />many reasons...
+                    </p>
+                    <div class="grad__box w-100 my-3">
+                        <div class="row py-3">
+                            <div class="col-4 d-flex  justify-content-center">
+                                <img src="FabitsAssets/Images/giftt.png" alt="" class="grad__icon m-auto ">
+                            </div>
+                            <div class="col-8">
+                                <b>
+
+
+                                    <p class=" font__black pt-3 ">
+                                        Easy and effortless <br />
+                                        Investment options<br />
+                                    </p>
+                                </b>
+                                <p class="font__black  " style="margin-top: -15px;">
+                                    Smart Investment Boxes<br /> greatly simplifies your <br /> choices
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grad__box2 w-100 mb-3">
+                        <div class="row py-3 ps-3 ">
+                            <div class="col-8 ">
+                                <b>
+                                    <p class=" font__black pt-3 ">
+                                        Advanced technology for <br />
+                                        tracking and realignment<br />
+                                    </p>
+                                </b>
+                                <p class="font__black  " style="margin-top: -15px;">
+                                    Fabits allows you not just easy tracking and realignment to meet your goals
+                                </p>
+
+                            </div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <img src="FabitsAssets/Images/carr.png" alt="" class="grad__icon__car  m-auto ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grad__box w-100 mb-3">
+                        <div class="row py-3">
+                            <div class="col-4 d-flex  justify-content-center">
+                                <img src="FabitsAssets/Images/handd.png" alt="" class="grad__icon m-auto">
+                            </div>
+                            <div class="col-8">
+                                <b>
+                                    <p class=" font__black pt-3 ">
+                                        Your investemnt tracking <br />
+                                        is a piece of cake<br />
+                                    </p>
+                                </b>
+                                <p class="font__black  " style="margin-top: -15px;">
+                                    Simple and stress-free <br /> tracking. No complicated <br /> charts and
+                                    graphs. We keep you focussed on your goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="about__fabits max__width w-100 mx-3 pe-3">Get Started > ></button>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 display__desktop grad__pc ">
+        <section class="fifth__slide  " style="overflow-x: hidden; ">
+            <div class="container-fluid p-0 m-0 fifth__content">
+                <div class="container text-center">
+                    <h1 class="heading font__black pt-5" style="opacity: 0.9;">
+                        Why Fabits
+                    </h1>
+                    <p class="font__black paragraph ">
+                        Our customers love us for many reasons...
+                    </p>
+                    <div class="d-flex justify-content-center w-100 text-start">
+                        <div class="grad__width d-flex">
+                            <div class="mx-3 grad__box w-100 my-3">
+                                <div class="row py-3 m-auto">
+                                    <div class="col-4 d-flex  justify-content-center ps-4">
+                                        <img src="FabitsAssets/Images/giftt.png" alt="" class="grad__icon mt-4 ">
+                                    </div>
+                                    <div class="col-8 ">
+                                        <b>
+                                            <p class=" font__black pt-3 ">
+                                                Easy and effortless
+                                                Investment options
+                                            </p>
+                                        </b>
+                                        <p class="font__black  " style="margin-top: -15px;">
+                                            Smart Investment Boxes greatly simplifies your choices
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mx-3 grad__box2 w-100 my-3">
+                                <div class="row py-3 ps-3 ">
+                                    <div class="col-7 ">
+                                        <b>
+                                            <p class=" font__black pt-3 ">
+                                                Advanced technology for
+                                                tracking and realignment
+                                            </p>
+                                        </b>
+                                        <p class="font__black  " style="margin-top: -15px;">
+                                            Fabits allows you not just easy tracking and realignment to meet your goals
+                                        </p>
+
+                                    </div>
+                                    <div class="col-5 d-flex justify-content-center m-auto">
+                                        <img src="FabitsAssets/Images/carr.png" alt="" class="grad__icon__car  ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mx-3 grad__box w-100 my-3">
+                                <div class="row py-3">
+                                    <div class="col-4 d-flex  justify-content-center ">
+                                        <div class="m-auto ps-3">
+                                            <img src="FabitsAssets/Images/handd.png" alt="" class="grad__icon  ">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <b>
+                                            <p class=" font__black pt-3 ">
+                                                Your investemnt tracking
+                                                is a piece of cake
+                                            </p>
+                                        </b>
+                                        <p class="font__black  " style="margin-top: -15px;">
+                                            Simple and stress-free <br /> tracking. No complicated <br /> charts and
+                                            graphs. We keep you focussed on your goals.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center w-100 my-5">
+                    <button class="about__fabits max__width w-100 mx-3 pe-3">Get Started > ></button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content w-100">
+                <div class="container d-flex justify-content-center ">
+                    <div class="container-fluid p-0 m-0 text-center text-light py-5">
+                        <h1 class="heading  py-5 display__desktop" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <h1 class="heading__contact  py-5 display__mobile text-start ps-3" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row w-100 d-flex justify-content-center grad__width">
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">FABITS</h5>
+                                    <p class="content__paragraph">
+                                        Shareway Securities Limited<br /> Corporate Office: No 2, Hayes Road,<br />
+                                        Richmond Town, Bangalore 560025.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">Regd. Office: </h5>
+                                    <p class="content__paragraph">
+                                        old no 46 new no 6,
+                                        <br /> Gilli flower, flat, E- 2nd floor, 23rd street,
+                                        <br /> Anna Nagar East, Chennai 600102
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <p class="content__paragraph">
+                                        080-45687111
+                                        <br />
+                                        + 91 8050030909
+                                        <br /> support@fabits.com / customercare@fabits.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 link__content m-auto w-100">
+                <div class="container d-flex justify-content-center w-100  ">
+                    <div class=" w-100 pe-3 text-center text-light py-5">
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row  d-flex justify-content-center  text-dark w-100 links grad__width">
+                                <div class="col-6 col-md-3 text-start content__paragraph2    ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Platforms
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Finbits
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                FAQ's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Backoffice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 text-start">
+                                    <div class=" text-start content__paragraph2">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Disclosure
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Notifications
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Circulars
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Terms and Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Privacy Policy
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Policies and Procedures
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Investor Charter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Investor Complaints
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 text-start ">
+                                    <ul class="w-100 content__paragraph2">
+                                        <li>
+                                            SEBI Registration number:
+                                            <b>
+
+                                                INZ000208134
+                                            </b>
+
+
+                                        </li>
+                                        <li class="w-100">
+                                            Segments:
+                                            <b>
+
+                                                NSE CM – FO
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CDSL Depository Participant:
+                                            <b>
+
+                                                IN-DP-610-2021
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CIN NO:
+                                            <b>
+
+                                                U67120TN2008PLC066952
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            GST NO:
+                                            <b>
+
+                                                29AALCS7597J1ZA
+                                            </b>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="d-flex justify-content-center grad__width text-dark w-100">
+                                <div>
+                                    <hr class="bg-dark">
+                                    <p class="text-start px-2 content__paragraph2">
+                                        SHAREWAY SECURITIES LIMITED (FABITS) Member of NSE – SEBI Registration number:
+                                        INZ000208134 CDSL: Depository services through SHAREWAY SECURITIES LIMITED. –
+                                        SEBI
+                                        Registration number: IN-DP-610-2021. Registered Address: old no 46 new no 6,
+                                        Gilli
+                                        flower, flat, 2nd floor, 23rd street, Anna Nagar East, Chennai 600102. Corporate
+                                        Address: No 2, Hayes Road Richmond Town Bangalore 560025. For any complaints
+                                        pertaining
+                                        to securities broking please write to
+                                        <a href="mailto:rathi@fabits.com" target="_blank">
+                                            rathi@fabits.com
+                                        </a>
+                                        . Please ensure you carefully
+                                        read
+                                        the Risk Disclosure Document as prescribed by SEBI
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content m-auto w-100">
+                <div class="container   d-flex justify-content-start grad__width text-light py-3">
+                    <p>
+                        © 2022 Fabits. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

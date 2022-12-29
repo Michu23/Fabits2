@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabits - Financial Habits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div>
+    <header>
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="FabitsAssets/Images/Hamburger.svg" alt="logo" class="pt-2 hamburger  open">
+                <ion-icon name="close-outline" size="large" class=" close d-none pt-3 pe-2"></ion-icon>
+            </div>
+        </div>
+        <div class="mt-2 bg-light navs d-none">
+            <div class="p-5 pt-3 ">
+                <hr>
+                <div class="">
+                    <div class="text-center">
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="index.html" class="nav__link">
+                                    <h5>
+                                        Home
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Pricing.html" class="nav__link">
+                                    <h5>
+                                        Pricing
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item cp py-2 product__nav">
+                                <!-- <a href="Product.html" class="nav__link"> -->
+                                <h5>
+                                    Product
+                                    <ion-icon name="caret-down-outline" class=" ms-2"
+                                        style="margin-bottom: -2px;"></ion-icon>
+                                </h5>
+                                <!-- </a> -->
+                                <div class="product__nav__dropdown d-none ">
+                                    <div class="nav__item py-2">
+                                        <a href="SIBs.html" class="nav__link font__green">
+                                            <h5>
+                                                SIBs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="AI.html" class="nav__link font__green">
+                                            <h5>
+                                                AIAS
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="ETFs.html" class="nav__link font__green">
+                                            <h5>
+                                                ETFs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="Planning.html" class="nav__link font__green">
+                                            <h5>
+                                                Planning
+                                            </h5>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Team.html" class="nav__link">
+                                    <h5>
+                                        About Us
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Contact.html" class="nav__link">
+                                    <h5>
+                                        Contact
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="#" class="nav__link">
+                                    <button class="sb w-50 bg__green boxshadow text-white">
+                                        Let's get started
+                                    </button>
+                                </a>
+                            </div>
+                            <!-- <div class="nav__item py-2">
+                                <a href="#" class="nav__link">
+                                <h5>
+
+                                    Sign Up
+                                </h5>
+                                </a>
+                            </div> -->
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- <div style="height: 60px;"></div> -->
+    <div class="py-5 p-0 m-0"></div>
+    <div class="container-fluid p-0 m-0 pricing bgwhite display__mobile">
+        <div class="container p-0 m-0">
+            <div class="px-3">
+                <h1 class="heading font__black">
+
+                    <span class="font__green">
+                        Pricing
+                    </span>
+                    at <br />Fabits
+                </h1>
+                <p class=" pt-2">
+                    Everyone should be able to spend, save, and invest better with expert advice. That's why we keep
+                    prices low and transparent.
+                </p>
+
+            </div>
+
+            <div class="w-100 charges__bg p-3 pt-4">
+                <h2 class=" font__black">
+                    Charges
+                </h2>
+                <p>
+                    All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.
+                </p>
+                <div class="priceboxes d-flex justift-content-center border boxshadow text-center mb-3 ">
+                    <div class="pt-5 ">
+                        <div class="d-flex justify-content-center">
+                            <sup style="font-size: 30px;" class="font__green">
+                                ₹
+                            </sup>
+                            <h1 class="font__green heading__ok">
+                                0
+                            </h1>
+                        </div>
+
+                        <h5 class="pt-3">
+                            Planning tool
+                        </h5>
+                        <p class="px-3">
+                            Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity,
+                            currency, and commodity trades. Flat ₹20 on all option trades.
+                        </p>
+                        <div class="d-flex justify-content-between px-3">
+                            <a>
+                                Learn more
+                            </a>
+                            <p>V</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="priceboxes d-flex justift-content-center text-center mb-3 border boxshadow">
+                    <div class="pt-5 ">
+                        <div class="d-flex justify-content-center">
+                            <sup style="font-size: 30px;" class="font__green">
+                                ₹
+                            </sup>
+                            <h1 class="font__green heading__ok">
+                                0
+                            </h1>
+                        </div>
+
+                        <h5 class="pt-3">
+                            Planning tool
+                        </h5>
+                        <p class="px-3">
+                            Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity,
+                            currency, and commodity trades. Flat ₹20 on all option trades.
+                        </p>
+                        <div class="d-flex justify-content-between px-3">
+                            <a>
+                                Learn more
+                            </a>
+                            <p>V</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="priceboxes d-flex justift-content-center text-center mb-3 border boxshadow">
+                    <div class="pt-5 ">
+                        <div class="d-flex justify-content-center">
+                            <sup style="font-size: 30px;" class="font__green">
+                                ₹
+                            </sup>
+                            <h1 class="font__green heading__ok">
+                                0
+                            </h1>
+                        </div>
+
+                        <h5 class="pt-3">
+                            Planning tool
+                        </h5>
+                        <p class="px-3">
+                            Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity,
+                            currency, and commodity trades. Flat ₹20 on all option trades.
+                        </p>
+                        <div class="d-flex justify-content-between px-3">
+                            <a>
+                                Learn more
+                            </a>
+                            <p>V</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr>
+                <div class="w-100  p-3">
+                    <h1 class="heading font__black">
+                        Signup at <br />
+                        <span class="font__green">
+                            Fabits
+                        </span>
+                    </h1>
+                    <p>
+                        011472 Fabits is customer centric. <br>
+                        -* Simple and Cost Effective
+                    </p>
+                    <div class="d-flex">
+                        <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                        <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 pb-0 pt-5 bg-light rounded-5 detailed__pricing">
+                <h2>Detailed Pricing</h2>
+                <p>
+                    Starting ₹99 per month for AI driven smart investment buckets to drive you to the greater heights.
+                </p>
+
+                <div class="row mb-3">
+                    <div class="col-6 text-center py-2 nonnri active">
+                        Resident Indian
+                    </div>
+                    <div class="col-6 text-center py-2 nri ">
+                        NRI
+                    </div>
+
+                </div>
+                <div class="ri ">
+                    <div class="row th py-3">
+                        <div class="col-5">
+                            <b>
+                                Charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            <b>
+
+                                PIS
+                            </b>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-5">
+                            <b>
+                                Brokerage
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            Rs 150/- per executed order or 0.5% of Turnover whichever is lower.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                STT/CTT
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            0.1% on buy & sell
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+                                Transaction charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            NSE: 0.00345%
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                GST
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            18% on (brokerage + transaction charges)
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                SEBI charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            ₹10 / crore
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                Stamp charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            0.015% or ₹1500 / crore on buy side
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                AMC (Annual Maintenance Charges)
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            Rs. 300 + GST per year
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="nrii d-none">
+                    <div class="row th py-3">
+                        <div class="col-5">
+                            <b>
+
+                                Charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            <b>
+
+                                Equity Delivery
+                            </b>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-5">
+                            <b>
+
+                                Brokerage
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            Rs 30/- per executed order or 0.5% of Turnover whichever is lower.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                STT/CTT
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            0.1% on buy & sell
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                Transaction charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            NSE: 0.00345%
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                GST
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            18% on (brokerage + transaction charges)
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                SEBI charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            ₹10 / crore
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                Stamp charges
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            0.015% or ₹1500 / crore on buy side
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row ">
+                        <div class="col-5">
+                            <b>
+
+                                AMC (Annual Maintenance Charges)
+                            </b>
+                        </div>
+                        <div class="col-7">
+                            Rs. 300 + GST per year
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="d-flex justify-content-center">
+
+                    <img src="FabitsAssets/Images/Pricing/icon2 1.png" style="width: 30%;" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="w-100 signup__bg p-3">
+            <h1 class="heading font__black">
+                Signup at <br />
+                <span class="font__green">
+                    Fabits
+                </span>
+            </h1>
+            <p>
+                Fabits is customer centric. <br>
+                Simple and Cost Effective
+            </p>
+            <div class="d-flex" style="margin-top: -10px;">
+                <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+            </div>
+        </div>
+        <div class="charges__bg w-100 p-3 py-4 pt-5 ">
+            <h2 class="">
+                Detailed Charges
+            </h2>
+            <!-- <p>
+                <div>
+
+                </div>
+            </p> -->
+
+            <div class="row pb-2">
+                <div class="col-1 ">
+                    <img src="icon__point.png" height="10px" alt="">
+
+                </div>
+                <div class="col-11">
+                    DP transaction charge for Market Trades Rs.15+ GST per scrip (for any value) will be debited for all
+                    sell side transaction only.
+
+                </div>
+            </div>
+            <div class="row pb-2">
+                <div class="col-1 ">
+                    <img src="icon__point.png" height="10px" alt="">
+
+                </div>
+                <div class="col-11">
+                    For Mutual Fund: Rs.15 + GST per folio (for any value) will be debited for DEMAT redemption.
+
+
+                </div>
+            </div>
+            <div class="row pb-2">
+                <div class="col-1 ">
+                    <img src="icon__point.png" height="10px" alt="">
+
+                </div>
+                <div class="col-11">
+                    DP transaction charge for Off Market Trades: 0.3% on the value of stocks, subject to Maximum of Rs
+                    30,000/-, + GST per scrip (for any value) will be debited.
+
+                </div>
+            </div>
+            <div class="row pb-2">
+                <div class="col-1 ">
+                    <img src="icon__point.png" height="10px" alt="">
+
+                </div>
+                <div class="col-11">
+                    As per Govt Notification w.e.f. 01st Jul 2020, all Off Market Transactions in DEMAT account would be
+                    subject to stamp duty charges on upfront basis @ 0.015% of the consideration value.
+                </div>
+            </div>
+            <div class="row pb-2">
+                <div class="col-1 ">
+                    <img src="icon__point.png" height="10px" alt="">
+
+                </div>
+                <div class="col-11">
+                    For any other charges in the DEMAT, account please refer here.
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container-fluid p-0 m-0 pricing bgwhite display__desktop">
+        <div class="w-100 d-flex justify-content-center">
+            <div class="container p-0 m-0 pt-5 ">
+                <div class="px-3">
+                    <div class="w-100 d-flex justify-content-center">
+                        <h1 class="heading font__black text-center">
+                            <span class="font__green">
+                                Pricing
+                            </span>
+                            at <br />Fabits
+                        </h1>
+                    </div>
+                    <p class=" pt-2 text-center">
+                        Everyone should be able to spend, save, and invest better with expert advice.
+                        <br />
+                        That's why we keep
+                        prices low and transparent.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 m-0 pricing bgv display__desktop">
+        <div class="w-100 d-flex justify-content-center bgv">
+            <div class="container bgv p-0 m-0 pt-5 ">
+                <div class="w-100 bgv p-3 pt-4 text-center">
+                    <h2 class=" font__black">
+                        Charges
+                    </h2>
+                    <p class="text-center">
+                        All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.
+                    </p>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="priceboxes border boxshadow d-flex justift-content-center text-center mb-3 ">
+                                <div class="pt-5 ">
+                                    <div class="d-flex justify-content-center">
+                                        <sup style="font-size: 30px;" class="font__green">
+                                            ₹
+                                        </sup>
+                                        <h1 class="font__green heading__ok">
+                                            0
+                                        </h1>
+                                    </div>
+
+                                    <h5 class="pt-3">
+                                        Planning tool
+                                    </h5>
+                                    <p class="px-3">
+                                        Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades
+                                        across
+                                        equity,
+                                        currency, and commodity trades. Flat ₹20 on all option trades.
+                                    </p>
+                                    <div class="d-flex justify-content-between px-3">
+                                        <a>
+                                            Learn more
+                                        </a>
+                                        <p>V</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="priceboxes border boxshadow d-flex justift-content-center text-center mb-3 ">
+                                <div class="pt-5 ">
+                                    <div class="d-flex justify-content-center">
+                                        <sup style="font-size: 30px;" class="font__green">
+                                            ₹
+                                        </sup>
+                                        <h1 class="font__green heading__ok">
+                                            0
+                                        </h1>
+                                    </div>
+
+                                    <h5 class="pt-3">
+                                        Planning tool
+                                    </h5>
+                                    <p class="px-3">
+                                        Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades
+                                        across
+                                        equity,
+                                        currency, and commodity trades. Flat ₹20 on all option trades.
+                                    </p>
+                                    <div class="d-flex justify-content-between px-3">
+                                        <a>
+                                            Learn more
+                                        </a>
+                                        <p>V</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="priceboxes border boxshadow d-flex justift-content-center text-center mb-3 ">
+                                <div class="pt-5 ">
+                                    <div class="d-flex justify-content-center">
+                                        <sup style="font-size: 30px;" class="font__green">
+                                            ₹
+                                        </sup>
+                                        <h1 class="font__green heading__ok">
+                                            0
+                                        </h1>
+                                    </div>
+
+                                    <h5 class="pt-3">
+                                        Planning tool
+                                    </h5>
+                                    <p class="px-3">
+                                        Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades
+                                        across
+                                        equity,
+                                        currency, and commodity trades. Flat ₹20 on all option trades.
+                                    </p>
+                                    <div class="d-flex justify-content-between px-3">
+                                        <a>
+                                            Learn more
+                                        </a>
+                                        <p>V</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <!-- <div class="w-100 max__width  p-3">
+                        <h1 class="heading font__black">
+                            Signup at <br />
+                            <span class="font__green">
+                                Fabits
+                            </span>
+                        </h1>
+                        <p>
+                            011472 Fabits is customer centric. <br>
+                            -* Simple and Cost Effective
+                        </p>
+                        <div class="d-flex">
+                            <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                            <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="container-fluid p-0 m-0 pricing  display__desktop">
+
+        <div class="w-100 d-flex justify-content-center bgv">
+            <div class="container bgv p-0 m-0 pt-5 ">
+
+
+
+                <div class="p-3 pb-0 pt-5 bg-light text-center rounded-5 detailed__pricing">
+                    <h2>Detailed Pricing</h2>
+                    <p class="text-center">
+                        Starting ₹99 per month for AI driven smart investment buckets<br /> to drive you to the greater
+                        heights.
+                    </p>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="w-100 table__width ">
+                            <div class="row mb-3">
+                                <div class="col-6 text-center py-2 nonnri active">
+                                    Resident Indian
+                                </div>
+                                <div class="col-6 text-center py-2 nri ">
+                                    NRI
+                                </div>
+                            </div>
+                            <div class="ri ">
+                                <div class="row th py-3">
+                                    <div class="col-5">
+                                        <b>
+                                            Charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        <b>
+
+                                            PIS
+                                        </b>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-5">
+                                        <b>
+                                            Brokerage
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        Rs 150/- per executed order or 0.5% of Turnover whichever is lower.
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            STT/CTT
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        0.1% on buy & sell
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+                                            Transaction charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        NSE: 0.00345%
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            GST
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        18% on (brokerage + transaction charges)
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            SEBI charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        ₹10 / crore
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            Stamp charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        0.015% or ₹1500 / crore on buy side
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            AMC (Annual Maintenance Charges)
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        Rs. 300 + GST per year
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="nrii d-none">
+                                <div class="row th py-3">
+                                    <div class="col-5">
+                                        <b>
+
+                                            Charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        <b>
+
+                                            Equity Delivery
+                                        </b>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-5">
+                                        <b>
+
+                                            Brokerage
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        Rs 30/- per executed order or 0.5% of Turnover whichever is lower.
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            STT/CTT
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        0.1% on buy & sell
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            Transaction charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        NSE: 0.00345%
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            GST
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        18% on (brokerage + transaction charges)
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            SEBI charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        ₹10 / crore
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            Stamp charges
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        0.015% or ₹1500 / crore on buy side
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <b>
+
+                                            AMC (Annual Maintenance Charges)
+                                        </b>
+                                    </div>
+                                    <div class="col-7">
+                                        Rs. 300 + GST per year
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="d-flex justify-content-center">
+
+                        <img src="FabitsAssets/Images/Pricing/icon2 1.png" style="width: 30%;" alt="">
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="w-100 signup__bg p-3">
+            <h1 class="heading font__black">
+                Signup at <br />
+                <span class="font__green">
+                    Fabits
+                </span>
+            </h1>
+            <p>
+                Fabits is customer centric. <br>
+                Simple and Cost Effective
+            </p>
+            <div class="d-flex" style="margin-top: -10px;">
+                <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+            </div>
+        </div> -->
+    </div>
+    <div class="container-fluid p-0 m-0 charges__bg">
+    <div class="container charges__bg w-100 p-3 py-4 pt-5 ">
+        <h2 class="">
+            Detailed Charges
+        </h2>
+        <div class="row pb-2">
+            <div class="col-1 ">
+                <img src="icon__point.png" height="10px" alt="">
+
+            </div>
+            <div class="col-11">
+                DP transaction charge for Market Trades Rs.15+ GST per scrip (for any value) will be debited for
+                all sell side transaction only.
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col-1 ">
+                <img src="icon__point.png" height="10px" alt="">
+            </div>
+            <div class="col-11">
+                For Mutual Fund: Rs.15 + GST per folio (for any value) will be debited for DEMAT redemption.
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col-1 ">
+                <img src="icon__point.png" height="10px" alt="">
+            </div>
+            <div class="col-11">
+                DP transaction charge for Off Market Trades: 0.3% on the value of stocks, subject to Maximum of
+                Rs 30,000/-, + GST per scrip (for any value) will be debited.
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col-1 ">
+                <img src="icon__point.png" height="10px" alt="">
+            </div>
+            <div class="col-11">
+                As per Govt Notification w.e.f. 01st Jul 2020, all Off Market Transactions in DEMAT account
+                would be subject to stamp duty charges on upfront basis @ 0.015% of the consideration value.
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col-1 ">
+                <img src="icon__point.png" height="10px" alt="">
+            </div>
+            <div class="col-11">
+                For any other charges in the DEMAT, account please refer here.
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content w-100">
+                <div class="container d-flex justify-content-center ">
+                    <div class="container-fluid p-0 m-0 text-center text-light py-5">
+                        <h1 class="heading  py-5 display__desktop" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <h1 class="heading__contact  py-5 display__mobile text-start ps-3" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row w-100 d-flex justify-content-center grad__width">
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">FABITS</h5>
+                                    <p class="content__paragraph">
+                                        Shareway Securities Limited<br /> Corporate Office: No 2, Hayes Road,<br />
+                                        Richmond Town, Bangalore 560025.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">Regd. Office: </h5>
+                                    <p class="content__paragraph">
+                                        old no 46 new no 6,
+                                        <br /> Gilli flower, flat, E- 2nd floor, 23rd street,
+                                        <br /> Anna Nagar East, Chennai 600102
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <p class="content__paragraph">
+                                        080-45687111
+                                        <br />
+                                        + 91 8050030909
+                                        <br /> support@fabits.com / customercare@fabits.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 link__content m-auto w-100">
+                <div class="container d-flex justify-content-center w-100  ">
+                    <div class=" w-100 pe-3 text-center text-light py-5">
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row  d-flex justify-content-center  text-dark w-100 links grad__width">
+                                <div class="col-6 col-md-3 text-start content__paragraph2    ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Platforms
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Finbits
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                FAQ's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Backoffice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 text-start">
+                                    <div class=" text-start content__paragraph2">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Disclosure
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Notifications
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Circulars
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Terms and Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Privacy Policy
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Policies and Procedures
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Investor Charter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Investor Complaints
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 text-start ">
+                                    <ul class="w-100 content__paragraph2">
+                                        <li>
+                                            SEBI Registration number:
+                                            <b>
+
+                                                INZ000208134
+                                            </b>
+
+
+                                        </li>
+                                        <li class="w-100">
+                                            Segments:
+                                            <b>
+
+                                                NSE CM – FO
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CDSL Depository Participant:
+                                            <b>
+
+                                                IN-DP-610-2021
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CIN NO:
+                                            <b>
+
+                                                U67120TN2008PLC066952
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            GST NO:
+                                            <b>
+
+                                                29AALCS7597J1ZA
+                                            </b>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="d-flex justify-content-center grad__width text-dark w-100">
+                                <div>
+                                    <hr class="bg-dark">
+                                    <p class="text-start px-2 content__paragraph2" style="line-height: 1.9;">
+                                        SHAREWAY SECURITIES LIMITED (FABITS) Member of NSE – SEBI Registration number:
+                                        INZ000208134 CDSL: Depository services through SHAREWAY SECURITIES LIMITED. –
+                                        SEBI
+                                        Registration number: IN-DP-610-2021. Registered Address: old no 46 new no 6,
+                                        Gilli
+                                        flower, flat, 2nd floor, 23rd street, Anna Nagar East, Chennai 600102. Corporate
+                                        Address: No 2, Hayes Road Richmond Town Bangalore 560025. For any complaints
+                                        pertaining
+                                        to securities broking please write to
+                                        <a href="mailto:rathi@fabits.com" target="_blank">
+                                            rathi@fabits.com
+                                        </a>
+                                        . Please ensure you carefully
+                                        read
+                                        the Risk Disclosure Document as prescribed by SEBI
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content m-auto w-100">
+                <div class="container   d-flex justify-content-start grad__width text-light py-3">
+                    <p>
+                        © 2022 Fabits. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.nri').on('click', function () {
+                $('.nri').addClass('active');
+                $('.nonnri').removeClass('active');
+                $('.ri').removeClass('d-none');
+                $('.nrii').addClass('d-none');
+            });
+            $('.nonnri').on('click', function () {
+                $('.nonnri').addClass('active');
+                $('.nri').removeClass('active');
+                $('.nrii').removeClass('d-none');
+                $('.ri').addClass('d-none');
+            });
+        })
+    </script>
+
+
+</body>
+
+</html>
