@@ -871,3 +871,24 @@ header a {
 .desk__head a:hover{
   color: var(--bg-green) !important;
 }
+
+.no h6{
+  color: var(--bg-green) !important;
+}
+
+.no:hover h6{
+  color: white !important;
+}
+
+.no:hover{
+  background-color: var(--bg-green) !important;
+}
+
+.product__nav__dropdownn{
+  display: none !important;
+}
+
+.product__navv:hover  .product__nav__dropdownn{
+  display: block !important;
+}
+

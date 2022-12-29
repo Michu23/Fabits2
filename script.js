@@ -482,6 +482,9 @@ const nav__dropdown = document.querySelector(
   ".product__nav__dropdown"
 );
 
+const product__nav = document.querySelector(".product__nav");
+
+
 hamburger.addEventListener("click", () => {
   navs.classList.toggle("d-none");
   // header.classList.toggle("bgg");
@@ -496,9 +499,48 @@ close.addEventListener("click", () => {
   close.classList.toggle("d-none");
 });
 
+product__nav.addEventListener("click", () => {
+  nav__dropdown__list.classList.toggle("d-none");
+});
+
 pro.addEventListener("click", () => {
   nav__dropdown.classList.toggle("d-none");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const scrollProgress = document.getElementById('scroll-progress');
 const height =
@@ -509,6 +551,28 @@ window.addEventListener('scroll', () => {
     document.body.scrollTop || document.documentElement.scrollTop;
   scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const scrollProgresss = document.getElementById('scroll-progresss');
 const heightt =
