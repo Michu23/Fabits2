@@ -24,7 +24,7 @@
 <script src="script.js" defer></script>
 
 <body>
-    <header class="display__mobile">
+    <header class="display__mobile mh">
         <div class="d-flex justify-content-between">
             <div>
                 <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
@@ -55,11 +55,14 @@
                                     </h5>
                                 </a>
                             </div>
-                            <div class="nav__item cp py-2 product__nav">
+                            <div class="nav__item cp py-2 ">
                                 <!-- <a href="Product.html" class="nav__link"> -->
                                 <h5>
-                                    Product
-                                    <ion-icon name="caret-down-outline" class=" ms-2"
+                                    <a href="Product.html">
+
+                                        Product
+                                    </a>
+                                    <ion-icon class="product__nav" name="caret-down-outline" class=" ms-2"
                                         style="margin-bottom: -2px;"></ion-icon>
                                 </h5>
                                 <!-- </a> -->
@@ -125,6 +128,7 @@
                 </div>
             </div>
         </div>
+        <div id="scroll-progress" style="margin-top: 13.5px;"></div>
     </header>
     <header class="display__desktop dh py-3">
         <div class="d-flex justify-content-between ">
@@ -139,48 +143,78 @@
             <div class="d-flex justify-content-end pt-4 desk__head">
                 <div class="nav__item mx-3 ">
                     <a href="index.html" class="nav__link">
-                        <h5>
+                        <h6>
                             Home
-                        </h5>
+                        </h6>
                     </a>
                 </div>
-                
-                <div class="nav__item mx-3 cp  product__nav">
-                    <h5>
+                <div class="nav__item mx-3 cp  product__navv">
+                    <a href="Product.html">
+                    <h6>
                         Product
-                    </h5>
-
+                    </h6></a>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none" style="margin-left: -20px; ">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="SIBs.html" class="nav__link font__green">
+                                <h6>
+                                    SIBs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="AI.html" class="nav__link font__green">
+                                <h6>
+                                    AI Tech
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="ETFs.html" class="nav__link font__green">
+                                <h6>
+                                    ETFs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="Planning.html" class="nav__link font__green">
+                                <h6>
+                                    Planning
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="nav__item mx-3 ">
                     <a href="Team.html" class="nav__link">
-                        <h5>
+                        <h6>
                             About Us
-                        </h5>
+                        </h6>
                     </a>
                 </div>
                 <div class="nav__item mx-3 ">
                     <a href="Pricing.html" class="nav__link">
-                        <h5>
+                        <h6>
                             Pricing
-                        </h5>
+                        </h6>
                     </a>
                 </div>
                 <div class="nav__item mx-3 ">
                     <a href="Contact.html" class="nav__link">
-                        <h5>
+                        <h6>
                             Contact 
-                        </h5>
+                        </h6>
                     </a>
                 </div>
                 <div class="nav__item mx-3 ms-5 " >
                     <a href="#" class="nav__link" >
-                        <button class="sb bg__green boxshadow text-white start px-4" style="width: fit-content; margin-top: -10px;">
+                        <button class="sb bg__green boxshadow text-white start px-4" style="width: fit-content; margin-top: -100px;">
                             Let's get started
                         </button>
                     </a>
                 </div>
             </div>
         </div>
+        <div id="scroll-progresss" class="mt-3"></div>
     </header>
     <!-- <div style="height: 60px;"></div> -->
     <div class="container-fluid p-0 m-0 etfs">

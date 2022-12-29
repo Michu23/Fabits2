@@ -892,3 +892,34 @@ header a {
   display: block !important;
 }
 
+.product__page h2{
+  
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+
+
+color: rgba(0, 0, 0, 0.7);
+}
+
+
+.product__page p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+
+
+align-items: center;
+text-align: justify;
+
+color: rgba(0, 0, 0, 0.7);
+}
+
+a{
+  width: fit-content !important;
+}
