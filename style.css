@@ -945,3 +945,25 @@ a{
   right: 35%;
   transform: translate(0, -50%);
 }
+
+
+.story {
+  background-image: url(./FabitsAssets/Images/Team/image\ 2.png) !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
+
+
+.story p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+
+color: #fff;
+
+}
+
