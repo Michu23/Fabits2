@@ -284,12 +284,12 @@ body::-webkit-scrollbar {
 
 /* First slide */
 
-.first__slide {
+/* .first__slide {
   background-image: url(./FabitsAssets/Images/calm-businesswoman-relaxing-with-breath-gymnastics.jpg) !important;
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat !important;
-}
+} */
 
 .first__slide2 {
   object-fit: none !important;
@@ -922,4 +922,13 @@ color: rgba(0, 0, 0, 0.7);
 
 a{
   width: fit-content !important;
+}
+
+
+.child {
+  /* Center vertically */
+  position: absolute;
+  top: 50%;
+  right: 35%;
+  transform: translate(0, -50%);
 }
