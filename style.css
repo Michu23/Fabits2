@@ -308,8 +308,21 @@ body::-webkit-scrollbar {
   ) !important; */
   background: linear-gradient(
     180deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 97.14%
+  ) !important;
+}
+
+.first__slide .first__content2 {
+  /* background: linear-gradient(
+    180deg,
     rgba(0, 0, 30, 0.2) 0%,
-    rgba(79, 158, 126, 0.3) 97.14%
+    rgba(0, 0, 30, 0.9) 97.14%
+  ) !important; */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 30, 0.9) 0%,
+    rgba(0, 0, 30, 0.9) 97.14%
   ) !important;
 }
 
