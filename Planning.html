@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabits - Financial Habits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+<script src="script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <header class="display__mobile mh">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="FabitsAssets/Images/Hamburger.svg" alt="logo" class="pt-2 hamburger  open">
+                <ion-icon name="close-outline" size="large" class=" close d-none pt-3 pe-2"></ion-icon>
+            </div>
+        </div>
+        <div class="mt-2 bg-light navs d-none">
+            <div class="p-5 pt-3 ">
+                <hr>
+                <div class="">
+                    <div class="text-center">
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="index.html" class="nav__link">
+                                    <h5>
+                                        Home
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Pricing.html" class="nav__link">
+                                    <h5>
+                                        Pricing
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item cp py-2 ">
+                                <!-- <a href="Product.html" class="nav__link"> -->
+                                <h5>
+                                    <a href="Product.html">
+
+                                        Product
+                                    </a>
+                                    <ion-icon class="product__nav" name="caret-down-outline" class=" ms-2"
+                                        style="margin-bottom: -2px;"></ion-icon>
+                                </h5>
+                                <!-- </a> -->
+                                <div class="product__nav__dropdown d-none ">
+                                    <div class="nav__item py-2">
+                                        <a href="SIBs.html" class="nav__link font__green">
+                                            <h5>
+                                                SIBs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="AI.html" class="nav__link font__green">
+                                            <h5>
+                                                AIAS
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="ETFs.html" class="nav__link font__green">
+                                            <h5>
+                                                ETFs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="Planning.html" class="nav__link font__green">
+                                            <h5>
+                                                Planning
+                                            </h5>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Team.html" class="nav__link">
+                                    <h5>
+                                        About Us
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Contact.html" class="nav__link">
+                                    <h5>
+                                        Contact
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="#" class="nav__link">
+                                    <button class="sb w-50 bg__green boxshadow text-white">
+                                        Let's get started
+                                    </button>
+                                </a>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progress" style="margin-top: 13.5px;"></div>
+    </header>
+    <header class="display__desktop dh py-3">
+        <div class="d-flex justify-content-between ">
+            <div>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                </a>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+                </a>
+            </div>
+            <div class="d-flex justify-content-end pt-4 desk__head">
+                <div class="nav__item mx-3 ">
+                    <a href="index.html" class="nav__link">
+                        <h6>
+                            Home
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 cp  product__navv">
+                    <a href="Product.html">
+                        <h6>
+                            Product
+                        </h6>
+                    </a>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px; ">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="SIBs.html" class="nav__link font__green">
+                                <h6>
+                                    SIBs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="AI.html" class="nav__link font__green">
+                                <h6>
+                                    AI Tech
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="ETFs.html" class="nav__link font__green">
+                                <h6>
+                                    ETFs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="Planning.html" class="nav__link font__green">
+                                <h6>
+                                    Planning
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Team.html" class="nav__link">
+                        <h6>
+                            About Us
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Pricing.html" class="nav__link">
+                        <h6>
+                            Pricing
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Contact.html" class="nav__link">
+                        <h6>
+                            Contact
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ms-5 ">
+                    <a href="#" class="nav__link">
+                        <button class="sb bg__green boxshadow text-white start px-4"
+                            style="width: fit-content; margin-top: -100px;">
+                            Let's get started
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progresss" class="mt-3"></div>
+    </header>
+    <!-- <div style="height: 60px;"></div> -->
+    <div class="container-fluid p-0 m-0 sibs bgwhite display__mobile">
+        <div class="py-5 p-0 m-0"></div>
+        <div class="p-3">
+            <h1 class="font__black heading">
+                The Importance of
+                <span class="font__green">
+
+                    Goal-Based Planning
+                </span>
+
+                and
+
+                <span class="font__green">
+
+                    Investing
+                </span>
+            </h1>
+
+
+            <p class="mt-4">
+                At the beginning of every year, you may be doing an exercise to define your individual KPI’s (Key
+                Performance Index), based on your company’s goals and strategy. This could include sales targets, cost
+                targets, growth and other goals based on your position in the organization. Once you have defined your
+                goals, you will need to prioritise and assign appropriate weightage to each one.
+            </p>
+            <div class="w-100 d-flex justify-content-center">
+
+                <img src="FabitsAssets/Images/SIBs/gift-boxes 1.png" class="w-50" alt="">
+            </div>
+            <p class=" ">
+                Goal setting helps us align to the goals of the organization. It gives us purpose and direction – and
+                acts as a roadmap for the work that we do every day through the next year. It ensures we prioritize more
+                important (and impactful) tasks, and acts as a metric for us to gauge our progress at the end of the
+                year. Bonuses and increments are tied to the success of achieving the goals we set out.
+            </p>
+            <p class="pb-0">
+                If goals can help us perform better, and further our careers in our chosen paths, why shouldn’t our
+                investments do the same for us in our financial journey?
+            </p>
+            <p class="pb-0">
+                We all have different needs (and goals), yet, when it comes to investments, we are prescribed a
+                one-shoe-fits-all approach. In addition, everyone may have several goals – and each goal may require a
+                different strategy. For example, if education is a top priority, it would require an investment vehicle
+                that is more consistent and less volatile. Alternatively, a plan to buy a car may have a lower priority
+                and can thus allow more volatility as the time frame is not too critical. </p>
+        </div>
+        <div class="w-100  signup__bg p-4">
+            <h1 class="heading font__black">
+                Signup with <br />
+                <span class="font__green">
+                    Fabits
+                </span>
+            </h1>
+            <p>
+                Fabits is simple, cost-effective, <br> and customer centric.
+            </p>
+            <div class="d-flex text-light justify-content-end">
+                <button class="w-75 sb bg__white mx-1 text-dark">Start your Journey</button>
+            </div>
+        </div>
+        <div class="p-3 pt-5 bgv planning">
+            <h4 class="">
+
+                With Fabits, our aim is you <br />
+                <span class="font__green">
+                    to help you
+                </span> to:
+            </h4>
+
+            <div class="row my-2">
+                <div class="col-1 text-end">
+                    1.
+                </div>
+                <div class="col-11">
+                    Define and identify your goals (such as buying a bike, saving for marriage, retirement etc.) This
+                    will give you a clear purpose for your money and investments.
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-1 text-end">
+                    2.
+                </div>
+                <div class="col-11">
+                    Prioritise defined goals.
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-1 text-end">
+                    3.
+                </div>
+                <div class="col-11">
+                    Define your monthly Systematic Investment Plans (SIPs) - to break bigger goals to smaller,
+                    achievable habits.
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-1 text-end">
+                    4.
+                </div>
+                <div class="col-11">
+                    Align your goals to customized Smart Investment Boxes (SIBs) that will steer you in the right
+                    direction. </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-1 text-end">
+                    5.
+                </div>
+                <div class="col-11">
+                    Regularly track performance based on your goals.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 m-0 sibs bgwhite display__desktop">
+        <div class="py-5 p-0 m-0"></div>
+        <div class="container" style="max-width: 800px;">
+            <div class="p-3 ">
+                <div class="w-100 d-flex justify-content-center">
+                    <h1 class="font__black heading text-center">
+                        The Importance of
+                        <span class="font__green">
+        
+                            Goal-Based Planning
+                        </span>
+        
+                        and
+        
+                        <span class="font__green">
+        
+                            Investing
+                        </span>
+                    </h1>
+        
+                </div>
+
+            </div>
+        </div>
+        <div class="container" style="max-width: 800px;">
+            <div class="p-3 ">
+                <p class="mt-4">
+                    At the beginning of every year, you may be doing an exercise to define your individual KPI’s (Key
+                    Performance Index), based on your company’s goals and strategy. This could include sales targets, cost
+                    targets, growth and other goals based on your position in the organization. Once you have defined your
+                    goals, you will need to prioritise and assign appropriate weightage to each one.
+                </p>
+                <div class="w-100 d-flex justify-content-center">
+    
+                    <img src="FabitsAssets/Images/SIBs/gift-boxes 1.png" class="w-25" alt="">
+                    <img src="FabitsAssets/Images/SIBs/gift-boxes 1.png" class="w-25" alt="">
+                    <img src="FabitsAssets/Images/SIBs/gift-boxes 1.png" class="w-25" alt="">
+                </div>
+                <p class=" ">
+                    Goal setting helps us align to the goals of the organization. It gives us purpose and direction – and
+                    acts as a roadmap for the work that we do every day through the next year. It ensures we prioritize more
+                    important (and impactful) tasks, and acts as a metric for us to gauge our progress at the end of the
+                    year. Bonuses and increments are tied to the success of achieving the goals we set out.
+                </p>
+                <p class="pb-0">
+                    If goals can help us perform better, and further our careers in our chosen paths, why shouldn’t our
+                    investments do the same for us in our financial journey?
+                </p>
+                <p class="pb-0">
+                    We all have different needs (and goals), yet, when it comes to investments, we are prescribed a
+                    one-shoe-fits-all approach. In addition, everyone may have several goals – and each goal may require a
+                    different strategy. For example, if education is a top priority, it would require an investment vehicle
+                    that is more consistent and less volatile. Alternatively, a plan to buy a car may have a lower priority
+                    and can thus allow more volatility as the time frame is not too critical. </p>
+
+            </div>
+            <div class="w-100  signup__bg p-4 pb-0">
+                <h1 class="heading font__black">
+                    Signup with
+                    <span class="font__green">
+                        Fabits
+                    </span>
+                </h1>
+                <p>
+                    Fabits is simple, cost-effective, <br> and customer centric.
+
+                <div class="d-flex justify-content-end">
+                    <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 m-0 bgv bgwhite display__desktop">
+
+        <div class="container" style="max-width: 800px;">
+
+
+
+
+            <div class="p-3 pt-5">
+                <h1 class="heading0 text-center pt-5">
+                    Here are the reasons <br />
+                    <span class="font__green">
+                        why SIBs work:
+                    </span>
+                </h1>
+                <div class="d-flex justify-content-center">
+                    <div class="" style="max-width: 500px;">
+                        <div class="text-center border py-5 bg__white rounded-3 mt-5">
+                            <img src="FabitsAssets/Images/SIBs/diversification.svg" class="w-25 py-2" alt="">
+                            <h2>
+                                Diversification
+                            </h2>
+                            <p class="p-3">
+                                Each SIB consists of select mix of various asset classes - domestic equity,
+                                international
+                                markets, gold, and debt, in varying proportions based on your end-goals. Each basket
+                                is
+                                curated
+                                by financial experts using time-tested and proven investment strategies.
+                            </p>
+                        </div>
+                        <div class="text-center border py-5 bg__white rounded-3 mt-5">
+                            <img src="FabitsAssets/Images/SIBs/Need__icon.svg" class="w-25 py-2" alt="">
+                            <h2>
+                                Need Specific SIBs
+                            </h2>
+                            <p class="p-3">
+                                Every investing goal is unique and different; hence the investment strategy should
+                                be
+                                designed
+                                specifically for that particular goal. Risk management is critical to ensure that
+                                you
+                                reach your
+                                goals on time. For instance, a retirement portfolio needs to serve an individual’s
+                                goals
+                                over a
+                                long period of time, whereas a child’s undergraduate education fund needs to deliver
+                                before the
+                                child turns 18. Ergo, a retirement fund can take on more risk and volatility, while
+                                the
+                                child
+                                education fund needs to more consistent in a relatively shorter time period. </p>
+                        </div>
+                        <div class="text-center border py-5 bg__white rounded-3 mt-5 ">
+                            <img src="FabitsAssets/Images/SIBs/better.svg" class="w-25 py-2" alt="">
+                            <h2>
+                                Better Risk-<br />Adjusted Returns
+                            </h2>
+                            <p class="p-3">
+                                SIBs are reviewed on a regular basis to keep track of ever-changing market
+                                conditions,
+                                and
+                                adjustments are made based on scientific research and data driven quantitative
+                                methodologies.
+                                The weightage of undervalued assets is increased while we bank gains from overvalued
+                                assets.
+                                This ensures a greater probability of riding the uptrend while cushioning against
+                                the
+                                dips.
+                            </p>
+                        </div>
+                        <div class="text-center border py-5 bg__white rounded-3 mt-5 ">
+                            <img src="FabitsAssets/Images/SIBs/portfolio.svg" class="w-25 py-2" alt="">
+                            <h2>
+                                Portfolio Monitoring<br />and rebalancing
+                            </h2>
+                            <p class="p-3">
+                                Our AI tech platform constantly monitors and tracks your portfolio. Based on your
+                                investment
+                                patterns and market conditions, your portfolio can deviate from the risk metrics
+                                defined. This
+                                could expose your portfolio and your needs to greater risks. Our AI enabled
+                                ‘Advanced
+                                Investor
+                                Assistance System’ (AIAS) Tech detects these deviations and rebalances your
+                                portfolio to
+                                bring
+                                you back on course. This ensures that portfolio volatility is decreased while
+                                maintaining above
+                                average steady returns.
+                            </p>
+                        </div>
+                        <div class="text-center border py-5 bg__white rounded-3 mt-5 mb-5 ">
+                            <img src="FabitsAssets/Images/SIBs/low__cost.svg" class="w-25 py-2" alt="">
+                            <h2>
+                                Low Cost
+                            </h2>
+                            <p class="p-3">
+                                Our SIBs comprise of low-cost instruments called Exchange Traded Funds. These are
+                                more
+                                effective
+                                investment vehicles than the more popular mutual funds. Learn more about ETFs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w-100  signup__bg p-4">
+            <h2 class="heading font__black">
+                Signup at <br />
+                <span class="font__green">
+                    Fabits
+                </span>
+            </h2>
+            <p>
+                Fabits is customer centric. <br>
+                Simple and Cost Effective
+            </p>
+            <div class="d-flex">
+                <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+                <button class="w-50 sb bg__white mx-1">Start your Journey</button>
+            </div>
+        </div> -->
+
+    </div>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content w-100">
+                <div class="container d-flex justify-content-center ">
+                    <div class="container-fluid p-0 m-0 text-center text-light py-5">
+                        <h1 class="heading  py-5 display__desktop" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <h1 class="heading__contact  py-5 display__mobile text-start ps-3" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row w-100 d-flex justify-content-center grad__width">
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">FABITS</h5>
+                                    <p class="content__paragraph">
+                                        Shareway Securities Limited<br /> Corporate Office: No 2, Hayes Road,<br />
+                                        Richmond Town, Bangalore 560025.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">Regd. Office: </h5>
+                                    <p class="content__paragraph">
+                                        old no 46 new no 6,
+                                        <br /> Gilli flower, flat, E- 2nd floor, 23rd street,
+                                        <br /> Anna Nagar East, Chennai 600102
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <p class="content__paragraph">
+                                        080-45687111
+                                        <br />
+                                        + 91 8050030909
+                                        <br /> support@fabits.com / customercare@fabits.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 link__content m-auto w-100">
+                <div class="container d-flex justify-content-center w-100  ">
+                    <div class=" w-100 pe-3 text-center text-light py-5">
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row  d-flex justify-content-center  text-dark w-100 links grad__width">
+                                <div class="col-6 col-md-3 text-start content__paragraph2    ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Platforms
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Finbits
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                FAQ's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Backoffice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 text-start">
+                                    <div class=" text-start content__paragraph2">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Disclosure
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Notifications
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Circulars
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Terms and Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Privacy Policy
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Policies and Procedures
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Investor Charter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-dark">
+                                                    Investor Complaints
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 text-start ">
+                                    <ul class="w-100 content__paragraph2">
+                                        <li>
+                                            SEBI Registration number:
+                                            <b>
+
+                                                INZ000208134
+                                            </b>
+
+
+                                        </li>
+                                        <li class="w-100">
+                                            Segments:
+                                            <b>
+
+                                                NSE CM – FO
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CDSL Depository Participant:
+                                            <b>
+
+                                                IN-DP-610-2021
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CIN NO:
+                                            <b>
+
+                                                U67120TN2008PLC066952
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            GST NO:
+                                            <b>
+
+                                                29AALCS7597J1ZA
+                                            </b>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="d-flex justify-content-center grad__width text-dark w-100">
+                                <div>
+                                    <hr class="bg-dark">
+                                    <p class="text-start px-2 content__paragraph2" style="line-height: 1.9;">
+                                        SHAREWAY SECURITIES LIMITED (FABITS) Member of NSE – SEBI Registration number:
+                                        INZ000208134 CDSL: Depository services through SHAREWAY SECURITIES LIMITED. –
+                                        SEBI
+                                        Registration number: IN-DP-610-2021. Registered Address: old no 46 new no 6,
+                                        Gilli
+                                        flower, flat, 2nd floor, 23rd street, Anna Nagar East, Chennai 600102. Corporate
+                                        Address: No 2, Hayes Road Richmond Town Bangalore 560025. For any complaints
+                                        pertaining
+                                        to securities broking please write to
+                                        <a href="mailto:rathi@fabits.com" target="_blank">
+                                            rathi@fabits.com
+                                        </a>
+                                        . Please ensure you carefully
+                                        read
+                                        the Risk Disclosure Document as prescribed by SEBI
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content m-auto w-100">
+                <div class="container   d-flex justify-content-start grad__width text-light py-3">
+                    <p>
+                        © 2022 Fabits. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+</body>
+
+</html>

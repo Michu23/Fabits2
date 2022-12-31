@@ -471,8 +471,7 @@ body::-webkit-scrollbar {
 li {
   list-style: none !important;
   text-decoration: none !important;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  
 }
 
 ul {
@@ -1063,4 +1062,17 @@ line-height: 24px;
 text-align: justify !important;
 color: #fff;
 
+}
+
+
+.planning p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+text-align: justify !important;
+padding: 0 !important;
+margin-bottom: 5px;
 }
