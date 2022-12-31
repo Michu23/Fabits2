@@ -369,7 +369,7 @@ body::-webkit-scrollbar {
   margin: 0 !important;
   position: absolute !important;
   top: 50% !important;
-  /* left: 50% !important; */
+  left: 20% !important;
   -ms-transform: translateY(-50%) !important;
   transform: translateY(-50%) !important;
 }
@@ -838,7 +838,8 @@ header a {
     #ec6ead,
     #3494e6
   ); /* Chrome 10-25, Safari 5.1-6 */
-  height: 120px;
+  /* height: 120px;
+  width: 120px; */
   /* width: 100px;2022 */
   background: linear-gradient(
     to right,
@@ -847,16 +848,32 @@ header a {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 10px;
   padding-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden !important;
   max-width: 200px !important;
   transition: 0.3s !important;
+  max-height: 242px !important;
+  min-height: 242px !important;
 }
 
-.teampics img {
-  height: 100px !important;
+.proimage{
+  /* height: 150px !important;
+  width: 90px !important; */
+  margin: 0 auto !important;
+  /* margin-bottom: 10px !important; */
+  transition: 0.3s !important;
 }
+
+.ramesh{
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* .teampics img {
+  height: 100px !important;
+} */
 
 .probox:hover {
   border-radius: 50% !important;
@@ -955,6 +972,12 @@ a{
   background-position: top center !important;
   background-repeat: no-repeat !important;
 }
+.storypc {
+  background-image: url(./FabitsAssets/Images/Team/storypc.jpg) !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
 
 
 .story p{
@@ -964,8 +987,48 @@ font-weight: 400;
 font-size: 15px;
 line-height: 24px;
 /* or 160% */
-
+text-align: justify !important;
 color: #fff;
+}
 
+.team p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+text-align: justify !important;
+
+}
+
+.teampics p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+opacity: 0.8 !important;
+}
+
+.incase{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+opacity: 0.8 !important;
+}
+
+
+.fabitslogo{
+  width: clamp(200px, 60%, 400px) !important;
+}
+
+.justify{
+  text-align: justify !important;
+}
+
+.proimage{
+  max-height: 242px !important;
 }
 
