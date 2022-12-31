@@ -1039,3 +1039,28 @@ opacity: 0.8 !important;
   max-height: 242px !important;
 }
 
+.story__container{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+
+.vertically__align{
+  position: absolute;
+  top: 50%; left: 50% !important;
+  transform: translate(-50%,-50%) !important;
+}
+
+.story__paragraph{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* or 160% */
+text-align: justify !important;
+color: #fff;
+
+}
