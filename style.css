@@ -140,6 +140,13 @@ body::-webkit-scrollbar {
   opacity: 0.9 !important;
 }
 
+.heading0 {
+  line-height: 1 !important;
+  font-size: clamp(2.5rem, 8vw, 3.2rem) !important;
+  font-weight: 700 !important;
+  opacity: 0.9 !important;
+}
+
 .privacy h2 {
   line-height: 1 !important;
   font-size: 28px;
