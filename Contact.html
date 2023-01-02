@@ -592,6 +592,36 @@
                 onClick: function () { },
             }).showToast();
         }
+        function Toastt(message) {
+            Toastify({
+                text: message,
+                duration: 6000,
+                newWindow: true,
+                close: true,
+                gravity: "top",
+                position: "center",
+                stopOnFocus: true,
+                style: {
+                    background: "#4f9e7e",
+                    color: "#ffffff",
+                    textAlign: "center",
+                    fontSize: "1 rem",
+                    padding: "1rem",
+                    paddingLeft: "2rem",
+                    paddingRight: "2rem",
+                    padding: "1rem",
+                    display: "block",
+                    textTransform: "capitalize",
+                    maxWidth: "50%",
+                    borderRadius: "0.5rem",
+                    zIndex: 99999,
+                    // left: "50%",
+                    // top: "50%",
+                    transform: "translateX(-50%) translateY(-50%)",
+                },
+                onClick: function () { },
+            }).showToast();
+        }
 
 
         $(".submit_form").submit((e) => {
@@ -635,7 +665,7 @@
                     data: $(".submit_form").serialize(),
                     method: "post",
                     success: function (response) {
-                        Toast("Successfully Submitted!");
+                        Toastt("Successfully Submitted!");
                         setTimeout(() => {
                             window.location.reload();
                         }, 2000);
