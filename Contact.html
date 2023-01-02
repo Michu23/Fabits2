@@ -25,6 +25,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+    integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" refer></script>
 
 <body>
     <header class="display__mobile mh">
@@ -153,10 +159,12 @@
                 </div>
                 <div class="nav__item mx-3 cp  product__navv">
                     <a href="Product.html">
-                    <h6>
-                        Product
-                    </h6></a>
-                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none" style="margin-left: -20px; ">
+                        <h6>
+                            Product
+                        </h6>
+                    </a>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px; ">
                         <div class="nav__item py-3 px-3 pe-5 no">
                             <a href="SIBs.html" class="nav__link font__green">
                                 <h6>
@@ -204,13 +212,14 @@
                 <div class="nav__item mx-3 ">
                     <a href="Contact.html" class="nav__link">
                         <h6>
-                            Contact 
+                            Contact
                         </h6>
                     </a>
                 </div>
-                <div class="nav__item mx-3 ms-5 " >
-                    <a href="#" class="nav__link" >
-                        <button class="sb bg__green boxshadow text-white start px-4" style="width: fit-content; margin-top: -100px;">
+                <div class="nav__item mx-3 ms-5 ">
+                    <a href="#" class="nav__link">
+                        <button class="sb bg__green boxshadow text-white start px-4"
+                            style="width: fit-content; margin-top: -100px;">
                             Let's get started
                         </button>
                     </a>
@@ -239,25 +248,25 @@
                 <div class="row">
                     <div class="col-6 px-5">
                         <img src="Logooooo.png" class="w-75 mt-3" alt="">
-                </div>
+                    </div>
                     <div class="col-6">
                         <h5>
-                            Technology cant replace the human element. 
+                            Technology cant replace the human element.
                             We are always happy to talk to you.
                         </h5>
-                        <a href="" >
+                        <a href="">
                             <a href="https://calendly.com/fabits" target="_blank">
-                            <button class="sb bg__green text-white w-75 mt-3 ">
-                                <h5>
-                                    Schedule your 1-1
-                                </h5>
-                            </button>
-                        </a>
+                                <button class="sb bg__green text-white w-75 mt-3 ">
+                                    <h5>
+                                        Schedule your 1-1
+                                    </h5>
+                                </button>
+                            </a>
 
                         </a>
 
                     </div>
-                    
+
 
                 </div>
 
@@ -266,9 +275,7 @@
 
             <div>
 
-                <form class="p-5 th mb-5 rounded-3" id="submit-form" 
-                    method="post"
-                >
+                <form class="p-5 th mb-5 rounded-3 submit-form">
                     <h5>
                         You can also write to us
                     </h5>
@@ -276,35 +283,31 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Name</label>
-                                <input type="text" class="form-control" 
-                                name="Name"
-                                placeholder="Name">
+                                <input type="text" class="form-control" id="form_name" name="Name" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
+                                <label for="exampleInputPassword1">Phone</label>
+                                <input type="text" class="form-control" id="form_phone"  name="Number" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                name="Email"
+                                <input type="email" class="form-control" id="form_email" name="Email"
                                     aria-describedby="emailHelp" placeholder="Enter email">
-                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                name="Message"
+                                <textarea class="form-control" id="form_message" rows="3" name="Message"
                                     placeholder="Enter your message"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="form-group mt-3 d-flex justify-content-center ">
-
-                        <!-- <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div> -->
                         <button type="submit" class="btn btn-primary w-25 bg-dark outline-0 border-0">Submit</button>
                 </form>
             </div>
@@ -536,24 +539,136 @@
     </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
+        $(".submit-form").submit((e) => {
+            alert("Form submitted successfully")
+            e.preventDefault();
+            alert("Form submitted successfully")
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbzQ6tt1yuyHyH2OfQUtgm2kjvOcxwyT8aXDAwRi8_0gn9V5SQi8_R0aoyUn6Qs2lpDfQQ/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
+                url: "https://script.google.com/macros/s/AKfycbzQ6tt1yuyHyH2OfQUtgm2kjvOcxwyT8aXDAwRi8_0gn9V5SQi8_R0aoyUn6Qs2lpDfQQ/exec",
+                data: $(".submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Form submitted successfully");
                     window.location.reload()
                 },
-                error:function (err){
+                error: function (err) {
                     alert("Something Error")
                 }
             })
         })
     </script>
+    <script>
+        function Toast(message) {
+            Toastify({
+                text: message,
+                duration: 6000,
+                newWindow: true,
+                close: true,
+                gravity: "bottom",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "red",
+                    color: "#ffffff",
+                    textAlign: "center",
+                    fontSize: "1 rem",
+                    padding: "1rem",
+                    paddingLeft: "2rem",
+                    paddingRight: "2rem",
+                    // lineHeight: "2.5rem",
+                    padding: "1rem",
+                    display: "block",
+                    textTransform: "capitalize",
+                    maxWidth: "50%",
+                    borderRadius: "0.5rem",
+                    zIndex: 99999,
+                    // left: "50%",
+                    // top: "50%",
+                    transform: "translateX(-50%) translateY(-50%)",
+                },
+                onClick: function () { }, // Callback after click
+            }).showToast();
+        }
+
+        $(".submit-form").submit((e) => {
+    
+            e.preventDefault();
+            var name = $("#form_name").val();
+            console.log(name);
+            var email = $("#form_email").val();
+            var message = $("#form_message").val();
+            var phone = $("#form_phone").val();
+            var noError = true;
+            if (name[0] == " ") {
+                Toast("Name cannot start with space");
+                $("#name_error").text("Name cannot start with space");
+                setTimeout(() => {
+                    $("#name_error").text("");
+                }, 4000);
+                noError = false;
+            }
+            if (name.length < 6) {
+                $("#name_error").text("Name must be atleast 6 characters. ");
+                Toast("Name must be atleast 6 characters. ");
+                setTimeout(() => {
+                    $("#name_error").text("");
+                }, 4000);
+                noError = false;
+            }
+            if (email[0] == " ") {
+                Toast("Email cannot start with space");
+                $("#email_error").text("Email cannot start with space");
+                setTimeout(() => {
+                    $("#email_error").text("");
+                }, 4000);
+    
+                noError = false;
+            }
+            if (message[0] == " ") {
+                Toast("Message cannot start with space");
+                $("#message_error").text("Message cannot start with space");
+                setTimeout(() => {
+                    $("#message_error").text("");
+                }, 4000);
+                noError = false;
+            }
+            if (message.length < 10) {
+                Toast("Message must be atleast 10 characters. ");
+                $("#message_error").text("Message must be atleast 10 characters. ");
+                setTimeout(() => {
+                    $("#message_error").text("");
+                }, 4000);
+                noError = false;
+            }
+            if (noError) {
+                $.ajax({
+                    url: "https://script.google.com/macros/s/AKfycbyVk1PFsIhusRGGPvZOjzGDeIQofReSwQqyFfG6_SZA2CjQNLK0UdQ5CGQE7SFTQXyB2w/exec",
+                    data: $("#submit-form").serialize(),
+                    method: "post",
+                    success: function (response) {
+                        Toast("Successfully Submitted!");
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 2000);
+                    },
+                    error: function (err) {
+                        alert("Something Error");
+                    },
+                });
+            }
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 
 </html>
