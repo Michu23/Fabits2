@@ -289,7 +289,7 @@
 
             <div>
 
-                <form class="p-5 th mb-5 rounded-3 submit_form" method="post" action="">
+                <form class="p-5 px-1 th mb-5 rounded-3 submit_form" method="post" action="">
                     <h5>
                         You can also write to us
                     </h5>
@@ -321,6 +321,11 @@
                                     placeholder="Enter your message"></textarea>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12">
+                        <span id="name_error" class="error__message"></span><br>
+                        <span id="phone_error" class="error__message"></span><br>
+                        <span id="message_error" class="error__message"></span>
                     </div>
                     <div class="form-group mt-3 d-flex justify-content-center ">
                         <input type="submit" class="btn btn-primary w-25 bg-dark outline-0 border-0">
@@ -611,6 +616,7 @@
                     paddingRight: "2rem",
                     padding: "1rem",
                     display: "block",
+                    marginTop: "2rem",
                     textTransform: "capitalize",
                     maxWidth: "50%",
                     borderRadius: "0.5rem",
@@ -637,26 +643,52 @@
             var noError = true;
             if (name[0] == " ") {
                 Toast("Name cannot start with space")
+                $("#name_error").text("Name cannot start with space");
+                setTimeout(() => {
+                    $("#name_error").text("");
+                }, 4000);
                 noError = false;
             }
             if (name.length < 3) {
                 Toast("Name must be atleast 3 characters. ");
+                $("#name_error").text("Name must be atleast 3 characters. ");
+                setTimeout(() => {
+                    $("#name_error").text("");
+                }, 4000);
                 noError = false;
             }
             if (email[0] == " ") {
                 Toast("Email cannot start with space");
+                $("#email_error").text("Email cannot start with space");
+                setTimeout(() => {
+                    $("#email_error").text("");
+                }, 4000);
+
                 noError = false;
             }
             if (message[0] == " ") {
                 Toast("Message cannot start with space");
+                $("#message_error").text("Message cannot start with space");
+                setTimeout(() => {
+                    $("#message_error").text("");
+                }, 4000);
+
                 noError = false;
             }
             if (message.length < 2) {
                 Toast("Message must be atleast 2 characters. ");
+                $("#message_error").text("Message must be atleast 2 characters. ");
+                setTimeout(() => {
+                    $("#message_error").text("");
+                }, 4000);
                 noError = false;
             }
             if (phone.length < 8) {
                 Toast("Phone number must be atleast 8 characters. ");
+                $("#phone_error").text("Phone number must be atleast 8 characters. ");
+                setTimeout(() => {
+                    $("#phone_error").text("");
+                }, 4000);
                 noError = false;
             }
             if (noError) {

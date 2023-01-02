@@ -18,6 +18,12 @@ html {
   height: -webkit-fill-available !important;
 }
 
+.error__message{
+  color: red !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
 #scroll-progress {
   position: fixed;
   /* top: 0; */
