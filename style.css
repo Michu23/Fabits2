@@ -566,6 +566,9 @@ a {
 .max__width {
   max-width: 500px !important;
 }
+.max__width2 {
+  max-width: 500px !important;
+}
 
 .getstarted {
   bottom: 0 !important;
@@ -996,8 +999,13 @@ opacity: 0.8 !important;
 }
 
 .vertically__align{
-  position: absolute;
+  position: absolute !important;
   top: 50%; left: 50% !important;
+  transform: translate(-50%,-50%) !important;
+}
+.vertically__align2{
+  position: absolute !important;
+  top: 50%; left: 75% !important;
   transform: translate(-50%,-50%) !important;
 }
 
