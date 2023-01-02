@@ -10,6 +10,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
 </head>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -28,9 +32,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
     integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" refer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+    integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" refer></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" defer></script>
+<script src="app.js" defer></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <body>
     <header class="display__mobile mh">
@@ -275,7 +289,7 @@
 
             <div>
 
-                <form class="p-5 th mb-5 rounded-3 submit-form">
+                <form class="p-5 th mb-5 rounded-3 submit_form" method="post" action="">
                     <h5>
                         You can also write to us
                     </h5>
@@ -289,7 +303,8 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Phone</label>
-                                <input type="text" class="form-control" id="form_phone"  name="Number" placeholder="Phone">
+                                <input type="text" class="form-control" id="form_phone" name="Number"
+                                    placeholder="Phone">
                             </div>
                         </div>
                         <div class="col-12">
@@ -308,8 +323,7 @@
                         </div>
                     </div>
                     <div class="form-group mt-3 d-flex justify-content-center ">
-                        <button type="submit" class="btn btn-primary w-25 bg-dark outline-0 border-0">Submit</button>
-                </form>
+                        <input type="submit" class="btn btn-primary w-25 bg-dark outline-0 border-0">
             </div>
 
         </div>
@@ -543,28 +557,11 @@
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.js"
+        integrity="sha512-ZHzbWDQKpcZxIT9l5KhcnwQTidZFzwK/c7gpUUsFvGjEsxPusdUCyFxjjpc7e/Wj7vLhfMujNx7COwOmzbn+2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $(".submit-form").submit((e) => {
-            alert("Form submitted successfully")
-            e.preventDefault();
-            alert("Form submitted successfully")
-            $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbzQ6tt1yuyHyH2OfQUtgm2kjvOcxwyT8aXDAwRi8_0gn9V5SQi8_R0aoyUn6Qs2lpDfQQ/exec",
-                data: $(".submit-form").serialize(),
-                method: "post",
-                success: function (response) {
-                    alert("Form submitted successfully");
-                    window.location.reload()
-                },
-                error: function (err) {
-                    alert("Something Error")
-                }
-            })
-        })
-    </script> -->
 
-    <script>
         function Toast(message) {
             Toastify({
                 text: message,
@@ -575,14 +572,13 @@
                 position: "right",
                 stopOnFocus: true,
                 style: {
-                    background: "red",
+                    background: "#4f9e7e",
                     color: "#ffffff",
                     textAlign: "center",
                     fontSize: "1 rem",
                     padding: "1rem",
                     paddingLeft: "2rem",
                     paddingRight: "2rem",
-                    // lineHeight: "2.5rem",
                     padding: "1rem",
                     display: "block",
                     textTransform: "capitalize",
@@ -593,65 +589,50 @@
                     // top: "50%",
                     transform: "translateX(-50%) translateY(-50%)",
                 },
-                onClick: function () { }, // Callback after click
+                onClick: function () { },
             }).showToast();
         }
 
 
-        $(".submit-form").submit((e) => {
+        $(".submit_form").submit((e) => {
             e.preventDefault();
-            alert("Form submitted successfully")
             var name = $("#form_name").val();
             console.log(name);
             var email = $("#form_email").val();
+            console.log(email);
             var message = $("#form_message").val();
+            console.log(message);
             var phone = $("#form_phone").val();
+            console.log(phone);
             var noError = true;
             if (name[0] == " ") {
-                Toast("Name cannot start with space");
-                $("#name_error").text("Name cannot start with space");
-                setTimeout(() => {
-                    $("#name_error").text("");
-                }, 4000);
+                Toast("Name cannot start with space")
                 noError = false;
             }
-            if (name.length < 6) {
-                $("#name_error").text("Name must be atleast 6 characters. ");
-                Toast("Name must be atleast 6 characters. ");
-                setTimeout(() => {
-                    $("#name_error").text("");
-                }, 4000);
+            if (name.length < 3) {
+                Toast("Name must be atleast 3 characters. ");
                 noError = false;
             }
             if (email[0] == " ") {
                 Toast("Email cannot start with space");
-                $("#email_error").text("Email cannot start with space");
-                setTimeout(() => {
-                    $("#email_error").text("");
-                }, 4000);
-    
                 noError = false;
             }
             if (message[0] == " ") {
                 Toast("Message cannot start with space");
-                $("#message_error").text("Message cannot start with space");
-                setTimeout(() => {
-                    $("#message_error").text("");
-                }, 4000);
                 noError = false;
             }
             if (message.length < 10) {
                 Toast("Message must be atleast 10 characters. ");
-                $("#message_error").text("Message must be atleast 10 characters. ");
-                setTimeout(() => {
-                    $("#message_error").text("");
-                }, 4000);
+                noError = false;
+            }
+            if (phone.length < 8) {
+                Toast("Phone number must be atleast 8 characters. ");
                 noError = false;
             }
             if (noError) {
                 $.ajax({
-                    url: "https://script.google.com/macros/s/AKfycbyVk1PFsIhusRGGPvZOjzGDeIQofReSwQqyFfG6_SZA2CjQNLK0UdQ5CGQE7SFTQXyB2w/exec",
-                    data: $("#submit-form").serialize(),
+                    url: "https://script.google.com/macros/s/AKfycbwa790xHtJT6Ppc0vLTqK6V2IxUiYciH5Zn_s29bLDdEqj4_ch8XhVmuQyPMhSQ6spO/exec",
+                    data: $(".submit_form").serialize(),
                     method: "post",
                     success: function (response) {
                         Toast("Successfully Submitted!");
