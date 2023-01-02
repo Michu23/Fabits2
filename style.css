@@ -837,62 +837,6 @@ header a {
   text-shadow: 0px 2px, 2px 0px, 2px 2px;
 }
 
-.probox {
-  background: #3494e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ec6ead,
-    #3494e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  /* height: 120px;
-  width: 120px; */
-  /* width: 100px;2022 */
-  background: linear-gradient(
-    to right,
-    #ec6ead,
-    #3494e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 10px;
-  padding-top: 20px;
-  margin-bottom: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden !important;
-  max-width: 200px !important;
-  transition: 0.3s !important;
-  max-height: 242px !important;
-  min-height: 242px !important;
-}
-
-.proimage{
-  /* height: 150px !important;
-  width: 90px !important; */
-  margin: 0 auto !important;
-  /* margin-bottom: 10px !important; */
-  transition: 0.3s !important;
-}
-
-.ramesh{
-  background-size: cover !important;
-  background-position: top center !important;
-  background-repeat: no-repeat !important;
-}
-
-/* .teampics img {
-  height: 100px !important;
-} */
-
-.probox:hover {
-  border-radius: 50% !important;
-  transition-duration: 0.3s !important;
-  background-image: linear-gradient(
-    to bottom,
-    #dc8665,
-    #e39163,
-    #e89c62,
-    #eca862,
-    #eeb462
-  );
-}
 
 .start{
   transition: 0.3s !important;
@@ -1075,4 +1019,59 @@ line-height: 24px;
 text-align: justify !important;
 padding: 0 !important;
 margin-bottom: 5px;
+}
+
+
+
+.probox {
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  /* height: 120px;
+  width: 120px; */
+  /* width: 100px;2022 */
+  background: linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden !important;
+  max-width: 200px !important;
+  transition: 0.3s !important;
+  max-height: 242px !important;
+  min-height: 242px !important;
+}
+
+.proimage{
+  /* height: 150px !important;
+  width: 90px !important; */
+  margin: 0 auto !important;
+  /* margin-bottom: 10px !important; */
+  transition: 0.3s !important;
+}
+
+.ramesh{
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
+
+.probox:hover {
+  border-radius: 50% !important;
+  transition-duration: 0.3s !important;
+  background-image: linear-gradient(
+    to bottom,
+    #dc8665,
+    #e39163,
+    #e89c62,
+    #eca862,
+    #eeb462
+  );
 }
