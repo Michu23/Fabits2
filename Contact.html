@@ -568,7 +568,7 @@
                 duration: 6000,
                 newWindow: true,
                 close: true,
-                gravity: "bottom",
+                gravity: "top",
                 position: "right",
                 stopOnFocus: true,
                 style: {
@@ -651,8 +651,8 @@
                 Toast("Message cannot start with space");
                 noError = false;
             }
-            if (message.length < 10) {
-                Toast("Message must be atleast 10 characters. ");
+            if (message.length < 2) {
+                Toast("Message must be atleast 2 characters. ");
                 noError = false;
             }
             if (phone.length < 8) {
