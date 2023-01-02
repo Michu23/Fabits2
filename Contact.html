@@ -276,13 +276,16 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                                <input type="text" class="form-control" 
+                                name="Name"
+                                placeholder="Name">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
+                                name="Email"
                                     aria-describedby="emailHelp" placeholder="Enter email">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
@@ -291,6 +294,7 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Message</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                name="Message"
                                     placeholder="Enter your message"></textarea>
                             </div>
                         </div>
@@ -537,17 +541,15 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"",
+                url:"https://script.google.com/macros/s/AKfycbzQ6tt1yuyHyH2OfQUtgm2kjvOcxwyT8aXDAwRi8_0gn9V5SQi8_R0aoyUn6Qs2lpDfQQ/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully")
                     window.location.reload()
-                    //window.location.href="https://google.com"
                 },
                 error:function (err){
                     alert("Something Error")
-    
                 }
             })
         })
