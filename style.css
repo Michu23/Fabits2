@@ -1069,6 +1069,13 @@ margin-bottom: 5px;
   /* margin-bottom: 10px !important; */
   transition: 0.3s !important;
 }
+.proimage2{
+  /* height: 150px !important;
+  width: 90px !important; */
+  margin-top: 45px;
+  /* margin-bottom: 10px !important; */
+  transition: 0.3s !important;
+}
 
 .ramesh{
   background-size: cover !important;
