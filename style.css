@@ -18,7 +18,7 @@ html {
   height: -webkit-fill-available !important;
 }
 
-.error__message{
+.error__message {
   color: red !important;
   font-size: 12px !important;
   font-weight: 500 !important;
@@ -29,7 +29,7 @@ html {
   /* top: 0; */
   width: 0%;
   height: 6px;
-  background:var(--bg-green);
+  background: var(--bg-green);
   z-index: 10000;
 }
 
@@ -38,7 +38,7 @@ html {
   /* top: 0; */
   width: 0%;
   height: 6px;
-  background:var(--bg-green);
+  background: var(--bg-green);
   z-index: 10000;
 }
 
@@ -53,8 +53,8 @@ body::-webkit-scrollbar {
 }
 
 .body {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .display__mobile header {
@@ -87,11 +87,7 @@ body::-webkit-scrollbar {
   z-index: 999 !important;
   /* opacity: 0 !important; */
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-
 }
-
-
-
 
 .fh {
   min-height: 100vh !important;
@@ -134,7 +130,7 @@ body::-webkit-scrollbar {
   ) !important;
 }
 
-.table__width{
+.table__width {
   max-width: 800px !important;
 }
 
@@ -477,7 +473,6 @@ body::-webkit-scrollbar {
 li {
   list-style: none !important;
   text-decoration: none !important;
-  
 }
 
 ul {
@@ -846,75 +841,66 @@ header a {
   text-shadow: 0px 2px, 2px 0px, 2px 2px;
 }
 
-
-.start{
+.start {
   transition: 0.3s !important;
   transform: scale(1) !important;
-
 }
 
-.start:hover{
+.start:hover {
   transition: 0.3s !important;
   transform: scale(1.1) !important;
-
 }
 
-.desk__head a:hover{
+.desk__head a:hover {
   color: var(--bg-green) !important;
 }
 
-.no h6{
+.no h6 {
   color: var(--bg-green) !important;
 }
 
-.no:hover h6{
+.no:hover h6 {
   color: white !important;
 }
 
-.no:hover{
+.no:hover {
   background-color: var(--bg-green) !important;
 }
 
-.product__nav__dropdownn{
+.product__nav__dropdownn {
   display: none !important;
 }
 
-.product__navv:hover  .product__nav__dropdownn{
+.product__navv:hover .product__nav__dropdownn {
   display: block !important;
 }
 
-.product__page h2{
-  
+.product__page h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-
-
-color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
+.product__page p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
 
-.product__page p{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-/* or 160% */
+  align-items: center;
+  text-align: justify;
 
-
-align-items: center;
-text-align: justify;
-
-color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
-a{
+a {
   width: fit-content !important;
 }
-
 
 .child {
   /* Center vertically */
@@ -923,7 +909,6 @@ a{
   right: 35%;
   transform: translate(0, -50%);
 }
-
 
 .story {
   background-image: url(./FabitsAssets/Images/Team/image\ 2.png) !important;
@@ -938,119 +923,130 @@ a{
   background-repeat: no-repeat !important;
 }
 
-
-.story p{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-/* or 160% */
-text-align: justify !important;
-color: #fff;
+.story p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+  text-align: justify !important;
+  color: #fff;
 }
 
-.team p{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-text-align: justify !important;
-
-}
-
-.teampics p{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 20px;
-opacity: 0.8 !important;
-}
-
-.incase{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 20px;
-opacity: 0.8 !important;
-}
-
-
-.fabitslogo{
-  width: clamp(200px, 60%, 400px) !important;
-}
-
-.justify{
+.team p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
   text-align: justify !important;
 }
 
-.proimage{
+.teampics p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.8 !important;
+}
+
+.incase {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.8 !important;
+}
+
+.fabitslogo {
+  width: clamp(200px, 60%, 400px) !important;
+}
+
+.justify {
+  text-align: justify !important;
+}
+
+.proimage {
   max-height: 242px !important;
 }
 
-
-.story__container{
+.story__container {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.vertically__align{
+.vertically__align {
   position: absolute !important;
-  top: 50%; left: 50% !important;
-  transform: translate(-50%,-50%) !important;
+  top: 50%;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
 }
-.vertically__align2{
+.vertically__align2 {
   position: absolute !important;
-  top: 50%; left: 75% !important;
-  transform: translate(-50%,-50%) !important;
+  top: 50%;
+  left: 75% !important;
+  transform: translate(-50%, -50%) !important;
 }
 
-.story__paragraph{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-/* or 160% */
-text-align: justify !important;
-color: #fff;
-
+.story__paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 160% */
+  text-align: justify !important;
+  color: #fff;
 }
 
-
-.planning p{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-/* or 160% */
-text-align: justify !important;
-padding: 0 !important;
-margin-bottom: 5px;
+.planning p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+  text-align: justify !important;
+  padding: 0 !important;
+  margin-bottom: 5px;
 }
 
+.proimage {
+  /* height: 150px !important;
+  width: 90px !important; */
+  margin: 0 auto !important;
+  /* margin-bottom: 10px !important; */
+  transition: 0.3s !important;
+}
+.proimage2 {
+  /* height: 150px !important;
+  width: 90px !important; */
+  margin-top: 45px;
+  /* margin-bottom: 10px !important; */
+  transition: 0.3s !important;
+}
 
+.ramesh {
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
 
 .probox {
-  background: #3494e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ec6ead,
-    #3494e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  /* height: 120px;
-  width: 120px; */
-  /* width: 100px;2022 */
-  background: linear-gradient(
-    to right,
-    #ec6ead,
-    #3494e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(
+    to top,
+    #654ea3,
+    #9161aa,
+    #b478b1,
+    #d292bb,
+    #eaafc8
+  );
+
   border-radius: 10px;
   padding-top: 20px;
   margin-bottom: 10px;
@@ -1062,45 +1058,31 @@ margin-bottom: 5px;
   min-height: 242px !important;
 }
 
-.proimage{
-  /* height: 150px !important;
-  width: 90px !important; */
-  margin: 0 auto !important;
-  /* margin-bottom: 10px !important; */
-  transition: 0.3s !important;
-}
-.proimage2{
-  /* height: 150px !important;
-  width: 90px !important; */
-  margin-top: 45px;
-  /* margin-bottom: 10px !important; */
-  transition: 0.3s !important;
-}
-
-.ramesh{
-  background-size: cover !important;
-  background-position: top center !important;
-  background-repeat: no-repeat !important;
-}
-
 .probox:hover {
   border-radius: 50% !important;
   transition-duration: 0.3s !important;
   background-image: linear-gradient(
-    to bottom,
-    #dc8665,
-    #e39163,
-    #e89c62,
-    #eca862,
-    #eeb462
+    to top,
+    #ee9ca7,
+    #f3acb5,
+    #f7bdc4,
+    #fbcdd2,
+    #ffdde1
   );
 }
 
-.oppp{
+.oppp {
   opacity: 0.4 !important;
 }
 
-.olol li{
+.olol li {
   list-style: disc !important;
+  opacity: 0.8 !important;
+}
+
+
+.footerlinks li{
+  padding-bottom: 10px !important;
+  font-weight: 500;
 }
 

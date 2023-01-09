@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabits - Financial Habits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg" type="image/png" sizes="16x16">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <header class="display__mobile mh">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="FabitsAssets/Images/Hamburger.svg" alt="logo" class="pt-2 hamburger  open">
+                <ion-icon name="close-outline" size="large" class=" close d-none pt-3 pe-2"></ion-icon>
+            </div>
+        </div>
+        <div class="mt-2 bg-light navs d-none">
+            <div class="p-5 pt-3 ">
+                <hr>
+                <div class="">
+                    <div class="text-center">
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="index.html" class="nav__link">
+                                    <h5>
+                                        Home
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Pricing.html" class="nav__link">
+                                    <h5>
+                                        Pricing
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item cp py-2 ">
+                                <!-- <a href="Product.html" class="nav__link"> -->
+                                <h5>
+                                    <a href="Product.html">
+
+                                        Product
+                                    </a>
+                                    <ion-icon class="product__nav" name="caret-down-outline" class=" ms-2"
+                                        style="margin-bottom: -2px;"></ion-icon>
+                                </h5>
+                                <!-- </a> -->
+                                <div class="product__nav__dropdown d-none ">
+                                    <div class="nav__item py-2">
+                                        <a href="SIBs.html" class="nav__link font__green">
+                                            <h5>
+                                                SIBs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="AI.html" class="nav__link font__green">
+                                            <h5>
+                                                AI-Tech
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="ETFs.html" class="nav__link font__green">
+                                            <h5>
+                                                ETFs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="Planning.html" class="nav__link font__green">
+                                            <h5>
+                                                Planning
+                                            </h5>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Team.html" class="nav__link">
+                                    <h5>
+                                        About Us
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Contact.html" class="nav__link">
+                                    <h5>
+                                        Contact
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
+                                    <button class="sb w-50 bg__green boxshadow text-white">
+                                        Let's get started
+                                    </button>
+                                </a>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progress" style="margin-top: 13.5px;"></div>
+    </header>
+    <header class="display__desktop dh py-3">
+        <div class="d-flex justify-content-between ">
+            <div>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                </a>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+                </a>
+            </div>
+            <div class="d-flex justify-content-end pt-4 desk__head">
+                <div class="nav__item mx-3 ">
+                    <a href="index.html" class="nav__link">
+                        <h6>
+                            Home
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 cp  product__navv">
+                    <a href="Product.html">
+                        <h6>
+                            Product
+                        </h6>
+                    </a>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px; ">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="SIBs.html" class="nav__link font__green">
+                                <h6>
+                                    SIBs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="AI.html" class="nav__link font__green">
+                                <h6>
+                                    AI-Tech
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="ETFs.html" class="nav__link font__green">
+                                <h6>
+                                    ETFs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="Planning.html" class="nav__link font__green">
+                                <h6>
+                                    Planning
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Team.html" class="nav__link">
+                        <h6>
+                            About Us
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Pricing.html" class="nav__link">
+                        <h6>
+                            Pricing
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Contact.html" class="nav__link">
+                        <h6>
+                            Contact
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ms-5 ">
+                    <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
+                        <button class="sb bg__green boxshadow text-white start px-4"
+                            style="width: fit-content; margin-top: -100px;">
+                            Let's get started
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progresss" class="mt-3"></div>
+    </header>
+    <!-- <div style="height: 60px;"></div> -->
+    <div class="py-5 p-0 m-0"></div>
+    <div class="container-fluid p-0 m-0 bgwhite d-flex justify-content-center">
+        <div class="container p-0 m-0 privacy">
+            <div class="px-3">
+                <h1 class="heading font__black text-center mt-5 pt-5">
+                    Disclosure
+                </h1>
+
+                <h2 class="mt-5 display__mobile">
+                    Shareway Securities <br />Limited (FABITS)
+                </h2>
+                <h2 class="mt-5 display__desktop">
+                    Shareway Securities Limited (FABITS)
+                </h2>
+                <p>
+                    The site, including any content or information contained within it or any site linked to the site,
+                    or any product or service licensed or purchased through the site, is provided on an “as is” basis
+                    and without warranties of any kind, either express or implied, including, but not limited to
+                    warranties of title or non-infringement or warranties of merchantability and fitness for a
+                    particular purpose, other than those warranties which are implied by and incapable of exclusion,
+                    restriction or modification under the laws applicable to this agreement. The website is owned,
+                    operated and maintained by Fabits (hereinafter referred to as “Shareway Securities Limited” a
+                    Company incorporated under the Companies Act, 2013 having CIN: U67120TN2008PLC066952, and having its
+                    Registered Office at #Flat E,2nd Floor“Gilli Flower” No 6/46,23rd Street L Block Anna Nagar East
+                    Chennai – 600102
+                    <br><br>
+                    You acknowledge that any warranty that is provided in connection with any of the products or
+                    services described herein is provided solely by the owner, advertiser, manufacturer, or supplier of
+                    that product and/or service, and not by Fabits.Fabits.com does not warrant that your access to the
+                    site and/or related services will be uninterrupted or error-free, that defects will be corrected, or
+                    that this site or the server provided herein is free of viruses or other harmful components. Access
+                    to and use of this site and the information provided herein is at your own risk and Fabits.com does
+                    not undertake any accountability for any irregularities, viruses or damage to any computer that
+                    results from accessing, availing or downloading of any information from this site. Fabits.com does
+                    not warrant or make any representations regarding the use of or any consequences resulting from the
+                    use of any product and/or service purchased in terms of its compatibility, correctness, accuracy,
+                    and reliability or otherwise. You assume total responsibility and risk for your use of this site and
+                    all site-related services.
+                    <br><br>
+
+                    You agree that, except as provided under the Fabits.com return policy, Fabits.com and its directors,
+                    officers, employees, agents, sponsors, consultants, business partners or other representatives
+                    (‘service providers’) shall not be responsible or liable for any direct, indirect, incidental,
+                    consequential, special, exemplary, punitive or any other damages (including without limitation loss
+                    of profits, loss or corruption of data, loss of goodwill, work stoppage, computer failure or
+                    malfunction, or interruption of business) under any contract, negligence, strict liability or any
+                    other theory arising out of or relating in any way with the use of the site or in reliance of the
+                    information available on the site, site-related services, or any products or services offered or
+                    sold or displayed on the Fabits.com site.
+                    <br><br>
+
+                    If the foregoing limitation is held to be unenforceable, the maximum liability of Fabits. and its
+                    service providers to you shall not exceed the amount of fees paid by you for the products or
+                    services that you have ordered through the site.
+                    <br><br>
+
+                    The possibility exists that the site could include inaccuracies or errors. Additionally, the
+                    possibility exists that unauthorized additions, deletions or alterations could be made by third
+                    parties to the site. Although Fabits. attempts to ensure the highest level of integrity,
+                    correctness, and authenticity of the site, it makes no guarantees whatsoever as to its completeness,
+                    correctness, or accuracy. In the event that any inaccuracy arises, please inform Fabits. so that it
+                    can be corrected.
+                    <br><br>
+
+                    The price and value of investments and the income derived from them can increase or decrease and you
+                    may not get back the amount you invest. Changes in the rate of exchange may have an adverse effect
+                    on the value, price, and income of investments in deposits other than your own. Past performance is
+                    not necessarily an indicator of future performance. The services and investments referred to in our
+                    site may have tax consequences and it is important to bear in mind that Fabits. does not provide tax
+                    advice. The level of taxation depends on individual circumstances and such levels and bases of
+                    taxation can change. You should consult your own tax advisor in order to understand any applicable
+                    tax consequences.
+                    <br><br>
+
+                    Fabits. does not make any personal recommendations. The information on our Internet site is provided
+                    solely to enable investors to make their own investment decisions and does not constitute a
+                    recommendation to buy, sell or otherwise deal in investments. The services and the securities we
+                    offer may not be suitable for all customers. If you have any doubts, you should seek advice from an
+                    independent financial adviser.
+                    <br><br>
+
+                    This Internet site is only available to residents in India and is presently not available to foreign
+                    residents including non-resident Indians (NRIs) in foreign jurisdictions where the services cannot
+                    be offered without prior regulatory compliance. In all such cases due efforts are being made to
+                    comply with regulatory requirements in various jurisdictions of which you shall be notified from
+                    time to time. This service does not constitute an offer to sale or a solicitation to any person in
+                    any jurisdiction where it is unlawful to make such an offer or solicitation.
+                    <br><br>
+
+                    No market analysis, research report or any other information, on the web site is to be construed as
+                    a representation with respect to shares, securities, or other investments.
+                    <br><br>
+
+                    You understand and agree that no joint venture, partnership, employment, or agency relationship
+                    exists between you and us as a result of this agreement or on account of use of our web site.
+                    <br><br>
+
+                    Price and availability of products and services offered on the site are subject to change without
+                    prior notice. To the extent that we provide information on the availability of products or services
+                    you should not rely on such information. Fabits.com will not be liable for any lack of availability
+                    of products and services you may order through the site.
+                    <br><br>
+                </p>
+                <h4>
+                    Disclaimer and Limitation of Liability
+                </h4>
+
+                <p>
+                    Disclaimer: Fabits and/or any of its affiliates do not provide any tips, advisory, solicitation,
+                    opinions, or portfolio management services regarding buying, selling and trading of any securities,
+                    directly or indirectly, in any manner. Information displayed or laid out by Fabits, including but
+                    not limited to; Fabits Varsity, trading, charting and other tools on the and Pi platform Open trade,
+                    Android, iOS, Pulse, and all other platforms including social media, are purely for either
+                    educational, informational, or discussion purposes and should not be construed as direct or indirect
+                    recommendation to invest, trade or speculate in the markets. Fabits would welcome and appreciate
+                    immediate notification or notice, if any person would come across any such tips, advisory,
+                    solicitation, opinions, or related services regarding buying, selling and trading of any securities,
+                    directly or indirectly, in any manner from any person or platform which is believed to be or likely
+                    to be believed as Fabits. Please contact
+                    <a href="mailto:support@fabits.com">
+                        support@fabits.com
+                    </a>
+                    for any of your queries with regard to
+                    the same. In no event shall Fabits be liable for any investments, trades or speculative activities
+                    performed by any person based on any such information or content and all such activities shall be
+                    solely at their own risk.
+                    <br><br>
+                    Transactions between you and Fabits. shall be governed by and construed in accordance with the laws
+                    of India, without regard to any conflicts of laws of other nations. Any litigation regarding this
+                    agreement or any transaction between customer and Fabits.com or any action at law or in equity
+                    arising out of or relating to this agreement or transaction shall be filed only in the Competent
+                    Courts of Bangalore alone and the customer hereby agrees, consents and submits to the jurisdiction
+                    of such courts for the purpose of litigating any such action.
+                    <br><br>
+                    The Stock exchange, Mumbai is not in any manner answerable, responsible or liable to any person pr
+                    persons for any acts of omissions or commission, errors, mistakes and/or partners, agents associate
+                    etc., of any of the Rules, regulations, bye-laws of the Stock Exchange Mumbai, SEBI Act or any other
+                    laws in force from time to time. The Stock Exchange, Mumbai is not answerable, responsible, or
+                    liable for any information on this website or for any services rendered by us, our employees and our
+                    servants.
+                    <br><br>
+                    Please note that any of your personal details; including but not limited to, your registered contact
+                    number, password, login information, email ID, date of birth, bank account, address etc., is
+                    strictly not shared with any third party,i.e. any non-affiliate of Fabits, without your express
+                    consent.
+                    <br><br>
+                    Fabits or any of its affiliates, employees, agents, or any other representatives would never contact
+                    you and ask you for your personal details such as your login information, password, Aadhaar OTP,
+                    bank account details and such other related information. Please do not provide any details to
+                    queries from calls where such information is asked by the caller who impersonates to be an affiliate
+                    of Fabits. For reporting any such information or for further queries with regard to this, please
+                    contact support@Fabits.com.
+                    <br><br>
+                    Financial information
+                    <b>
+
+                        Annual Return 2020-21
+                    </b>
+                    <br><br>
+
+                    Notices & transcripts
+                    <b>
+                        Notice of Annual General Meeting
+                    </b>
+                </p>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content w-100">
+                <div class="container d-flex justify-content-center ">
+                    <div class="container-fluid p-0 m-0 text-center text-light py-5">
+                        <h1 class="heading  py-5 display__desktop" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <h1 class="heading__contact  py-5 display__mobile text-start ps-3" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row w-100 d-flex justify-content-center grad__width">
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">FABITS</h5>
+                                    <p class="content__paragraph">
+                                        Shareway Securities Limited<br /> Corporate Office: No 2, Hayes Road,<br />
+                                        Richmond Town, Bangalore 560025.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">Regd. Office: </h5>
+                                    <p class="content__paragraph">
+                                        old no 46 new no 6,
+                                        <br /> Gilli flower, flat, E- 2nd floor, 23rd street,
+                                        <br /> Anna Nagar East, Chennai 600102
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <p class="content__paragraph">
+                                        080-45687111
+                                        <br />
+                                        + 91 8050030909
+                                        <br /> support@fabits.com / customercare@fabits.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 link__content m-auto w-100">
+                <div class="container d-flex justify-content-center w-100  ">
+                    <div class=" w-100 pe-3 text-center text-light py-5">
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row footerlinks  d-flex justify-content-center  text-dark w-100 links grad__width">
+                                <div class="col-6 col-md-3 text-start content__paragraph2    ">
+                                    <ul>
+                                        <li>
+                                            <a href="Team.html" class="text-dark">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Platforms
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Finbits
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                FAQ's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Backoffice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Contact.html" class="text-dark">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 text-start">
+                                    <div class=" text-start content__paragraph2">
+                                        <ul>
+                                            <li>
+                                                <a href="disclosure.html" class="text-dark">
+                                                    Disclosure
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notifications-circulars.html" class="text-dark">
+                                                    Notifications
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notifications-circulars.html" class="text-dark">
+                                                    Circulars
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Terms.html" class="text-dark">
+                                                    Terms and Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Privacy.html" class="text-dark">
+                                                    Privacy Policy
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="policies-and-procedures.html" class="text-dark">
+                                                    Policies and Procedures
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investor-charter.html" class="text-dark">
+                                                    Investor Charter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investor-complaints.html" class="text-dark">
+                                                    Investor Complaints
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 text-start ">
+                                    <ul class="w-100 content__paragraph2">
+                                        <li>
+                                            SEBI Registration number:
+                                            <b>
+
+                                                INZ000208134
+                                            </b>
+
+
+                                        </li>
+                                        <li class="w-100">
+                                            Segments:
+                                            <b>
+
+                                                NSE CM – FO
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CDSL Depository Participant:
+                                            <b>
+
+                                                IN-DP-610-2021
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CIN NO:
+                                            <b>
+
+                                                U67120TN2008PLC066952
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            GST NO:
+                                            <b>
+
+                                                29AALCS7597J1ZA
+                                            </b>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="d-flex justify-content-center grad__width text-dark w-100 ">
+                                <div style="opacity: 0.9;">
+                                    <hr class="bg-dark">
+                                    <p class="text-start px-2 content__paragraph2">
+                                        SHAREWAY SECURITIES LIMITED (FABITS) Member of NSE – SEBI Registration number:
+                                        INZ000208134 CDSL: Depository services through SHAREWAY SECURITIES LIMITED. –
+                                        SEBI
+                                        Registration number: IN-DP-610-2021. Registered Address: old no 46 new no 6,
+                                        Gilli
+                                        flower, flat, 2nd floor, 23rd street, Anna Nagar East, Chennai 600102. Corporate
+                                        Address: No 2, Hayes Road Richmond Town Bangalore 560025. For any complaints
+                                        pertaining
+                                        to securities broking please write to
+                                        <a href="mailto:rathi@fabits.com" target="_blank">
+                                            rathi@fabits.com
+                                        </a>
+                                        . Please ensure you carefully
+                                        read
+                                        the Risk Disclosure Document as prescribed by SEBI
+                                    </p>
+                                    <p class="text-start px-2 content__paragraph2">
+                                        
+                                            Attention Investors :
+                                        
+                                       
+                                        1) “Prevent Unauthorized Transactions in your trading/Demat account Update your
+                                        Mobile Number/Email IDs with your stock brokers/Depository Participant. Receive
+                                        alerts/information of your transactions on your Registered Mobile/Email for all
+                                        debit and other important transactions in your trading/Demat account directly
+                                        from Exchange/CDSL on the same day.”
+                                        
+
+                                        2) “KYC is a one-time exercise while dealing in securities markets-once KYC is done
+                                        through a SEBI registered intermediary (broker, DP, Mutual Fund, etc.), you need
+                                        not undergo the same process again when you approach another intermediary.”
+                                        <br><br>
+
+                                        No need to issue cheques by investors while subscribing to IPO. Just write the
+                                        bank account number and sign in the application form to authorise your bank to
+                                        make payment in case of allotment. No worry about a refund as the money remains
+                                        in the investor’s account.
+                                        
+
+                                        This is to inform you as per Rules, Regulations and Bye-laws of Multi Commodity
+                                        Exchange of India Ltd (MCX), that we do client-based trading and proprietary
+                                        trading.
+                                        
+
+                                        Procedure to file a complaint on SCORES (Easy & quick). Register on the SCORES
+                                        portal and have the mandatory details for filing complaints on 
+                                        
+                                        <a href="https://scores.gov.in/scores/Welcome.html" target="_blank">
+                                            SCORES 
+                                        </a>
+                                        
+                                        (Name,
+                                        PAN, Address, Mobile Number and E-mail ID). Benefits: Effective Communication
+                                        and Speedy redressal of the grievances.
+                                        
+
+                                        Stock Brokers can accept securities as margin from clients only by way of a
+                                        pledge in the depository system w.e.f. September 01, 2020
+                                        
+
+                                        Update your email id and mobile number with your stock broker/depository
+                                        participant and receive OTP directly from the depository on your email id and/or
+                                        mobile number to create pledge
+                                        
+
+                                        Check your securities / MF / bonds in the consolidated account statement issued
+                                        by NSDL/CDSL every month.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content m-auto w-100">
+                <div class="container   d-flex justify-content-start grad__width text-light py-3">
+                    <p>
+                        © 2022 Fabits. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

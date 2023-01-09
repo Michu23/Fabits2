@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabits - Financial Habits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg" type="image/png" sizes="16x16">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <header class="display__mobile mh">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="FabitsAssets/Images/Hamburger.svg" alt="logo" class="pt-2 hamburger  open">
+                <ion-icon name="close-outline" size="large" class=" close d-none pt-3 pe-2"></ion-icon>
+            </div>
+        </div>
+        <div class="mt-2 bg-light navs d-none">
+            <div class="p-5 pt-3 ">
+                <hr>
+                <div class="">
+                    <div class="text-center">
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="index.html" class="nav__link">
+                                    <h5>
+                                        Home
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Pricing.html" class="nav__link">
+                                    <h5>
+                                        Pricing
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item cp py-2 ">
+                                <!-- <a href="Product.html" class="nav__link"> -->
+                                <h5>
+                                    <a href="Product.html">
+
+                                        Product
+                                    </a>
+                                    <ion-icon class="product__nav" name="caret-down-outline" class=" ms-2"
+                                        style="margin-bottom: -2px;"></ion-icon>
+                                </h5>
+                                <!-- </a> -->
+                                <div class="product__nav__dropdown d-none ">
+                                    <div class="nav__item py-2">
+                                        <a href="SIBs.html" class="nav__link font__green">
+                                            <h5>
+                                                SIBs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="AI.html" class="nav__link font__green">
+                                            <h5>
+                                                AI-Tech
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="ETFs.html" class="nav__link font__green">
+                                            <h5>
+                                                ETFs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="Planning.html" class="nav__link font__green">
+                                            <h5>
+                                                Planning
+                                            </h5>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Team.html" class="nav__link">
+                                    <h5>
+                                        About Us
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Contact.html" class="nav__link">
+                                    <h5>
+                                        Contact
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
+                                    <button class="sb w-50 bg__green boxshadow text-white">
+                                        Let's get started
+                                    </button>
+                                </a>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progress" style="margin-top: 13.5px;"></div>
+    </header>
+    <header class="display__desktop dh py-3">
+        <div class="d-flex justify-content-between ">
+            <div>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                </a>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+                </a>
+            </div>
+            <div class="d-flex justify-content-end pt-4 desk__head">
+                <div class="nav__item mx-3 ">
+                    <a href="index.html" class="nav__link">
+                        <h6>
+                            Home
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 cp  product__navv">
+                    <a href="Product.html">
+                        <h6>
+                            Product
+                        </h6>
+                    </a>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px; ">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="SIBs.html" class="nav__link font__green">
+                                <h6>
+                                    SIBs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="AI.html" class="nav__link font__green">
+                                <h6>
+                                    AI-Tech
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="ETFs.html" class="nav__link font__green">
+                                <h6>
+                                    ETFs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="Planning.html" class="nav__link font__green">
+                                <h6>
+                                    Planning
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Team.html" class="nav__link">
+                        <h6>
+                            About Us
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Pricing.html" class="nav__link">
+                        <h6>
+                            Pricing
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Contact.html" class="nav__link">
+                        <h6>
+                            Contact
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ms-5 ">
+                    <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
+                        <button class="sb bg__green boxshadow text-white start px-4"
+                            style="width: fit-content; margin-top: -100px;">
+                            Let's get started
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progresss" class="mt-3"></div>
+    </header>
+    <!-- <div style="height: 60px;"></div> -->
+    <div class="py-5 p-0 m-0"></div>
+    <div class="container-fluid p-0 m-0 bgwhite d-flex justify-content-center">
+        <div class="container p-0 m-0 privacy">
+            <div class="px-3">
+                <h1 class="heading font__black text-center mt-5 pt-5">
+
+
+                    Investor charter - Stock Brokers
+                </h1>
+
+                <h4>
+                    VISION
+                </h4>
+
+                <p>
+                    To follow the highest standards of ethics and compliances while facilitating the trading by clients
+                    in securities in a fair and transparent manner, to contribute to creating wealth for investors. We
+                    envision a world, where every individual makes good financial habits a part of their lifestyle.
+                </p>
+
+                <h4>
+                    MISSION
+                </h4>
+
+                <ol class="olol">
+                    <li>
+
+                        To provide high-quality and dependable service through innovation, capacity enhancement, and the
+                        use of technology.
+                    </li>
+                    <li>
+
+
+                        To establish and maintain a relationship of trust and ethics with the investors.
+                    </li>
+                    <li>
+
+                        To observe the highest standard of compliance and transparency.
+                    </li>
+                    <li>
+
+                        To always keep ‘protection of investors’ interest’ as a goal while providing service.
+                    </li>
+                    <li>
+
+                        our journey to realise this vision, we bring together the best practices, learned over decades
+                        of industry experience and provide effortless investment solutions, crafted for everyone.
+                    </li>
+                </ol>
+
+
+                <h4>
+                    Services provided to Investors
+                </h4>
+
+                <ol class="olol">
+                    <li>
+
+                        Execution of trades on behalf of investors.
+                    </li>
+                    <li>
+
+                        Issuance of Contract Notes.
+                    </li>
+                    <li>
+
+                        Issuance of intimations regarding margin due payments.
+                    </li>
+                    <li>
+
+                        Facilitate execution of early pay-in obligation instructions.
+                    </li>
+                    <li>
+
+                        Settlement of client’s funds.
+                    </li>
+                    <li>
+
+                        Intimation of securities held in Client Unpaid Securities Account (CUSA) Account.
+                    </li>
+                    <li>
+
+                        Issuance of retention statement of funds.
+                    </li>
+                    <li>
+
+                        Risk management systems to mitigate operational and market risk.
+                    </li>
+                    <li>
+
+                        Facilitate client profile changes in the system as instructed by the client.
+                    </li>
+                    <li>
+
+                        Information sharing with the client w.r.t. exchange circulars.
+                    </li>
+                    <li>
+
+                        Redressal of Investor’s grievances
+                    </li>
+                </ol>
+
+                <h4>
+                    Rights of Investors
+                </h4>
+
+                <ol class="olol">
+                    <li>
+
+                        Ask for and receive information from a firm about the work history and background of the person
+                        handling your account, as well as information about the firm itself.
+                    </li>
+                    <li>
+
+                        Receive complete information about the risks, obligations, and costs of any investment before
+                        investing.
+                    </li>
+                    <li>
+
+                        Receive recommendations consistent with your financial needs and investment objectives.
+                    </li>
+                    <li>
+
+                        Receive a copy of all completed account forms and agreements.
+                    </li>
+                    <li>
+
+                        Receive account statements that are accurate and understandable.
+                    </li>
+                    <li>
+
+                        Understand the terms and conditions of transactions you undertake
+                    </li>
+                    <li>
+
+                        Access your funds in a timely manner and receive information about any restrictions or
+                        limitations on access.
+                    </li>
+                    <li>
+
+                        Receive complete information about maintenance or service charges, transaction or redemption
+                        fees, and penalties.
+                    </li>
+                    <li>
+
+                        Discuss your grievances with the compliance officer of the firm and receive prompt attention to
+                        and fair consideration of your concerns.
+                    </li>
+                </ol>
+
+                <h4>
+                    Various activities of Stock Brokers with timelines
+                </h4>
+
+                <b>
+                    <div class="row th p-3">
+                        <div class="col-6">
+                            Activities
+                        </div>
+                        <div class="col-6">
+                            Expected Timelines
+                        </div>
+                    </div>
+                </b>
+                <div class=" p-3">
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            KYC entered into KRA System and CKYCR
+                        </div>
+                        <div class="col-6">
+                            10 days of account opening
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Client Onboarding
+                        </div>
+                        <div class="col-6">
+
+                            Immediate, but not later than one week
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Order execution
+                        </div>
+                        <div class="col-6">
+
+                            Immediate on receipt of order, but not later than the same day
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Allocation of Unique Client Code
+                        </div>
+                        <div class="col-6">
+
+                            Before trading
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Copy of duly completed Client
+
+                            Registration Documents to clients
+                        </div>
+                        <div class="col-6">
+
+                            7 days from the date of upload of Unique Client Code to the
+
+                            Exchange by the trading member
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Issuance of contract notes
+                        </div>
+                        <div class="col-6">
+
+                            24 hours of execution of trades
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Collection of upfront margin from client
+                        </div>
+                        <div class="col-6">
+
+                            Before initiation of trade
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Issuance of intimations regarding other margin
+
+                            due payments
+                        </div>
+                        <div class="col-6">
+
+                            At the end of the T day
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Settlement of client funds
+                        </div>
+                        <div class="col-6">
+
+                            30 days / 90 days for running account settlement (RAS)
+
+                            as per the preference of the client. If consent is not given for RAS
+
+                            - within 24 hours of pay-out
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            ‘Statement of Accounts’ for Funds, Securities and
+
+                            Commodities
+                        </div>
+                        <div class="col-6">
+
+                            Weekly basis (Within four trading days of Securities and
+
+                            Commodities following week)
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Issuance of retention statement of funds
+
+                            /commodities
+                        </div>
+                        <div class="col-6">
+
+                            5 days from the date of settlement
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Issuance of Annual Global Statement
+                        </div>
+                        <div class="col-6">
+
+                            30 days from the end of the financial year
+                        </div>
+
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Investor grievances redressal
+                        </div>
+                        <div class="col-6">
+
+                            30 days from the receipt of the complaint
+                        </div>
+
+                    </div>
+                </div>
+
+                <h4>
+                    DOs and DON’Ts for Investors
+                </h4>
+
+                <b>
+                    <div class="row th p-3">
+                        <div class="col-6">
+                            DOs
+                        </div>
+                        <div class="col-6">
+                            DON’Ts
+                        </div>
+                    </div>
+                </b>
+
+                <div class=" p-3">
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Read all documents and conditions being agreed before signing
+
+                            the account opening
+                        </div>
+                        <div class="col-6">
+                            Do not deal with unregistered stockbrokers.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Receive a copy of KYC, copy of account opening documents and
+
+                            Unique Client Code.
+                        </div>
+                        <div class="col-6">
+
+                            Do not forget to strike off blanks in your account opening and KYC.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Read the product / operational framework / timelines related to various
+
+                            Trading and Clearing & Settlement processes.
+                        </div>
+                        <div class="col-6">
+
+                            Do not submit an incomplete account opening and KYC form.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Receive all information about brokerage, fees and other charges levied.
+
+
+                        </div>
+                        <div class="col-6">
+
+
+                            Do not forget to inform any change in information linked to the trading
+
+                            account and obtain confirmation of updation in the system.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Register your mobile number and email ID in your trading, demat and
+
+                            bank accounts to get regular alerts on your transactions.
+                        </div>
+                        <div class="col-6">
+
+                            Do not transfer funds, for the purposes of trading to anyone other than
+
+                            a stock broker. No payment should be made in name of employee of stock broker.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            If executed, receive a copy of Power of Attorney. However, Power of Attorney
+
+                            is not a mandatory requirement as per SEBI / Stock Exchanges. Before granting
+
+                            Power of Attorney, carefully examine the scope and implications of powers being granted.
+                        </div>
+                        <div class="col-6">
+
+                            Do not ignore any emails / SMSs received with regards to trades done, from the
+
+                            Stock Exchange and raise a concern, if discrepancy is observed.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Receive contract notes for trades executed, showing transaction price, brokerage,
+
+                            GST and STT etc. as applicable, separately, within 24 hours of execution of trades.
+                        </div>
+                        <div class="col-6">
+
+                            Do not opt for digital contracts, if not familiar with computers.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Receive funds and securities / commodities on time within
+
+                            24 hours from pay-out.
+                        </div>
+                        <div class="col-6">
+
+                            Do not share a trading password.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Verify details of trades, contract notes and statement of account and approach relevant
+
+                            authority for any discrepancies. Verify trade details on the Exchange websites from the
+                            trade verification facility provided by the Exchanges.
+                        </div>
+                        <div class="col-6">
+
+                            Do not fall prey to fixed / guaranteed returns schemes.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Receive statement of accounts periodically. If opted for running account settlement,
+
+                            account has to be settled by the stock broker as per the option given by the client (30 or
+                            90days).
+                        </div>
+                        <div class="col-6">
+
+                            Do not fall prey to fraudsters sending emails and SMSs luring to trade in stocks /
+                            securities promising huge profits.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            In case of any grievances, approach stock broker or Stock Exchange or SEBI for getting the
+                            same resolved within prescribed timelines.
+                        </div>
+                        <div class="col-6">
+
+                            Do not follow herd mentality for investments. Seek expert and professional advice for your
+                            investments.
+                        </div>
+                    </div>
+                </div>
+
+
+                <h4 class="mt-4">
+                    Grievance Redressal Mechanism
+
+                </h4>
+
+                <p>
+                    <b>
+
+                        Level 1–
+                    </b>
+
+                    Approach the Stock Broker at the designated Investor Grievance e-mail ID of the stock broker. The
+                    Stock Broker will strive to redress the grievance immediately, but not later than 30 days of the
+                    receipt of the grievance.
+                </p>
+
+                <p>
+                    <b>
+
+                        Level 2–
+                    </b>
+
+                    Approach the Stock Exchange using the grievance mechanism mentioned at the website of the respective
+                    exchange.
+                </p>
+
+                <p class="text-center">
+                    <b>
+                        Complaints Resolution Process at Stock Exchange explained graphically:
+                    </b>
+                </p>
+
+                <div class="d-flex justify-content-center mb-5">
+                    <img src="FabitsAssets/Complaints/graph.png" alt="" class="img-fluid">
+                </div>
+
+                <h4>
+                    Timelines for complaint resolution process at Stock Exchanges against stock brokers
+                </h4>
+
+                <b>
+                    <div class="row th p-3">
+                        <div class="col-6">
+                            Type of Activity
+                        </div>
+                        <div class="col-6">
+                            Timelines for activity
+                        </div>
+                    </div>
+                </b>
+
+                <div class=" p-3">
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Receipt of Complaint
+                        </div>
+                        <div class="col-6">
+                            Day of complaint (C Day).
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Additional information sought from the investor, if any,
+
+                            and provisionally forwarded to stock broker.
+                        </div>
+                        <div class="col-6">
+                            C + 7 Working days.
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Registration of the complaint and forwarding to the stock broker.
+                        </div>
+                        <div class="col-6">
+
+                            C+8 Working Days i.e. T day.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+                            Amicable Resolution
+
+
+
+                        </div>
+                        <div class="col-6">
+
+                            T+15 Working Days.
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Refer to Grievance Redressal Committee (GRC), in case of no amicable resolution.
+                        </div>
+                        <div class="col-6">
+
+                            T+16 Working Days.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+                            Complete resolution process post GRC.
+                        </div>
+                        <div class="col-6">
+
+                            T + 30 Working Days.
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            In case where the GRC Member requires additional information,
+
+                            GRC order shall be completed within.
+
+                        </div>
+                        <div class="col-6">
+                            T + 45 Working Days.
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Implementation of GRC Order.
+                        </div>
+                        <div class="col-6">
+                            On receipt of GRC Order, if the order is in favour of the investor,
+
+                            debit the funds of the stock broker. Order for debit is issued immediately
+
+                            or as per the directions given in GRC order.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            In case the stock broker is aggrieved by the GRC order,
+
+                            will provide intention to avail arbitration
+
+                        </div>
+                        <div class="col-6">
+                            Within 7 days from receipt of order
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            If intention from stock broker is received and the GRC
+
+                            order amount is upto Rs.20 lakhs
+                        </div>
+                        <div class="col-6">
+
+                            Investor is eligible for interim relief from Investor Protection Fund (IPF).
+
+                            The interim relief will be 50% of the GRC order amount or Rs.2 lakhs whichever is less.
+
+                            The same shall be provided after obtaining and Undertaking from the investor.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Stock Broker shall file for arbitration
+                        </div>
+                        <div class="col-6">
+                            Within 6 months from the date of GRC recommendation
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            In case the stock broker does not file for arbitration within 6 months </div>
+                        <div class="col-6">
+                            The GRC order amount shall be released to the investor after adjusting the amount released
+                            as interim relief, if any.
+                        </div>
+                    </div>
+                </div>
+
+                <h4>
+                    Handling of Investor’s claims / complaints in case of default of a Trading Member / Clearing Member
+                    (TM/CM)
+                </h4>
+
+                <h4>
+                    Default of TM/CM
+                </h4>
+
+                <p>
+                    Following steps are carried out by Stock Exchange for benefit of investor, in case stockbroker
+                    defaults:
+                </p>
+
+                <ol class="olol">
+                    <li>
+
+                        Circular is issued to inform about declaration of Stock Broker as Defaulter.
+                    </li>
+                    <li>
+
+                        Information of defaulter stock broker is disseminated on Stock Exchange website.
+                    </li>
+                    <li>
+
+                        Public Notice is issued informing declaration of a stock broker as defaulter and inviting claims
+                        within specified period
+                    </li>
+                    <li>
+
+                        Intimation to clients of defaulter stock brokers via emails and SMS for facilitating lodging of
+                        claims within the specified period.
+                    </li>
+                </ol>
+
+
+                <p>
+                    Following information is available on Stock Exchange website for information of investors:
+
+
+                </p>
+
+                <ol class="olol">
+                    <li>
+
+                        Norms for eligibility of claims for compensation from IPF
+                    </li>
+                    <li>
+
+                        Claim form for lodging claim against defaulter stock broker.
+                    </li>
+                    <li>
+
+                        FAQ on processing of investors’ claims against Defaulter stock broker.
+                    </li>
+                    <li>
+
+                        Provision to check online status of client’s claim.
+                    </li>
+                </ol>
+
+                <p>
+                    <b>
+
+                        Level 3 –
+                    </b>
+
+                    The complaint not redressed at Stock Broker / Stock Exchange level, may be lodged with SEBI on
+                    SCORES (a web-based centralized grievance redressal system of SEBI) @
+                    <br><br>
+                    <a href="https://scores.gov.in/scores/Welcome.html"
+                        target="_blank">https://scores.gov.in/scores/Welcome.html</a>
+                </p>
+
+                <h1 class="text-center mt-5 ">
+                    INVESTOR CHARTER FOR DEPOSITORIES AND
+                    DEPOSITORY PARTICIPANTS
+                    (Annexure – A)
+
+                </h1>
+
+                <h4>
+                    Vision
+                </h4>
+
+                <p>
+                    Towards making the Indian Securities Market – Transparent, Efficient, & Investor friendly by
+                    providing safe, reliable, transparent and trusted record keeping platform for investors to hold and
+                    transfer securities in dematerialized form
+                </p>
+
+                <h4>
+                    Mission
+                </h4>
+
+                <ol class="olol">
+                    <li>
+
+                        To hold securities of investors in dematerialized form and facilitate its transfer, while
+                        ensuring safekeeping of securities and protecting interest of investors.
+                    </li>
+                    <li>
+
+                        To provide timely and accurate information to investors with regard to their holding and
+                        transfer of securities held by them.
+                    </li>
+                    <li>
+
+                        To provide the highest standards of investor education, investor awareness and timely services
+                        so as to enhance Investor Protection and create awareness about Investor Rights.
+                    </li>
+                </ol>
+
+                <h4>
+                    Details of business transacted by the Depository and Depository Participant (DP)
+                </h4>
+
+                <p>
+                    A Depository is an organization which holds securities of investors in electronic form. Depositories
+                    provide services to various market participants – Exchanges, Clearing Corporations, Depository
+                    Participants (DPs), Issuers, and Investors in both primary swell as secondary markets. The
+                    depository carries out its activities through its agents which are known as Depository Participants
+                    (DP). Details are available on the link
+                    <a href="https://www.cdslindia.com/DP/dplist.aspx">
+                        [https://www.cdslindia.com/DP/dplist.aspx].
+                    </a>
+                </p>
+
+                <h4>
+                    Description of services provided by the Depository through Depository Participants (DPs) to
+                    investors
+                </h4>
+
+                <p>
+                    (1) Basic Services
+                </p>
+
+                <b>
+                    <div class="row th p-3">
+                        <div class="col-6">
+                            Brief about the Activity / Service
+                        </div>
+                        <div class="col-6">
+                            Expected Timelines for processing by the DP after receipt of proper documents
+                        </div>
+                    </div>
+                </b>
+
+                <div class=" p-3">
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Dematerialization of securities
+
+
+                        </div>
+                        <div class="col-6">
+                            7 days
+
+
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Rematerialization of securities
+                        </div>
+                        <div class="col-6">
+                            7 days
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Mutual Fund Conversion / Destatementization
+                        </div>
+                        <div class="col-6">
+
+                            5 days
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+                            Re-conversion / Restatementisation of Mutual fund units
+
+
+
+                        </div>
+                        <div class="col-6">
+
+                            7 days
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Transmission of securities
+                        </div>
+                        <div class="col-6">
+
+                            7 days
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+                            Registering pledge request
+                        </div>
+                        <div class="col-6">
+
+                            15 days
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Closure of demat account
+
+                        </div>
+                        <div class="col-6">
+                            30 days
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Settlement Instruction
+                        </div>
+                        <div class="col-6">
+                            Depositories to accept physical DIS for pay-in of securities up to 4 p.m.
+
+                            and DIS in electronic form up to 6 p.m. on T+1 day
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    (2) Depositories provide special services like pledge, hypothecation, internet-based services etc.
+                    in addition to their core services and these include
+                </p>
+
+                <b>
+                    <div class="row th p-3">
+                        <div class="col-6">
+                            Type of Activity /Service
+                        </div>
+                        <div class="col-6">
+                            Brief about the Activity / Service
+                        </div>
+                    </div>
+                </b>
+
+                <div class=" p-3">
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Value Added Services
+
+
+                        </div>
+                        <div class="col-6">
+                            Depositories also provide value added services such as
+                            <br>
+
+                            <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                                a. Basic Services Demat Account (BSDA)
+                            </a>
+                            <br>
+                            <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+                                b. Transposition cum dematerialization
+                            </a>
+                            <br>
+                            <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                                c. Linkages with Clearing System
+                            </a>
+                            <br>
+                            <p>
+                                d. Distribution of cash and non-cash corporate benefits (Bonus, Rights, IPOs etc.),
+                                stock lending.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+
+                            Consolidated Account statement (CAS)
+                        </div>
+                        <div class="col-6">
+                            CAS is issued 10 days from the end of the month (if there were transactions in the previous
+                            month) or half yearly(if no transactions) .
+
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+
+                            Digitalization of provided services by the depositories
+                        </div>
+                        <div class="col-6">
+
+                            Depositories offer below technology solutions and e-facilities to their demat account
+                            holders through DPs:
+                            <ol class="olol">
+                                <li>
+
+                                    E-account opening: Details available on the
+                                    <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                                        link
+                                    </a>
+
+                                </li>
+                                <li>
+
+
+                                    Online instructions for execution: Details available on the
+                                    <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                                        link
+                                    </a>
+                                <li>
+                                    <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+                                        Easiest
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+                                        Gift transfers
+                                    </a>
+                                </li>
+                                </li>
+                                <li>
+                                    e-DIS / Demat Gateway: Details available on the
+                                    <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                                        link
+                                    </a>
+                                </li>
+                                <li>
+                                    e-CAS facility: Details available on the
+                                    <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                                        link
+                                    </a>
+                                </li>
+                                <li>
+                                    Miscellaneous services: Details available on the
+                                    <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                                        link
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+
+                    <h2>
+                        Details of Grievance Redressal Mechanism
+                    </h2>
+
+                    <p>
+                        The Process of investor grievance redressal
+                    </p>
+
+
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+                            Investor Complaint/ Grievances
+
+
+
+                        </div>
+                        <div class="col-6">
+
+                            <p>
+
+                                Investor can lodge complaint/ grievance against the Depository/DP in the following ways:
+                            </p>
+                            <ol class="olol">
+
+                                <li>
+
+
+                                    Electronic mode -
+                                </li>
+                                <li>
+                                    <a href="https://www.scores.gov.in/scores/Welcome.html" target="_blank">
+                                        SCORES
+                                    </a>
+
+                                    (a web based centralized grievance redressal system of SEBI)
+                                <li>
+                                    Respective Depository’s web portal dedicated for the filing of
+                                    compliant[https://www.cdslindia.com/Footer/grievances.aspx]
+                                </li>
+                                </li>
+
+
+
+                                <li>
+
+
+                                    Offline mode [details of link to the form to be provided by DPs]
+                                </li>
+
+                            </ol>
+                            <p>
+
+                                The complaints/ grievances lodged directly with the Depository shall be resolved within
+                                30 days.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2 bg-light">
+                        <div class="col-6">
+                            Investor Grievance Redressal Committee of Depository
+                        </div>
+                        <div class="col-6">
+
+                            If no amicable resolution is arrived, then the Investor has the option to refer the
+                            complaint/grievance to the Grievance Redressal Committee (GRC)of the Depository. Upon
+                            receipt of reference, the GRC will endeavor to resolve the complaint/ grievance by hearing
+                            the parties and examining the necessary information and documents.
+                        </div>
+                    </div>
+                    <div class="row p-1 py-2">
+                        <div class="col-6">
+                            Arbitration proceedings
+                        </div>
+                        <div class="col-6">
+
+                            The Investor may also avail the arbitration mechanism set out in the Byelaws and Business
+                            Rules/Operating Instructions of the Depository in relation to any grievance, or dispute
+                            relating to depository services. The arbitration reference shall be concluded by way of
+                            issue of an arbitral award within 4 months from the date of appointment of arbitrator(s).
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <p>
+                For the Multi-level complaint resolution mechanism available at the Depositories please refer to
+                <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                    link.
+                </a>
+            </p>
+
+            <h2>
+                Guidance pertaining to special circumstances related to market activities: Termination of the Depository
+                Participant
+            </h2>
+
+            <b>
+                <div class="row p-3">
+                    <div class="col-6">
+                        Type of special circumstances
+                    </div>
+                    <div class="col-6">
+
+                        Timelines for the Activity/ Service
+                    </div>
+                </div>
+            </b>
+            <div class="p-3">
+                <div class="row p-3">
+                    <div class="col-6">
+                        <ol class="olol">
+                            <li>
+
+                                Depositories to terminate the participation in case a participant no longer meets the
+                                eligibility criteria and/or any other grounds as mentioned in the bye laws like
+                                suspension of trading member by the Stock Exchanges.
+                            </li>
+                            <li>
+
+                                Participant surrenders the participation by its own wish.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-6">
+
+                        Client will have a right to transfer all its securities to any other Participant of its choice
+                        without any charges for the transfer within 30 days from the date of intimation by way of
+                        letter/email.
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <h2>
+                Dos and Don’ts for Investors
+            </h2>
+
+            <p>
+                For Do’s and Don’ts please refer to the
+                <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+
+                    link.
+                </a>
+            </p>
+
+            <h2>
+                Rights of investors
+            </h2>
+
+            <p>
+                For rights, please refer to the
+                <a href="https://www.cdslindia.com/Investors/InvestorCharter.html">
+
+                    link.
+                </a>
+            </p>
+            <h2>
+                Responsibilities of Investors
+            </h2>
+            <p>
+                For responsibilities, please refer to the
+                <a href="https://www.cdslindia.com/Investors/InvestorCharter.html" target="_blank">
+                    link.
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content w-100">
+                <div class="container d-flex justify-content-center ">
+                    <div class="container-fluid p-0 m-0 text-center text-light py-5">
+                        <h1 class="heading  py-5 display__desktop" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <h1 class="heading__contact  py-5 display__mobile text-start ps-3" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row w-100 d-flex justify-content-center grad__width">
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">FABITS</h5>
+                                    <p class="content__paragraph">
+                                        Shareway Securities Limited<br /> Corporate Office: No 2, Hayes Road,<br />
+                                        Richmond Town, Bangalore 560025.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">Regd. Office: </h5>
+                                    <p class="content__paragraph">
+                                        old no 46 new no 6,
+                                        <br /> Gilli flower, flat, E- 2nd floor, 23rd street,
+                                        <br /> Anna Nagar East, Chennai 600102
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <p class="content__paragraph">
+                                        080-45687111
+                                        <br />
+                                        + 91 8050030909
+                                        <br /> support@fabits.com / customercare@fabits.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 link__content m-auto w-100">
+                <div class="container d-flex justify-content-center w-100  ">
+                    <div class=" w-100 pe-3 text-center text-light py-5">
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row footerlinks  d-flex justify-content-center  text-dark w-100 links grad__width">
+                                <div class="col-6 col-md-3 text-start content__paragraph2    ">
+                                    <ul>
+                                        <li>
+                                            <a href="Team.html" class="text-dark">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Platforms
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Finbits
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                FAQ's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Backoffice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Contact.html" class="text-dark">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 text-start">
+                                    <div class=" text-start content__paragraph2">
+                                        <ul>
+                                            <li>
+                                                <a href="disclosure.html" class="text-dark">
+                                                    Disclosure
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notifications-circulars.html" class="text-dark">
+                                                    Notifications
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notifications-circulars.html" class="text-dark">
+                                                    Circulars
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Terms.html" class="text-dark">
+                                                    Terms and Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Privacy.html" class="text-dark">
+                                                    Privacy Policy
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="policies-and-procedures.html" class="text-dark">
+                                                    Policies and Procedures
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investor-charter.html" class="text-dark">
+                                                    Investor Charter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investor-complaints.html" class="text-dark">
+                                                    Investor Complaints
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 text-start ">
+                                    <ul class="w-100 content__paragraph2">
+                                        <li>
+                                            SEBI Registration number:
+                                            <b>
+
+                                                INZ000208134
+                                            </b>
+
+
+                                        </li>
+                                        <li class="w-100">
+                                            Segments:
+                                            <b>
+
+                                                NSE CM – FO
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CDSL Depository Participant:
+                                            <b>
+
+                                                IN-DP-610-2021
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CIN NO:
+                                            <b>
+
+                                                U67120TN2008PLC066952
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            GST NO:
+                                            <b>
+
+                                                29AALCS7597J1ZA
+                                            </b>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="d-flex justify-content-center grad__width text-dark w-100 ">
+                                <div style="opacity: 0.9;">
+                                    <hr class="bg-dark">
+                                    <p class="text-start px-2 content__paragraph2">
+                                        SHAREWAY SECURITIES LIMITED (FABITS) Member of NSE – SEBI Registration number:
+                                        INZ000208134 CDSL: Depository services through SHAREWAY SECURITIES LIMITED. –
+                                        SEBI
+                                        Registration number: IN-DP-610-2021. Registered Address: old no 46 new no 6,
+                                        Gilli
+                                        flower, flat, 2nd floor, 23rd street, Anna Nagar East, Chennai 600102. Corporate
+                                        Address: No 2, Hayes Road Richmond Town Bangalore 560025. For any complaints
+                                        pertaining
+                                        to securities broking please write to
+                                        <a href="mailto:rathi@fabits.com" target="_blank">
+                                            rathi@fabits.com
+                                        </a>
+                                        . Please ensure you carefully
+                                        read
+                                        the Risk Disclosure Document as prescribed by SEBI
+                                    </p>
+                                    <p class="text-start px-2 content__paragraph2">
+                                        
+                                            Attention Investors :
+                                        
+                                       
+                                        1) “Prevent Unauthorized Transactions in your trading/Demat account Update your
+                                        Mobile Number/Email IDs with your stock brokers/Depository Participant. Receive
+                                        alerts/information of your transactions on your Registered Mobile/Email for all
+                                        debit and other important transactions in your trading/Demat account directly
+                                        from Exchange/CDSL on the same day.”
+                                        
+
+                                        2) “KYC is a one-time exercise while dealing in securities markets-once KYC is done
+                                        through a SEBI registered intermediary (broker, DP, Mutual Fund, etc.), you need
+                                        not undergo the same process again when you approach another intermediary.”
+                                        <br><br>
+
+                                        No need to issue cheques by investors while subscribing to IPO. Just write the
+                                        bank account number and sign in the application form to authorise your bank to
+                                        make payment in case of allotment. No worry about a refund as the money remains
+                                        in the investor’s account.
+                                        
+
+                                        This is to inform you as per Rules, Regulations and Bye-laws of Multi Commodity
+                                        Exchange of India Ltd (MCX), that we do client-based trading and proprietary
+                                        trading.
+                                        
+
+                                        Procedure to file a complaint on SCORES (Easy & quick). Register on the SCORES
+                                        portal and have the mandatory details for filing complaints on 
+                                        
+                                        <a href="https://scores.gov.in/scores/Welcome.html" target="_blank">
+                                            SCORES 
+                                        </a>
+                                        
+                                        (Name,
+                                        PAN, Address, Mobile Number and E-mail ID). Benefits: Effective Communication
+                                        and Speedy redressal of the grievances.
+                                        
+
+                                        Stock Brokers can accept securities as margin from clients only by way of a
+                                        pledge in the depository system w.e.f. September 01, 2020
+                                        
+
+                                        Update your email id and mobile number with your stock broker/depository
+                                        participant and receive OTP directly from the depository on your email id and/or
+                                        mobile number to create pledge
+                                        
+
+                                        Check your securities / MF / bonds in the consolidated account statement issued
+                                        by NSDL/CDSL every month.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content m-auto w-100">
+                <div class="container   d-flex justify-content-start grad__width text-light py-3">
+                    <p>
+                        © 2022 Fabits. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

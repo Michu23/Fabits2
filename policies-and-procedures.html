@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabits - Financial Habits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg" type="image/png" sizes="16x16">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <header class="display__mobile mh">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="FabitsAssets/Images/Hamburger.svg" alt="logo" class="pt-2 hamburger  open">
+                <ion-icon name="close-outline" size="large" class=" close d-none pt-3 pe-2"></ion-icon>
+            </div>
+        </div>
+        <div class="mt-2 bg-light navs d-none">
+            <div class="p-5 pt-3 ">
+                <hr>
+                <div class="">
+                    <div class="text-center">
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="index.html" class="nav__link">
+                                    <h5>
+                                        Home
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Pricing.html" class="nav__link">
+                                    <h5>
+                                        Pricing
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item cp py-2 ">
+                                <!-- <a href="Product.html" class="nav__link"> -->
+                                <h5>
+                                    <a href="Product.html">
+
+                                        Product
+                                    </a>
+                                    <ion-icon class="product__nav" name="caret-down-outline" class=" ms-2"
+                                        style="margin-bottom: -2px;"></ion-icon>
+                                </h5>
+                                <!-- </a> -->
+                                <div class="product__nav__dropdown d-none ">
+                                    <div class="nav__item py-2">
+                                        <a href="SIBs.html" class="nav__link font__green">
+                                            <h5>
+                                                SIBs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="AI.html" class="nav__link font__green">
+                                            <h5>
+                                                AI-Tech
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="ETFs.html" class="nav__link font__green">
+                                            <h5>
+                                                ETFs
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="Planning.html" class="nav__link font__green">
+                                            <h5>
+                                                Planning
+                                            </h5>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Team.html" class="nav__link">
+                                    <h5>
+                                        About Us
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="nav__item py-2">
+                                <a href="Contact.html" class="nav__link">
+                                    <h5>
+                                        Contact
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="nav__item py-2">
+                                <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
+                                    <button class="sb w-50 bg__green boxshadow text-white">
+                                        Let's get started
+                                    </button>
+                                </a>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progress" style="margin-top: 13.5px;"></div>
+    </header>
+    <header class="display__desktop dh py-3">
+        <div class="d-flex justify-content-between ">
+            <div>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-3 display__desktop">
+                </a>
+                <a href="index.html">
+                    <img src="Logooooo.png" alt="logo" style="width: 100px; " class="pt-4  ps-3 ms-0 display__mobile">
+                </a>
+            </div>
+            <div class="d-flex justify-content-end pt-4 desk__head">
+                <div class="nav__item mx-3 ">
+                    <a href="index.html" class="nav__link">
+                        <h6>
+                            Home
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 cp  product__navv">
+                    <a href="Product.html">
+                        <h6>
+                            Product
+                        </h6>
+                    </a>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px; ">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="SIBs.html" class="nav__link font__green">
+                                <h6>
+                                    SIBs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="AI.html" class="nav__link font__green">
+                                <h6>
+                                    AI-Tech
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="ETFs.html" class="nav__link font__green">
+                                <h6>
+                                    ETFs
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="Planning.html" class="nav__link font__green">
+                                <h6>
+                                    Planning
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Team.html" class="nav__link">
+                        <h6>
+                            About Us
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Pricing.html" class="nav__link">
+                        <h6>
+                            Pricing
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ">
+                    <a href="Contact.html" class="nav__link">
+                        <h6>
+                            Contact
+                        </h6>
+                    </a>
+                </div>
+                <div class="nav__item mx-3 ms-5 ">
+                    <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
+                        <button class="sb bg__green boxshadow text-white start px-4"
+                            style="width: fit-content; margin-top: -100px;">
+                            Let's get started
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-progresss" class="mt-3"></div>
+    </header>
+    <!-- <div style="height: 60px;"></div> -->
+    <div class="py-5 p-0 m-0"></div>
+    <div class="container-fluid p-0 m-0 bgwhite d-flex justify-content-center">
+        <div class="container p-0 m-0 privacy">
+            <div class="px-3">
+                <h1 class="heading font__black text-center display__desktop mt-5 pt-5">
+
+
+                    Disclosure
+                </h1>
+
+                <h2 class="mt-5 display__mobile">
+                    Shareway Securities <br />Limited (FABITS)
+                </h2>
+                <h2 class="mt-5 display__desktop">
+                    Shareway Securities Limited (FABITS)
+                </h2>
+                <p class="pt-2">
+                    Shareway Securities Limited Broking Ltd. (erstwhile Shareway Securities Limited, hereinafter
+                    referred to as Shareway Securities Limited) is a member of the National Stock Exchange, in the
+                    Equity, Equity Derivatives segment, its registered office at #Flat E,2nd Floor “Gilli Flower” No
+                    6/46,23rd Street L Block Anna Nagar East Chennai – 600102. For the purpose of these Policies &
+                    Procedures, wherever the context so mentions “Client”, “You” or “Your”, it shall mean any natural or
+                    legal person who has agreed to open an account or initiate the process of opening an account with
+                    Shareway Securities Limited by providing their information while registering on the platform as a
+                    user. Shareway Securities Limited allows any person to surf the Website without registering on the
+                    website. The term “We”, “Us”, “Our” and “Team Shareway Securities Limited” shall mean M/s Shareway
+                    Securities Limited
+                </p>
+                <h2>
+                    Funds
+                </h2>
+                <h4>
+                    System of Pay in and Pay-out of funds:
+                </h4>
+                <p>
+
+                    <b>
+                        Pay in:
+                    </b>
+                    Clients can transfer funds into the Trading Account only from such bank accounts which are
+                    registered with Shareway Securities Limited. Any transfer from a non-registered bank account will
+                    not be considered and the client does not get any trading limit credit for such transfers.
+                    <br><br>
+                    The client can transfer funds from the instant payment gateway facility available on the trading
+                    platform or on the Backoffice. Such transfers will be charged at ₹9 + GST per transfer.
+                    <br><br>
+
+                    If a client chooses to transfer using NEFT or by means of a cheque, there will be no cost.
+                    <br><br>
+
+                    If the client transfers funds via cheque, the details of the transfer along with a copy of the
+                    cheque should be made available to Shareway Securities Limited for the credit to be updated on the
+                    trading account.
+                    <br><br>
+
+                    <b>
+                        Pay out:
+                    </b>
+
+
+                    All payouts will have to be compulsorily placed on the Backoffice access provided to the clients.
+                    All pay-out requests will be processed electronically, and the credit shall come to the client’s
+                    primary bank account within 24 hours of having processed the pay-out request.
+                    <br><br>
+
+                    Withdrawal requests for EQ will be processed at 8:30 PM on working days. If you place a withdrawal
+                    request before 8:30 PM, the money will be credited to your account the next bank working day. If you
+                    place a withdrawal request after 8:30 PM, it will be processed on the next working day, and you will
+                    receive the funds in 48 hours.
+                    <br><br>
+
+                    Pay-out windows are closed on Saturday and Sunday – this means if you place a request on Saturday or
+                    Sunday or after 8:30 PM on Friday, it will be honored only on Monday.
+                </p>
+
+                <h2>
+                    Margins
+                </h2>
+                <p>
+                    Client Funding: Shareway Securities Limited does not engage in the business of Client Funding.
+                    Clients are required to have sufficient balance in their accounts to hold/carry forward positions.
+                    <br><br>
+                    NSE Equity: Shareway Securities Limited has a policy of giving up to 20 times exposure on a broad
+                    spectrum of stocks; no margin is given for delivery trades. The client needs to have enough money in
+                    his trading account to take delivery of shares failing which Shareway Securities Limited can cut the
+                    position. Comprehensive real-time margins at Shareway Securities Limited can be viewed
+
+                    <a href="https://zerodha.com/margin-calculator/Equity/" target="_blank">
+                        here.
+                    </a>
+                    <br><br>
+
+                    Cover Orders: Currently available for NSE Equity, typically the margin benefit under this is higher
+                    relative to MIS positions.
+                    <br><br>
+
+                    If any intraday position or an MIS trade is not squared off on the same day due to any link or
+                    system failure or any risks associated with internet/wireless-based trading which may occur at the
+                    end of the Client, Shareway Securities Limited or the respective Exchange, it shall be treated as a
+                    Cash and Carry (“CNC”) or NRML position and carried forward to the next trading day. In case of such
+                    a situation arising, the onus of squaring off the position will be on the Client. Our RMS desk shall
+                    square off any such position, without the requirement of a margin call, if the necessary cash is not
+                    available in the Client’s account.
+                    <br><br>
+
+                    Margin policies: The margin policies for trading through Shareway Securities Limited can be obtained
+                    by clicking on this
+
+                    <a href="https://zerodha.com/z-connect/tradezerodha/margin-requirements/zerodha-margin-policies"
+                        target="_blank">
+
+                        link
+                    </a>
+                </p>
+
+                <h2>
+                    Notes
+                </h2>
+
+                <ol class="olol">
+                    <li>
+                        A Call & Trade charge of ₹50 is applicable for positions squared of due to insufficient funds.
+                    </li>
+                    <li>
+
+                        An order placement charge of ₹20 plus GST will be levied for all OFS, Buyback and Takeover
+                        orders placed through Shareway Securities Limited.
+                    </li>
+                    <li>
+
+                        Positions which do not have sufficient funds can be cut any time at the discretion of our RMS
+                        desk. There will be no margin calls or intimation from our RMS desk.
+                    </li>
+                    <li>
+
+                        Any open positions can be squared off at the discretion of our RMS desk If the funds available
+                        in your account are short of exchange specified margins. There will be no margin call before the
+                        position is squared off. During times of extreme volatility, the loss could be more than the
+                        funds available in your account before the position is squared off. All resulting charges or
+                        debts that might occur from such square offs will have to be borne by the client.
+                    </li>
+                    <li>
+
+                        Collateral margin will not be considered for equity delivery positions.
+                    </li>
+                    <li>
+
+                        All BO, CO and MIS positions will automatically be squared off at the end of each trading day.
+                    </li>
+                    <li>
+
+                        Shareway Securities Limited blocks only SPAN margin for overnight positions on commodities. The
+                        exchange has offered a provision for brokers to collect an Additional Margin of 5%, which
+                        Shareway Securities Limited has chosen not to collect at its own discretion and passed on the
+                        benefit to its clients.
+                    </li>
+                    <li>
+
+                        Basket orders will not be allowed on penny stocks.
+                    </li>
+                    <li>
+
+                        Basket Orders will be allowed only on orders which are over ₹25,000 in turnover per leg.
+                    </li>
+                    <li>
+
+                        AMO (After-Market Orders) will be allowed only if the value of each order is above ₹25,000.
+                    </li>
+                    <li>
+
+                        AMO will be cancelled if the price entered is more than 10% away from the LTP in either
+                        direction.
+                    </li>
+                    <li>
+
+                        Fines levied by the exchange for short margin will be payable by the client.
+                    </li>
+                    <li>
+
+                        Clients will have to ensure all Co, Mis, and intraday products are closed by the EOD.
+                    </li>
+                    <li>
+
+                        BO and CO are not allowed in pre-open for Equities.
+                    </li>
+                    <li>
+
+                        Payments will only be accepted from the client’s registered bank account, cash and DD pay-ins
+                        are not accepted.
+                    </li>
+                    <li>
+
+                        Commodities with staggered delivery will be closed 10 days prior to the delivery date in order
+                        to avoid physical delivery, also commodities with compulsory delivery will be closed a day
+                        before their respective delivery intention periods.
+                    </li>
+                    <li>
+
+                        On the start of the delivery intention period, clients will not be informed before closing any
+                        open positions to avoid compulsory delivery notice. Clients are advised to close their positions
+                        well in advance.
+                    </li>
+                    <li>
+
+                        Because of illiquidity of stock option contracts, market orders have been disabled on stock
+                        options. Only limit orders are allowed. Place a limit buying order higher than the current price
+                        or selling order below the current price, this will act as good as market order but will also
+                        protect from any impact cost due to illiquidity.
+                    </li>
+                    <li>
+
+                        Instruments available for trading at Shareway Securities Limited are subject to the discretion
+                        of the risk management team, and these may change from time to time for various reasons.
+                    </li>
+                    <li>
+
+                        Stocks and scrips which are currently in the derivatives (including Futures & Options) segment
+                        and they fail to meet:
+                    </li>
+                    <li>
+
+                        (I) the Eligibility Criteria (specified vide SEBI Circular number CIR/DNPD/3/2012 dated July 23,
+                        2012) for a continuous period of three months; and
+                        <br>
+                        (II) the Enhanced Criteria (specified vide SEBI Circular number SEBI/HO/MRD/DP/CIR/P/2018/67
+                        dated April 11, 2018),
+                        shall be physically settled.
+                        <br>
+                        With reference to the above two stated Circulars along with any further updates regarding the
+                        same from SEBI or any Exchanges from time to time, where stocks/scrips which fail to meet both
+                        such Eligibility Criteria and Enhanced Criteria, Shareway Securities Limited’s policy on
+                        settlement with respect to such stocks can be read here.
+                        In case your account is in debit balance and/or if you have insufficient funds to manage your
+                        trading positions, you will be charged an interest of 0.05% per day as delayed payment charges.
+                        Know more.
+                    </li>
+                </ol>
+                <p>
+                    All information mentioned here is subject to change at the discretion of our Risk management team.
+                </p>
+
+
+                <h2>
+                    Collateral Margins
+                </h2>
+                <ol class="olol">
+                    <li>
+
+                        For all pledge requests placed before 4:00 PM, the collateral margin will be available to trade
+                        on T+1 day (next working day). All requests placed after 4:00 PM will be processed only on the
+                        next working day.
+                    </li>
+                    <li>
+
+                        Margins will be provided after the applicable haircut. You can click here for the applicable
+                        haircut on various stocks. A haircut of 10% would mean that if you pledged stocks worth Rs 1
+                        lakh, Rs 90,000 (90% of 1 lakh) will be added as collateral margin to your trading account.
+                    </li>
+                    <li>
+
+                        You can see this margin under the heading Direct Collateral on our trading platforms Pi
+                        (desktop), (Web/mobile), and NEST.
+                    </li>
+                    <li>
+
+                        You will be able to use this entire margin after haircut for taking intraday or overnight
+                        positions in Futures, and for writing Options of equities, indices, and currencies. You will not
+                        be able to use this margin to buy Options or take further positions on the equity segment.
+                    </li>
+                    <li>
+
+                        Exchanges stipulate that for overnight F&O positions, 50% of the margin needs to compulsorily
+                        come in cash and the remaining 50% can be in terms of collateral margin. If you don’t have
+                        enough cash, your account will be in debit balance and there will be an delayed payment
+                        (interest) charges charge of 0.05% per day applicable on the debit amount. So, if you take
+                        positions that requires a margin of Rs 1 lakh, you will need at least Rs 50,000 in cash
+                        irrespective of how much collateral margin you have. Assuming you don’t have this Rs 50,000,
+                        whatever you are short by will be the debit balance for the day, and delayed payment (interest)
+                        charges will be applicable for that amount. You can check this link to know more on how the
+                        delayed payment (interest) charges will be computed.
+                    </li>
+                    <li>
+
+                        Liquid funds are considered as cash equivalents by the exchange, so the above 50% rule wouldn’t
+                        apply. The Margin received from pledging liquid funds will be as good as having cash in your
+                        trading account. All cash equivalent stocks are updated here.
+                    </li>
+                    <li>
+
+                        All delayed payment (interest) charges accumulated will be debited once every month on the
+                        ledger. A link to see cumulative delayed payment (interest) charges calculation can be found on
+                        the holding page itself.
+                    </li>
+                    <li>
+
+                        All pledged stocks are marked as pledge in the client’s demat account until they are unpledged.
+                        The process of pledging will cost ₹30 plus GST per scrip irrespective of the quantity, and there
+                        is no charge for unpledged. So if you pledge 100 shares of Infosys and 200 shares of Reliance,
+                        the cost for pledging is ₹60 plus GST (30*2). This charge will be debited from your ledger the
+                        day the pledge request is processed.
+                    </li>
+                    <li>
+
+                        You will continue to get benefits of all corporate actions like dividends, splits, bonuses, etc.
+                        on the stocks you have pledged.
+                    </li>
+                    <li>
+
+                        This facility is available only for those clients who have opened a demat account through ILFS
+                        or Shareway Securities Limited with PoA duly mapped to Shareway Securities Limited. It is not
+                        available for non PoA accounts.
+                    </li>
+                    <li>
+
+                        Shareway Securities Limited reserves the right to liquidate any stock in case debit arises in
+                        the client’s account and subsequent non-payment of such debits.
+                    </li>
+                    <li>
+
+                        Shareway Securities Limited reserves the right to make any changes in the policy with due
+                        intimation to the client.
+                    </li>
+                </ol>
+
+                <h2>
+                    Debit balance
+                </h2>
+                <h4>
+                    Delayed payment charges
+                </h4>
+                <p>
+                    Shareway Securities Limited follows the practice of posting the settlement obligation towards their
+                    transaction in the client ledger on the settlement date. All clients are advised to make the payment
+                    before the pay-in time on the settlement day, though there are instances wherein client may delay
+                    the payment beyond the settlement date. Although, it is obligatory for a broker to meet the
+                    settlement obligation in time, therefore, in order to ensure timely receipt of funds from clients
+                    towards their payment obligation, “charges for delayed payment” are levied in the client’s account.
+                    The sum towards “charges for delayed payment” is levied to discourage delayed payment from clients
+                    who do not deposit the required sum of money before the pay in time on the pay in day. “Charges for
+                    delayed payment” are levied on the respective ledger debit of the clients at a rate of 0.05% per day
+                    of the debit balance in the account. For the purpose of reckoning debit balance, the debit balance
+                    in the client ledger is consolidated across all segments of the respective exchange after giving
+                    effect to the release of margin.
+                </p>
+                <h2>
+                    Contract notes and margin statement
+                </h2>
+                <p>
+                    Shareway Securities Limited will issue contract notes & margin statements to its clients within 24
+                    hours of the trade taking place. Along with the Contract Note, the client shall also be furnished
+                    with a copy of the daily margin status which is also available to be viewed on their respective
+                    Backoffice Personal Ledger.
+                </p>
+                <h4>
+                    Demat accounts
+                </h4>
+                <p>
+                    Shareway Securities Limited will maintain client’s securities in a designated account called the
+                    Client Beneficiary Account. The securities of Shareway Securities Limited will be kept in a separate
+                    demat account termed as Shareway Securities Limited Beneficiary Account. The clients’ and Shareway
+                    Securities Limited’s own securities will not be mixed with each other.
+                    <br><br>
+                    Shareway Securities Limited will open all DP Accounts . A client has the facility of linking his
+                    existing Demat Account to the Trading Account and taking delivery of stocks or opening a new Demat
+                    Account with Shareway Securities Limited’s DP . A client who wants to fully engage in trading in the
+                    Delivery Segment of NSE, will have to compulsorily open an account with Shareway Securities Limited
+                    . Transfer of shares from a third-party Demat account in to Shareway Securities Limited’s pool
+                    account and subsequent selling of such stocks is not allowed.
+                </p>
+                <h4>
+                    Trades
+                </h4>
+                <p>
+                    The trades of clients shall be carried out in the respective client code only. The dealers shall
+                    take utmost care while executing the trades of the clients regarding the accuracy of Client Code,
+                    Quantity, Price, etc.
+                </p>
+                <h4>
+                    Closing of accounts/dormant account
+                </h4>
+                <p>
+                    The Clients account shall be closed upon a specific request from the client. The closure shall be
+                    effective only after a period of one month has elapsed from the date of application/intimation or
+                    the date of settlement of account whichever is later.
+                    <br><br>
+                    Settlement of account shall mean that there is no outstanding balance of shares or funds in the
+                    books of the client and Shareway Securities Limited and the same is confirmed by the client. The
+                    date of confirmation shall be the effective date of settlement. As far as dormant accounts are
+                    concerned, we do not close such accounts, but mark the same as “Inactive” till further action by the
+                    concerned client.
+                </p>
+                <h4>
+                    Investor grievances
+                </h4>
+                <p>
+                    The Compliance Officer shall be the designated officer for handling the Investors Grievances and
+                    Client Complaints. The email ID you can write to in case you have any grievance is
+                    support@fabits.com.
+                    <br><br>
+                    The resolution of the Complaint shall be done at the earliest and the same shall be recorded in the
+                    register along with the date of resolution.
+                </p>
+                <h1 class="text-center my-5" style="font-weight: 800;">
+                    Shareway Securities Limited PMLA Policy
+                </h1>
+                <h2>
+                    Anti-Money Laundering Measures
+                </h2>
+                <h4>
+                    Background
+                </h4>
+                <p>
+                    The Prevention of Money Laundering Act, 2002 came into effect from 1st July 2005. Necessary
+                    Notifications / Rules under the said Act were published in the Gazette of India on 1 st July 2005 by
+                    the Department of Revenue, Ministry of Finance, and Government of India.
+                    <br><br>
+                    SEBI vide circular dated 18th January 2006 required Market intermediaries to lay down policy
+                    framework for anti-money laundering measures to be followed. Shareway Securities Limited being a
+                    Stockbroker needs to adhere to the same. SEBI has also issued a Master circular dated 19th December
+                    2008, which consolidates all the requirements/obligations issued with regard to AML/CFT until
+                    December 15, 2008
+                </p>
+                <h4>
+                    Objective
+                </h4>
+                <p>
+                    Money laundering has now become one of the major concerns of international financial community.
+                    Money Laundering is not just an attempt to disguise money derived from illegal activities. Rather,
+                    money laundering is involvement in any transaction or series of transactions that seek to conceal or
+                    disguise the nature or source of proceeds derived from illegal activities, including drug
+                    trafficking, terrorism, organized crime, fraud, and many other crimes.
+                    <br><br>
+                    The objective is to have a system in place for preventing any money laundering financial transaction
+                    through us and also to identify, monitor, report any such transaction to appropriate authorities.
+                    <br><br>
+                    “Know Your Customer “(KYC) is the guiding principle behind the Anti-Money Laundering (AML) measures.
+                    It incorporates the “Know Your Customer” Standards & “Anti Money Laundering” Measures, hereinafter
+                    to be referred as “KYC Standards” and “AML Measures “. The objective of is to “have in place
+                    adequate policies, practices and procedures that promote high ethical and professional standards and
+                    prevent the Company from being used, intentionally or unintentionally, by criminal elements “. KYC
+                    Standards and AML Measures would enable the Company to know/ understand its customers, the
+                    beneficial owners, the principals behind customers who are acting as agents and their financial
+                    dealings better which in turn will help the Company to manage its risks prudently
+                    <br><br>
+                    The management of the company is fully committed to establish appropriate policies and procedures
+                    for ensuring effectiveness and compliance with respect to all relevant legal requirements.
+                </p>
+                <h2>
+                    The regulatory/statutory requirements
+                </h2>
+                <p>
+                    An officer of the company will be designated as “Principal Officer” who will ensure proper discharge
+                    of all legal requirements with respect to the same Mr. Jinto VT , Compliance Head is the Principal
+                    Officer responsible for
+
+                </p>
+
+                <ol class="olol">
+                    <li>
+
+                        Compliance of the provisions of the PMLA and AML guidelines
+                    </li>
+                    <li>
+
+                        Act as a central reference point and play and active role in identification & assessment of
+                        potential suspicious transactions
+                    </li>
+                    <li>
+
+                        Ensure that Shareway Securities Limited discharges its legal obligation to report suspicious
+                        transactions to concerned authorities.
+                    </li>
+                </ol>
+                <p>
+                    The main aspect of this policy is the customer due diligence process which means:
+                </p>
+                <ol class="olol">
+                    <li>
+
+                        Obtaining sufficient information about to the client in order to identify who is the actual
+                        beneficial owner of the securities or on whose behalf transaction is conducted
+                    </li>
+                    <li>
+
+                        Verify the customers identity using reliable independent source document, data or information
+                    </li>
+                    <li>
+
+                        Conduct on-going due diligence and scrutiny of the account/ client to ensure that the
+                        transaction conducted are consistent with the clients’ background/ financial status, its
+                        activities and risk profile.
+                    </li>
+                </ol>
+                <p>
+                    The customer due diligence process includes three specific parameters:
+                </p>
+                <ol class="olol">
+                    <li>
+
+                        Policy for acceptance of clients: Each client should be met in person Complete KYC to be done
+                        for all clients No account to be opened in a fictitious/benami name or on an anonymous basis
+                    </li>
+                    <li>
+
+                        Clients Identification Procedure (Risk profiling) All clients to be classified as per the risk
+                        into 3 categories Low, Medium and High Risk
+                    </li>
+                    <li>
+
+                        Suspicious Transaction identification and reporting Any unusual activity compared to past
+                        transactions Sudden activity in Dormant accounts Sudden High volume / high value transactions
+                    </li>
+                    <li>
+                        Central Depository Securities Limited (CDSL) communique no. CDSL/OPS/DP/POLCY/2017/176 dated
+                        April 05, 2017, and CDSL/OPS/DP/POLCY/2017/354 dated July 18, 2017, advises that the Beneficial
+                        Owners should submit/update their Aadhar Card copy with the Depository Participant. Please
+                        ensure that you update your Aadhar Number with Shareway Securities Limited as per the mentioned
+                        notices.
+                    </li>
+                </ol>
+                <p>
+                    The principal officer shall report the nature, amount, date and all related details of any and all
+                    suspicious transactions recorded.
+                </p>
+
+                <h2>
+                    1. Client identification
+                </h2>
+                <p>
+                    Before opening any Trading account with us, the following measures shall be taken:
+
+
+                </p>
+
+                <ol class="olol">
+                    <li>
+
+                        In person verification of the client
+                    </li>
+                    <li>
+
+                        Identify beneficial ownership and control, i.e., determine the persons who beneficially own /
+                        control the account.
+                    </li>
+                    <li>
+
+                        Collect information about client’s background, occupation and also check the name of the
+                        introducer.
+                    </li>
+                    <li>
+
+                        Collect and verify all original documents from the client.
+                    </li>
+                    <li>
+
+                        Collect a certified copy of valid documents showing details of his permanent address, current
+                        address, PAN, nature of his occupation, financial status and also a recent photograph.
+                    </li>
+                    <li>
+
+                        For clients trading in F&O segment, documentary proof of his financial details will be
+                        collected.
+                    </li>
+                    <li>
+
+                        In case of corporate client, collect copies of certificate of incorporation, Memorandum of
+                        association and other documents as required by SEBI
+                    </li>
+                    <li>
+
+                        In case of corporate client, collect adequate information of the persons authorised to deal on
+                        behalf of the company.
+                    </li>
+                    <li>
+
+                        The client shall be interviewed personally regarding the purpose of opening the account i.e.,
+                        whether short term trading or long-term investment.
+                    </li>
+                    <li>
+
+                        Prior experience in stock market
+                    </li>
+                    <li>
+
+                        Introducer details
+                    </li>
+
+                </ol>
+                <h2>
+                    2. KYC up dation process
+                </h2>
+
+                <p>
+                    All corporate clients must submit annual report every year. In case of individual clients, Client
+                    Master details shall be sent to all clients, who will confirm either that the details are updated or
+                    shall be advised to submit details if required. He shall also specify his present occupation and
+                    financial income details per annum in the same declaration.
+                    <br><br>
+                    The information should be adequate enough to satisfy competent authorities (regulatory/ enforcement
+                    authorities) in future that due diligence was observed by us in compliance with the Guidelines.
+                    <br><br>
+                    Failure by prospective client to provide satisfactory evidence of identity should be noted and
+                    reported to the principal officer.
+                    <br><br>
+                    Further, we should also maintain continuous familiarity and follow-up with the client where
+                    inconsistencies in the information provided are noted.
+                    <br><br>
+                    The account will not be opened where we are unable to apply the above KYC policies, e.g.,
+                    non-co-operation of the client in providing full information etc
+                </p>
+
+                <h2>
+                    3. Client categorisation
+                </h2>
+
+                <p>
+                    Each client will be marked into 3 categories, High Risk, Medium Risk and Low Risk from the point of
+                    view of the anti-money laundering laws. The categorization will be made based on the following
+                    parameters/ factors of risk perception:
+                </p>
+                <ol class="olol">
+                    <li>
+
+                        High Net worth Clients
+                    </li>
+                    <li>
+
+                        Trusts/ NGOs / Charities receiving donations
+                    </li>
+                    <li>
+
+                        Companies having close family shareholdings (The above are considered of High Risk as per SEBI
+                        guidelines) The other parameters are nature of business activity, trading turnover, manner of
+                        making payment etc. Provision will be made in the back-office software for noting categorization
+                        of each client. The high-risk client will require regular KYC update.
+                    </li>
+                </ol>
+                <p>
+                    The clients will be placed under low, medium and high-risk category based on their turnover per day.
+                    Corporates / HNIs having respectable social and financial standing, Clients who make payment on time
+                    and take delivery of shares can be considered as Low
+                </p>
+
+                <h2>
+                    4. Suspended Persons
+                </h2>
+                <p>
+                    SEBI and other authorities suspend or debar persons / entities from participating in securities
+                    market on several instances. We as a Broker are required to ensure that such persons do not trade
+                    through us.
+                    <br><br>
+                    We shall lay down systems for identifying transactions which is not in consonance with the financial
+                    status declared/ shown by the client. Also, unusual activities compared to past transactions, sudden
+                    activity in dormant accounts, activity inconsistent from declared business activity, should be
+                    traced. This shall require appropriate changes in our back-office software.
+                    <br><br>
+                    Systems shall be put in place for identifying transactions likely to be market manipulation, and
+                    which appears to be insider trading and also any transaction which seems to have no bonafide
+                    intention. Regular communications by means of mailers, SMS, Email are sent to clients at various
+                    intervals requesting them to update their latest financial and KYC details available with us.
+                    <br><br>
+                    Role of Compliance Team & Internal Audit: The compliance team will play an important role in
+                    ensuring compliance of the above policies and procedures. The account opening team will exercise
+                    adequate due diligence as stated above. There will be periodic checking by the Principal Officer and
+                    the same report will be properly filed
+                    <br><br>
+                    here is a system of concurrent audit, which will also include ensuring compliance of the
+                </p>
+                <ol class="olol">
+                    <li>
+
+                        Due diligence in KYC norms.
+                    </li>
+                    <li>
+
+                        Generation of exception reports
+                    </li>
+                    <li>
+
+                        Trading in dormant client codes
+                    </li>
+                    <li>
+
+                        Level of awareness of staffs
+                    </li>
+                </ol>
+
+                <h2>
+                    5. Illiquid Securities
+                </h2>
+
+                <p>
+                    The Exchanges specifies a list of Illiquid Securities where higher due diligence is to be exercised
+                    by the Brokers. The list is displayed in our website for client’s information. The trade pattern in
+                    such scrips by our clients is monitored. In case of high volume in any scrip compared to Exchange
+                    volume, the client is asked to submit clarification.
+                </p>
+
+                <h2>
+                    6. Employee Training
+                </h2>
+
+                <p>
+                    We have policy for ongoing employee training programme so that the total staffs of our company
+                    completely aware of the provisions of AML and CFT procedures and amendments thereof. These training
+                    programmes are totally focused for frontline staff, back-office staff, compliance staff, risk
+                    management staff and staff dealing with new customers as it is very crucial that all those concerned
+                    fully understand the rationale behind these guidelines, obligations and requirements, implement them
+                    consistently and are sensitive to the risks of their systems being misused by unscrupulous elements,
+                    if there is any lapse on the part of any staffs of the company.
+                    <br><br>
+                    A register of attendance of participation in such Education/ training program is maintained for the
+                    employees, kept secured with the Compliance Department.
+                    <br><br>
+                    As resolved Shareway Securities Limited shall take adequate measures as per its internal policy to
+                    prevent money laundering and shall also put in place a framework for PMLA policy. The policies and
+                    procedures as mentioned above shall not be final as it may adopt additional measures to safeguard
+                    its interest with respect to activities associated with PMLA.
+                </p>
+
+
+                <h2>
+                    Shareway Securities Limited brief
+                </h2>
+                <p>
+                    Shareway Securities Limited has introduced the concept Investment boxes to choose in various schemes
+                    for the first time in India. Our focus is on helping Investor stay invested and gain out of the
+                    capital markets ahead of the rest of the pack by offering innovative solutions to the problems that
+                    exist in the trading domain.
+                    <br><br>
+                    We decided to create Shareway Securities Limited based on an in-depth understanding of how the odds
+                    are always stacked against active traders in the financial markets. A study conducted by us revealed
+                    that almost 90% of active traders in the markets lose money in the long run. One of the fundamental
+                    drivers that define this reality is the fact that brokerages in India have always charged traders a
+                    percentage brokerage, regardless of if one makes or loses money on a particular trade. This insight
+                    inspired us to create a whole new way of trading.
+                </p>
+
+
+                <h4>
+                    Charges:
+                </h4>
+
+                <ol class="olol">
+                    <li>
+
+                        Account opening (Trading & Demat) – ₹ 200 (Market rates are Free to ₹ 1500)
+                    </li>
+                    <li>
+
+                        Account opening (Trading, Demat & Commodities) – ₹300
+                    </li>
+                    <li>
+
+                        Note: Please go through the ‘Refund & Cancellation Policy’, to have a complete understanding of
+                        the refund rules and procedures.
+                    </li>
+                    <li>
+
+                        Annual Maintenance Charges for Demat (payable at the end of the year) – Rs 300 (Market rates are
+                        Rs 300 to Rs 1000) Annual Maintenance Charges for Trading Account – ZERO If you print your own
+                        forms through our website, we give you a discount of ₹100 on Account Opening Charges.
+                    </li>
+                    <li>
+
+                        DP Charges – Rs 8 (Shareway Securities Limited) plus ₹5.5 (CDSL) (applicable only when you are
+                        selling your Delivery position after having held for more than two days). (Market rates are
+                        usually between Rs 12 to Rs 25)
+                    </li>
+                    <li>
+
+                        STT, GST, NSE Turnover and Transaction Charges, SEBI charges are all as applicable market-wide
+                    </li>
+                    <li>
+
+                        GST will be levied additionally on all charges mentioned in this document as and wherever
+                        applicable.
+                    </li>
+                </ol>
+
+                <h4>
+                    Margins:
+                </h4>
+
+                <ol class="olol">
+                    <li>
+                        For Delivery positions, 100% cash will be required *square-off of all intraday CASH positions if
+                        not converted happens at 3:20 p.m. every day
+                    </li>
+                </ol>
+
+                <h2>
+                    Alternative Means of Communication in Case of L/L Failure in Internet
+                </h2>
+
+                <p>
+                    There are 2 types of trading backup system/processes planned for handling the subject i.e. ‘Call and
+                    Trade’ desk at HO and dealer desk located in branch locations. All successfully registered clients
+                    would be provided with Call and trade numbers and the clients would have to call us on these numbers
+                    and authenticate their account information before the dealer can place trades.
+                    <br><br>
+                    All clients on any issue in internet or connectivity failure or in any other difficulty can call on
+                    the nationwide accessible number to receive ‘Call and Trade’ service. After successful
+                    authentication i.e., manual authentication after providing personal identification details to call
+                    and trade dealer, clients can access their account as required. Clients being served at dealing desk
+                    can access their accounts with help of dealers at these locations.
+                    <br><br>
+                    Additional charges of ₹50 per executed order:
+                    A) for orders placed through our support/dealing desk.
+                    B) intraday (MIS/BO/CO) positions squared off before market closing by our RMS team.
+                    <br><br>
+                    Note: Trading using our Call & Trade desk involves many uncertain factors which include complex
+                    hardware, software, systems, and communication lines. These are susceptible to interruptions.
+                    <br><br>
+                    This document contains confidential information of _______________________ Pvt Ltd, which is
+                    provided for the sole purpose of permitting the recipient to evaluate the deployment document
+                    submitted herewith. In consideration of receipt of this document, the recipient agrees to maintain
+                    such information in confidence and to not reproduce or otherwise disclose this information to any
+                    person outside the group directly responsible for evaluation of its contents, except that there is
+                    no obligation to maintain the confidentiality of any information which was known to the recipient
+                    prior to receipt of such information from ____________ Pvt Ltd, or becomes publicly known through no
+                    fault of recipient, or is received without obligation of confidentiality from a third party owing no
+                    obligation of confidentiality to ________________________________________________________________
+                    Pvt Ltd.
+                </p>
+
+
+                <h2>
+                    Business Continuity Management
+                </h2>
+
+                <h4>
+                    Information security aspects of business continuity management
+                </h4>
+
+                <ol class="olol">
+                    <li>
+
+                        A managed process must be developed and maintained for business continuity throughout the
+                        organization that addresses the information security requirements needed for the organization’s
+                        business continuity.
+                    </li>
+                    <li>
+
+                        A comprehensive Business Continuity Plan (BCP) must be developed and implemented in order to
+                        maintain or restore business operations in the required time scales following interruption to,
+                        or failure of, critical business processes. The BCP must include effective Disaster Recovery
+                        procedures for quickly recovering from an emergency with minimum impact to the company’s
+                        operations.
+                    </li>
+                    <li>
+
+                        Business Continuity Plan must be developed based on critical business processes and the likely
+                        disruptive events along with their probability, impact and consequences for information security
+                        identified through Business Impact Analysis.
+                    </li>
+                    <li>
+
+                        A single framework of business continuity plans must be maintained to ensure all plans, across
+                        businesses and processes are consistent, to consistently address information security
+                        requirements, and to identify priorities for testing and maintenance.
+                    </li>
+                    <li>
+
+                        At present we have Production server and Backup server in place, and both were Sinked together
+                        to get the data updated in the backup server on real time. Also, the data is backed up through
+                        storage folder in a secured way, one copy of backup on same server itself, other copy in backup
+                        server & external media devices. Even we will take the backup of SQL database on daily basis and
+                        store it securely.
+                    </li>
+                    <li>
+
+                        In case of primary server failure then alternate communication will be carried from the
+                        secondary server and will continue the trading platform.
+                    </li>
+                </ol>
+
+                <h2>
+                    Recovery Procedures
+                </h2>
+
+                <h4>
+                    Network failure:
+                </h4>
+                <p>
+                    Our systems are hosted at the ______________________________________________with state-of-the-art
+                    redundancy measures.
+                </p>
+
+                <h4>
+                    Network failure
+                </h4>
+
+                <p>
+                    Every day we are taking backup of database one copy in a database server itself and other copies are
+                    stored in backup server and external media device also for need of restoration on need basis.
+                    <br><br>
+                    The Database is restored from these copies on failure.
+                    <br><br>
+                    If there is a problem with the database when we can restore the database from the backup node to
+                    server immediately and even if that backup system has a problem, we can restore the data from the
+                    external device.
+                </p>
+
+                <h4>
+                    System / hard disk failure:
+                </h4>
+
+                <p>
+                    To avoid single points of failure we plan to run a parallel server which are running simultaneously
+                    thus adding redundancy, so that customer can be provided service with limited downtime delay.
+                </p>
+
+                <h4>
+                    Alternative arrangements for customers for uninterrupted service:
+                </h4>
+
+                <p>
+                    We have a helpdesk where we can accept orders from the clients in case of failure of systems after
+                    proper authentication of the client.
+
+
+                </p>
+
+
+                <h2>
+                    Refund & cancellation policy
+
+                </h2>
+
+                <p>
+                    The Refund & Cancellation policy for all payments made towards account opening using the payment
+                    gateway shall stand as under:
+
+
+                </p>
+
+                <ol class="olol">
+                    <li>
+
+                        The Fees paid towards account opening charges for enabling equities as well as commodities is
+                        non-refundable.
+                    </li>
+                    <li>
+
+                        Pick up of required documents related to the account opening procedure is subject to
+                        availability of our representatives, given at any time and location.
+                    </li>
+                    <li>
+
+                        In case your account has not been opened by Team Shareway Securities Limited, after the tenth
+                        day passing by from the day of collection of all necessary supporting documents and receipt of
+                        all due authorizations from you, you may request for a full refund of the charges as paid by you
+                        towards account opening.
+                    </li>
+                    <li>
+
+                        In case you have paid the charges relating to account opening multiple times, please create a
+                        ticket here and we will initiate the necessary procedure to refund your money.
+                    </li>
+                </ol>
+
+
+                <p>
+                    Note: The completion of the refund procedure is subject to agencies such as banks, payment gateways.
+                    <br><br>
+                    All that you need to know in case your trading account is not active for more than 12 months.
+                    <br><br>
+                    © 2010 – 2022, Shareway Securities Limited Broking Ltd. All rights reserved.
+                </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content w-100">
+                <div class="container d-flex justify-content-center ">
+                    <div class="container-fluid p-0 m-0 text-center text-light py-5">
+                        <h1 class="heading  py-5 display__desktop" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <h1 class="heading__contact  py-5 display__mobile text-start ps-3" style="opacity: 0.9;">
+                            Contact
+                        </h1>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row w-100 d-flex justify-content-center grad__width">
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">FABITS</h5>
+                                    <p class="content__paragraph">
+                                        Shareway Securities Limited<br /> Corporate Office: No 2, Hayes Road,<br />
+                                        Richmond Town, Bangalore 560025.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <h5 class="contact__heading">Regd. Office: </h5>
+                                    <p class="content__paragraph">
+                                        old no 46 new no 6,
+                                        <br /> Gilli flower, flat, E- 2nd floor, 23rd street,
+                                        <br /> Anna Nagar East, Chennai 600102
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4 text-start">
+                                    <p class="content__paragraph">
+                                        080-45687111
+                                        <br />
+                                        + 91 8050030909
+                                        <br /> support@fabits.com / customercare@fabits.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 link__content m-auto w-100">
+                <div class="container d-flex justify-content-center w-100  ">
+                    <div class=" w-100 pe-3 text-center text-light py-5">
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="row footerlinks  d-flex justify-content-center  text-dark w-100 links grad__width">
+                                <div class="col-6 col-md-3 text-start content__paragraph2    ">
+                                    <ul>
+                                        <li>
+                                            <a href="Team.html" class="text-dark">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Platforms
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Finbits
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                FAQ's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-dark">
+                                                Backoffice
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Contact.html" class="text-dark">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 text-start">
+                                    <div class=" text-start content__paragraph2">
+                                        <ul>
+                                            <li>
+                                                <a href="disclosure.html" class="text-dark">
+                                                    Disclosure
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notifications-circulars.html" class="text-dark">
+                                                    Notifications
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notifications-circulars.html" class="text-dark">
+                                                    Circulars
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Terms.html" class="text-dark">
+                                                    Terms and Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Privacy.html" class="text-dark">
+                                                    Privacy Policy
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="policies-and-procedures.html" class="text-dark">
+                                                    Policies and Procedures
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investor-charter.html" class="text-dark">
+                                                    Investor Charter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investor-complaints.html" class="text-dark">
+                                                    Investor Complaints
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 text-start ">
+                                    <ul class="w-100 content__paragraph2">
+                                        <li>
+                                            SEBI Registration number:
+                                            <b>
+
+                                                INZ000208134
+                                            </b>
+
+
+                                        </li>
+                                        <li class="w-100">
+                                            Segments:
+                                            <b>
+
+                                                NSE CM – FO
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CDSL Depository Participant:
+                                            <b>
+
+                                                IN-DP-610-2021
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            CIN NO:
+                                            <b>
+
+                                                U67120TN2008PLC066952
+                                            </b>
+
+                                        </li>
+                                        <li>
+                                            GST NO:
+                                            <b>
+
+                                                29AALCS7597J1ZA
+                                            </b>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex w-100 justify-content-center">
+                            <div class="d-flex justify-content-center grad__width text-dark w-100 ">
+                                <div style="opacity: 0.9;">
+                                    <hr class="bg-dark">
+                                    <p class="text-start px-2 content__paragraph2">
+                                        SHAREWAY SECURITIES LIMITED (FABITS) Member of NSE – SEBI Registration number:
+                                        INZ000208134 CDSL: Depository services through SHAREWAY SECURITIES LIMITED. –
+                                        SEBI
+                                        Registration number: IN-DP-610-2021. Registered Address: old no 46 new no 6,
+                                        Gilli
+                                        flower, flat, 2nd floor, 23rd street, Anna Nagar East, Chennai 600102. Corporate
+                                        Address: No 2, Hayes Road Richmond Town Bangalore 560025. For any complaints
+                                        pertaining
+                                        to securities broking please write to
+                                        <a href="mailto:rathi@fabits.com" target="_blank">
+                                            rathi@fabits.com
+                                        </a>
+                                        . Please ensure you carefully
+                                        read
+                                        the Risk Disclosure Document as prescribed by SEBI
+                                    </p>
+                                    <p class="text-start px-2 content__paragraph2">
+                                        
+                                            Attention Investors :
+                                        
+                                       
+                                        1) “Prevent Unauthorized Transactions in your trading/Demat account Update your
+                                        Mobile Number/Email IDs with your stock brokers/Depository Participant. Receive
+                                        alerts/information of your transactions on your Registered Mobile/Email for all
+                                        debit and other important transactions in your trading/Demat account directly
+                                        from Exchange/CDSL on the same day.”
+                                        
+
+                                        2) “KYC is a one-time exercise while dealing in securities markets-once KYC is done
+                                        through a SEBI registered intermediary (broker, DP, Mutual Fund, etc.), you need
+                                        not undergo the same process again when you approach another intermediary.”
+                                        <br><br>
+
+                                        No need to issue cheques by investors while subscribing to IPO. Just write the
+                                        bank account number and sign in the application form to authorise your bank to
+                                        make payment in case of allotment. No worry about a refund as the money remains
+                                        in the investor’s account.
+                                        
+
+                                        This is to inform you as per Rules, Regulations and Bye-laws of Multi Commodity
+                                        Exchange of India Ltd (MCX), that we do client-based trading and proprietary
+                                        trading.
+                                        
+
+                                        Procedure to file a complaint on SCORES (Easy & quick). Register on the SCORES
+                                        portal and have the mandatory details for filing complaints on 
+                                        
+                                        <a href="https://scores.gov.in/scores/Welcome.html" target="_blank">
+                                            SCORES 
+                                        </a>
+                                        
+                                        (Name,
+                                        PAN, Address, Mobile Number and E-mail ID). Benefits: Effective Communication
+                                        and Speedy redressal of the grievances.
+                                        
+
+                                        Stock Brokers can accept securities as margin from clients only by way of a
+                                        pledge in the depository system w.e.f. September 01, 2020
+                                        
+
+                                        Update your email id and mobile number with your stock broker/depository
+                                        participant and receive OTP directly from the depository on your email id and/or
+                                        mobile number to create pledge
+                                        
+
+                                        Check your securities / MF / bonds in the consolidated account statement issued
+                                        by NSDL/CDSL every month.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0  ">
+        <section class="fourth__slide  p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
+            <div class="container-fluid p-0 m-0 contact__content m-auto w-100">
+                <div class="container   d-flex justify-content-start grad__width text-light py-3">
+                    <p>
+                        © 2022 Fabits. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
