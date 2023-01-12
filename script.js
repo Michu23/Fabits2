@@ -459,6 +459,39 @@ gsap.from(".a5", {
   // scale : 0,
 });
 
+gsap.from(".s1", {
+  scrollTrigger: {
+    trigger: ".second_slide_pc",
+    scrub: 1,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 0,
+  x: -100,
+});
+gsap.from(".s2", {
+  scrollTrigger: {
+    trigger: ".second_slide_pc",
+    scrub: 1,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 0,
+  x: -100,
+});
+gsap.from(".s3", {
+  scrollTrigger: {
+    trigger: ".second_slide_pc",
+    scrub: 1,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 0,
+  x: -100,
+});
+
+
+
 gsap.from(".a6", {
   scrollTrigger: {
     trigger: ".second_slide_pc",

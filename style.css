@@ -495,8 +495,13 @@ a {
 }
 
 .bgimage {
-  max-width: 300px;
-  height: 300px;
+  max-width: 250px;
+  height: 250px;
+}
+
+.carimage {
+  max-width: 400px;
+  height: 250px;
 }
 
 /* Second slide */
@@ -557,12 +562,24 @@ a {
 }
 
 .white__round {
+
   max-height: 188px !important;
   max-width: 245px !important;
   min-height: 100px !important;
   min-width: 140px !important;
   border-radius: 50% 50% !important;
   /* background-color: #fff !important;  */
+}
+
+.white__round2 {
+  height: 140px !important;
+  width: 180px !important;
+  max-height: 188px !important;
+  max-width: 245px !important;
+  min-height: 100px !important;
+  min-width: 140px !important;
+  border-radius: 50% 50% !important;
+  background-color: #fff !important; 
 }
 
 /* Third slide */
