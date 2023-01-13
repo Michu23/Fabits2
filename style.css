@@ -343,6 +343,15 @@ body::-webkit-scrollbar {
   ) !important;
 }
 
+.gradddd {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 30, 0.2) 0%,
+    rgba(0, 0, 30, 0.9) 97.14%
+  ) !important;
+  z-index: 777;
+}
+
 .second__content {
   background-image: url(./FabitsAssets/Images/49.png) !important;
   background-size: cover !important;
@@ -562,7 +571,6 @@ a {
 }
 
 .white__round {
-
   max-height: 188px !important;
   max-width: 245px !important;
   min-height: 100px !important;
@@ -579,7 +587,7 @@ a {
   min-height: 100px !important;
   min-width: 140px !important;
   border-radius: 50% 50% !important;
-  background-color: #fff !important; 
+  background-color: #fff !important;
 }
 
 /* Third slide */
@@ -1100,15 +1108,16 @@ a {
 .oppp {
   opacity: 0.4 !important;
 }
+.oppp2 {
+  opacity: 0.6 !important;
+}
 
 .olol li {
   list-style: disc !important;
   opacity: 0.8 !important;
 }
 
-
-.footerlinks li{
+.footerlinks li {
   padding-bottom: 10px !important;
   font-weight: 500;
 }
-
