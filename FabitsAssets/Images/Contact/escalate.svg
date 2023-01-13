@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 372">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: MyriadPro-Semibold, 'Myriad Pro';
+        font-size: 28.43px;
+        font-weight: 600;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: .01em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: .02em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-11 {
+        fill: #daf7ea;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-16 {
+        letter-spacing: 0em;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-18 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-19 {
+        letter-spacing: 0em;
+      }
+
+      .cls-20 {
+        letter-spacing: 0em;
+      }
+
+      .cls-21 {
+        fill: #baf7de;
+      }
+
+      .cls-22 {
+        fill: #4f9b7e;
+      }
+    </style>
+  </defs>
+  <rect class="cls-22" width="1366" height="140"/>
+  <rect class="cls-21" y="140" width="1366" height="58"/>
+  <rect class="cls-21" y="256" width="1366" height="58"/>
+  <rect class="cls-11" y="198" width="1366" height="58"/>
+  <rect class="cls-11" y="314" width="1366" height="58"/>
+  <rect class="cls-11" y="198" width="1366" height="58"/>
+  <text class="cls-4" transform="translate(44.78 78.52)"><tspan x="0" y="0">Details</tspan><tspan class="cls-5" x="0" y="34.12">O</tspan><tspan x="20.38" y="34.12">f</tspan></text>
+  <text class="cls-4" transform="translate(404.59 78.52)"><tspan x="0" y="0">Name</tspan></text>
+  <text class="cls-4" transform="translate(689.11 80.28)"><tspan class="cls-7" x="0" y="0">C</tspan><tspan x="16.26" y="0">o</tspan><tspan class="cls-17" x="32.3" y="0">n</tspan><tspan x="48.42" y="0">ta</tspan><tspan class="cls-8" x="72.84" y="0">c</tspan><tspan x="86.03" y="0">t </tspan><tspan x="0" y="34.12">N</tspan><tspan class="cls-18" x="19.22" y="34.12">o</tspan><tspan class="cls-15" x="34.4" y="34.12">.</tspan></text>
+  <text class="cls-4" transform="translate(1005.09 70.28)"><tspan x="0" y="0">Email </tspan><tspan x="0" y="34.12">I</tspan><tspan class="cls-13" x="7.51" y="34.12">d</tspan><tspan class="cls-15" x="23.74" y="34.12">.</tspan></text>
+  <text class="cls-3" transform="translate(43.77 179.64)"><tspan class="cls-7" x="0" y="0">C</tspan><tspan x="16.26" y="0">us</tspan><tspan class="cls-20" x="44.29" y="0">t</tspan><tspan x="54.1" y="0">omer </tspan><tspan class="cls-16" x="124.92" y="0">C</tspan><tspan x="141.38" y="0">a</tspan><tspan class="cls-14" x="155.82" y="0">r</tspan><tspan x="165.69" y="0">e</tspan></text>
+  <text class="cls-3" transform="translate(400.77 179.64)"><tspan class="cls-12" x="0" y="0">R</tspan><tspan x="16.46" y="0">amesh L</tspan></text>
+  <text class="cls-3" transform="translate(1006.77 179.64)"><tspan x="0" y="0">suppo</tspan><tspan class="cls-1" x="77.33" y="0">r</tspan><tspan class="cls-15" x="88.1" y="0">t@fabit</tspan><tspan class="cls-10" x="176.94" y="0">s</tspan><tspan x="188.49" y="0">.</tspan><tspan class="cls-14" x="195.19" y="0">c</tspan><tspan x="207.7" y="0">om</tspan></text>
+  <text class="cls-3" transform="translate(1006.77 232.64)"><tspan x="0" y="0">jeet@fabit</tspan><tspan class="cls-2" x="125.86" y="0">s</tspan><tspan class="cls-15" x="137.4" y="0">.</tspan><tspan class="cls-16" x="144.11" y="0">c</tspan><tspan x="156.62" y="0">om</tspan></text>
+  <text class="cls-3" transform="translate(1006.77 294.64)"><tspan class="cls-14" x="0" y="0">r</tspan><tspan class="cls-19" x="9.87" y="0">a</tspan><tspan class="cls-15" x="24.14" y="0">thi@fabit</tspan><tspan class="cls-2" x="136.52" y="0">s</tspan><tspan x="148.06" y="0">.</tspan><tspan class="cls-14" x="154.77" y="0">c</tspan><tspan x="167.28" y="0">om</tspan></text>
+  <text class="cls-3" transform="translate(1006.77 350.64)"><tspan x="0" y="0">dharma@fabit</tspan><tspan class="cls-10" x="174.75" y="0">s</tspan><tspan x="186.3" y="0">.</tspan><tspan class="cls-14" x="193.01" y="0">c</tspan><tspan x="205.52" y="0">om</tspan></text>
+  <text class="cls-3" transform="translate(401.77 240.64)"><tspan x="0" y="0">S Jee</tspan><tspan class="cls-6" x="61.12" y="0">t</tspan><tspan x="70.93" y="0">ender Singh</tspan></text>
+  <text class="cls-3" transform="translate(402.77 294.64)"><tspan class="cls-12" x="0" y="0">R</tspan><tspan class="cls-20" x="16.46" y="0">a</tspan><tspan x="30.73" y="0">thi R</tspan></text>
+  <text class="cls-3" transform="translate(402.77 352.64)"><tspan x="0" y="0">Dharma</tspan></text>
+  <text class="cls-3" transform="translate(43.77 240.64)"><tspan x="0" y="0">Head of </tspan><tspan class="cls-7" x="101.61" y="0">C</tspan><tspan class="cls-9" x="117.87" y="0">us</tspan><tspan class="cls-20" x="145.9" y="0">t</tspan><tspan x="155.71" y="0">omer </tspan><tspan class="cls-14" x="226.52" y="0">C</tspan><tspan class="cls-9" x="242.98" y="0">a</tspan><tspan class="cls-14" x="257.43" y="0">r</tspan><tspan x="267.29" y="0">e</tspan></text>
+  <text class="cls-3" transform="translate(44.77 294.64)"><tspan class="cls-7" x="0" y="0">C</tspan><tspan x="16.26" y="0">omplian</tspan><tspan class="cls-14" x="118.32" y="0">c</tspan><tspan x="130.83" y="0">e </tspan><tspan class="cls-5" x="151.39" y="0">O</tspan><tspan x="171.77" y="0">ffi</tspan><tspan class="cls-14" x="196.25" y="0">c</tspan><tspan x="208.76" y="0">er</tspan></text>
+  <text class="cls-3" transform="translate(46.77 352.64)"><tspan x="0" y="0">CEO</tspan></text>
+  <text class="cls-3" transform="translate(688.77 181.64)"><tspan x="0" y="0">98414 55600</tspan></text>
+  <text class="cls-3" transform="translate(689.77 238.64)"><tspan x="0" y="0">99855 88331</tspan></text>
+  <text class="cls-3" transform="translate(689.77 294.64)"><tspan x="0" y="0">97424 56907</tspan></text>
+  <text class="cls-3" transform="translate(689.77 352.64)"><tspan x="0" y="0">98451 97550</tspan></text>
+</svg>
