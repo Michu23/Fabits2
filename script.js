@@ -1,5 +1,65 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const ff1 = gsap.timeline();
+
+ScrollTrigger.create({
+  animation: ff1,
+  trigger: ".first__animation",
+  start: "top top",
+  end: "+=3500",
+  scrub: 1,
+  pin: true,
+  pinSpacing: true,
+  anticipatePin: 1,
+  markers: true,
+});
+
+ff1
+  .to(".fff3", {
+    x: -100,
+    opacity: 0,
+  },
+    "=-0.1"
+  )
+  .from(".fff2", {
+    x: 100,
+    opacity: 0,
+  },
+    "=-0.1"
+
+  )
+  .to(".fff2", {
+    x: 0,
+    opacity: 1,
+  },
+    "=-0.1"
+  )
+  .to(".fff2", {
+    x: -100,
+    opacity: 0,
+  },
+    "=-0.1"
+  )
+  .from(".ffff1", {
+    x: 100,
+    opacity: 0,
+  },
+    "=-0.1"
+  )
+  .to(".ffff1", {
+    x: 0,
+    opacity: 1,
+  },
+    "=-0.1"
+  );
+
+
+  
+  
+
+
+
+
 const tl2 = gsap.timeline();
 
 tl2
@@ -40,7 +100,6 @@ ScrollTrigger.create({
   scrub: 1,
   pin: true,
   pinSpacing: true,
-  // markers: true,
   anticipatePin: 1,
 });
 

@@ -309,18 +309,13 @@ body::-webkit-scrollbar {
   z-index: -1 !important;
 }
 
-.first__slide .first__content {
-  /* background: linear-gradient(
-    180deg,
-    rgba(0, 0, 30, 0.2) 0%,
-    rgba(0, 0, 30, 0.9) 97.14%
-  ) !important; */
+/* .first__slide .first__content {
   background: linear-gradient(
     180deg,
-    rgb(0, 0, 0) 0%,
-    rgb(0, 0, 0) 97.14%
+    rgb(0, 0, 0, 0.1) 0%,
+    rgb(0, 0, 0, 0.1) 97.14%
   ) !important;
-}
+} */
 
 .first__slide .first__content2 {
   /* background: linear-gradient(
@@ -354,6 +349,12 @@ body::-webkit-scrollbar {
 
 .second__content {
   background-image: url(./FabitsAssets/Images/49.png) !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
+.second__content2 {
+  background-image: url("https://res.cloudinary.com/dgmmpzere/video/upload/v1672403518/FabitsVideo_zgf4vb.mp4") !important;
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat !important;
@@ -1027,6 +1028,13 @@ a {
   transform: translate(-50%, -50%) !important;
 }
 
+.vertically__align3 {
+  position: absolute !important;
+  top: 50%;
+  left: 75% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
 .story__paragraph {
   font-family: "Poppins";
   font-style: normal;
@@ -1110,6 +1118,12 @@ a {
 }
 .oppp2 {
   opacity: 0.6 !important;
+  z-index: 1 !important;
+}
+
+.overcome {
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .olol li {
@@ -1120,4 +1134,8 @@ a {
 .footerlinks li {
   padding-bottom: 10px !important;
   font-weight: 500;
+}
+
+.video__tag{
+  filter: brightness(0.3);
 }
