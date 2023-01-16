@@ -6,7 +6,7 @@ ScrollTrigger.create({
   animation: ff1,
   trigger: ".first__animation",
   start: "top top",
-  end: "+=3500",
+  end: "+=1000",
   scrub: 1,
   pin: true,
   pinSpacing: true,
@@ -675,12 +675,14 @@ window.addEventListener("scroll", () => {
 //     x: -100,
 // });
 
-
-
 const play = document.querySelector('.playplace');
+const play2 = document.querySelector('.playplace2');
 const videocontainer = document.querySelector('.fabitsvideo');
+const videocontainer2 = document.querySelector('.fabitsvideo2');
 const video = document.querySelector('.thevideo');
+const video2 = document.querySelector('.thevideo2');
 const closee = document.querySelector('.closekaro');
+const closee2 = document.querySelector('.closekaro2');
 
 
 play.addEventListener('click', function () {
@@ -691,6 +693,16 @@ play.addEventListener('click', function () {
 closee.addEventListener('click', function () {
     videocontainer.classList.add('d-none');
     video.pause();
+});
+
+play2.addEventListener('click', function () {
+    videocontainer2.classList.remove('d-none');
+    video2.play();
+});
+
+closee2.addEventListener('click', function () {
+    videocontainer2.classList.add('d-none');
+    video2.pause();
 });
 
 

@@ -1161,3 +1161,23 @@ a {
   transition: 0.3s;
   color: #000;
 }
+
+.playboy2{
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 22px;
+  padding-bottom: 13px;
+  border-radius: 50%;
+  background-color: rgb(177, 177, 177,0.5);
+  border: #fff solid 5px;
+  cursor: pointer !important;
+  transition: 0.3s;
+  font-size: 40px; 
+  color: #fff;
+}
+
+.playboy2:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  color: #000;
+}
