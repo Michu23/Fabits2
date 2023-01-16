@@ -577,7 +577,7 @@ a {
   min-height: 100px !important;
   min-width: 140px !important;
   border-radius: 50% 50% !important;
-  /* background-color: #fff !important;  */
+  background-color: #fff !important; 
 }
 
 .white__round2 {
@@ -1180,4 +1180,9 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
   transition: 0.3s;
   color: #000;
+}
+
+.hihi{
+  aspect-ratio: 16/9;
+  max-width: 70%;
 }

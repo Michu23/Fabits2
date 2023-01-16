@@ -15,42 +15,52 @@ ScrollTrigger.create({
 });
 
 ff1
-  .to(".fff3", {
-    x: -100,
-    opacity: 0,
-    
-  },
+  .to(
+    ".fff3",
+    {
+      x: -100,
+      opacity: 0,
+    },
     "=-0.1"
   )
-  .from(".fff2", {
-    x: 100,
-    opacity: 0,
-  },
-    "=-0.1"
-
-  )
-  .to(".fff2", {
-    x: 0,
-    opacity: 1,
-  },
+  .from(
+    ".fff2",
+    {
+      x: 100,
+      opacity: 0,
+    },
     "=-0.1"
   )
-  .to(".fff2", {
-    x: -100,
-    opacity: 0,
-  },
+  .to(
+    ".fff2",
+    {
+      x: 0,
+      opacity: 1,
+    },
     "=-0.1"
   )
-  .from(".ffff1", {
-    x: 100,
-    opacity: 0,
-  },
+  .to(
+    ".fff2",
+    {
+      x: -100,
+      opacity: 0,
+    },
     "=-0.1"
   )
-  .to(".ffff1", {
-    x: 0,
-    opacity: 1,
-  },
+  .from(
+    ".ffff1",
+    {
+      x: 100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".ffff1",
+    {
+      x: 0,
+      opacity: 1,
+    },
     "=-0.1"
   );
 
@@ -68,45 +78,54 @@ ScrollTrigger.create({
   markers: true,
 });
 
-m
-  .to(".m3", {
-    x: -100,
-    opacity: 0,
-    
-  },
-    "=-0.1"
-  )
-  .from(".m2", {
-    x: 100,
-    opacity: 0,
-  },
-    "=-0.1"
-
-  )
-  .to(".m2", {
-    x: 0,
-    opacity: 1,
-  },
-    "=-0.1"
-  )
-  .to(".m2", {
+m.to(
+  ".m3",
+  {
     x: -100,
     opacity: 0,
   },
+  "=-0.1"
+)
+  .from(
+    ".m2",
+    {
+      x: 100,
+      opacity: 0,
+    },
     "=-0.1"
   )
-  .from(".m1", {
-    x: 100,
-    opacity: 0,
-  },
+  .to(
+    ".m2",
+    {
+      x: 0,
+      opacity: 1,
+    },
     "=-0.1"
   )
-  .to(".m1", {
-    x: 0,
-    opacity: 1,
-  },
+  .to(
+    ".m2",
+    {
+      x: -100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .from(
+    ".m1",
+    {
+      x: 100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".m1",
+    {
+      x: 0,
+      opacity: 1,
+    },
     "=-0.9"
-  )
+  );
 
 // const bull = gsap.timeline();
 
@@ -122,47 +141,65 @@ m
 //   markers: true,
 // });
 
-
-
-
-
-  
-  
-
-
-
-
 const tl2 = gsap.timeline();
 
 tl2
-  .from(".s11", {
-    x: 100,
-    opacity: 0,
-  })
-  .to(".s11", {
-    x: 100,
-    opacity: 0,
-  })
-  .from(".s22", {
-    x: -100,
-    opacity: 0,
-  })
-  .to(".s22", {
-    x: 0,
-    opacity: 1,
-  })
-  .to(".s22", {
-    x: -100,
-    opacity: 0,
-  })
-  .from(".s33", {
-    x: 100,
-    opacity: 0,
-  })
-  .to(".s33", {
-    x: -100,
-    opacity: 0,
-  });
+  .from(
+    ".s11",
+    {
+      x: 100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".s11",
+    {
+      x: 100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .from(
+    ".s22",
+    {
+      x: -100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".s22",
+    {
+      x: 0,
+      opacity: 1,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".s22",
+    {
+      x: -100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .from(
+    ".s33",
+    {
+      x: 100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".s33",
+    {
+      x: -100,
+      opacity: 0,
+    },
+    "=-0.1"
+  );
 
 ScrollTrigger.create({
   animation: tl2,
@@ -675,36 +712,34 @@ window.addEventListener("scroll", () => {
 //     x: -100,
 // });
 
-const play = document.querySelector('.playplace');
-const play2 = document.querySelector('.playplace2');
-const videocontainer = document.querySelector('.fabitsvideo');
-const videocontainer2 = document.querySelector('.fabitsvideo2');
-const video = document.querySelector('.thevideo');
-const video2 = document.querySelector('.thevideo2');
-const closee = document.querySelector('.closekaro');
-const closee2 = document.querySelector('.closekaro2');
+const play = document.querySelector(".playplace");
+const play2 = document.querySelector(".playplace2");
+const videocontainer = document.querySelector(".fabitsvideo");
+const videocontainer2 = document.querySelector(".fabitsvideo2");
+const video = document.querySelector(".thevideo");
+const video2 = document.querySelector(".thevideo2");
+const closee = document.querySelector(".closekaro");
+const closee2 = document.querySelector(".closekaro2");
 
-
-play.addEventListener('click', function () {
-    videocontainer.classList.remove('d-none');
-    video.play();
+play.addEventListener("click", function () {
+  videocontainer.classList.remove("d-none");
+  video.play();
 });
 
-closee.addEventListener('click', function () {
-    videocontainer.classList.add('d-none');
-    video.pause();
+closee.addEventListener("click", function () {
+  videocontainer.classList.add("d-none");
+  video.pause();
 });
 
-play2.addEventListener('click', function () {
-    videocontainer2.classList.remove('d-none');
-    video2.play();
+play2.addEventListener("click", function () {
+  videocontainer2.classList.remove("d-none");
+  video2.play();
 });
 
-closee2.addEventListener('click', function () {
-    videocontainer2.classList.add('d-none');
-    video2.pause();
+closee2.addEventListener("click", function () {
+  videocontainer2.classList.add("d-none");
+  video2.pause();
 });
-
 
 //  var clickFlag = 0;
 //  $('body').on('click', function () {
@@ -719,4 +754,3 @@ closee2.addEventListener('click', function () {
 //      clickFlag = 1;
 //      videocontainer.classList.remove('d-none');
 //  });
-
