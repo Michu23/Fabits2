@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
   position: fixed !important;
   height: 60px !important;
   top: 0 !important;
-  z-index: 999 !important;
+  z-index: 950 !important;
   /* opacity: 0 !important; */
 }
 
@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
   position: fixed !important;
   /* height: 60px !important; */
   top: 0 !important;
-  z-index: 999 !important;
+  z-index: 950 !important;
   /* opacity: 0 !important; */
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
   position: fixed !important;
   height: 60px !important;
   top: 0 !important;
-  z-index: 999 !important;
+  z-index: 950 !important;
   /* opacity: 0 !important; */
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -1121,6 +1121,7 @@ a {
   z-index: 1 !important;
 }
 
+
 .overcome {
   position: relative !important;
   z-index: 2 !important;
@@ -1137,5 +1138,26 @@ a {
 }
 
 .video__tag{
-  filter: brightness(0.3);
+  filter: brightness(0.1);
+}
+
+
+.playboy{
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 22px;
+  padding-bottom: 13px;
+  border-radius: 50%;
+  background-color: rgb(177, 177, 177,0.5);
+  border: #fff solid 5px;
+  cursor: pointer !important;
+  transition: 0.3s;
+  font-size: 40px; 
+  color: #fff;
+}
+
+.playboy:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  color: #000;
 }

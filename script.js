@@ -18,6 +18,7 @@ ff1
   .to(".fff3", {
     x: -100,
     opacity: 0,
+    
   },
     "=-0.1"
   )
@@ -52,6 +53,77 @@ ff1
   },
     "=-0.1"
   );
+
+const m = gsap.timeline();
+
+ScrollTrigger.create({
+  animation: m,
+  trigger: ".first__animation__mob",
+  start: "top top",
+  end: "+=3500",
+  scrub: 1,
+  pin: true,
+  pinSpacing: true,
+  anticipatePin: 1,
+  markers: true,
+});
+
+m
+  .to(".m3", {
+    x: -100,
+    opacity: 0,
+    
+  },
+    "=-0.1"
+  )
+  .from(".m2", {
+    x: 100,
+    opacity: 0,
+  },
+    "=-0.1"
+
+  )
+  .to(".m2", {
+    x: 0,
+    opacity: 1,
+  },
+    "=-0.1"
+  )
+  .to(".m2", {
+    x: -100,
+    opacity: 0,
+  },
+    "=-0.1"
+  )
+  .from(".m1", {
+    x: 100,
+    opacity: 0,
+  },
+    "=-0.1"
+  )
+  .to(".m1", {
+    x: 0,
+    opacity: 1,
+  },
+    "=-0.9"
+  )
+
+// const bull = gsap.timeline();
+
+// ScrollTrigger.create({
+//   animation: bull,
+//   trigger: ".first__animation",
+//   start: "top top",
+//   end: "+=3500",
+//   scrub: 1,
+//   pin: true,
+//   pinSpacing: true,
+//   anticipatePin: 1,
+//   markers: true,
+// });
+
+
+
 
 
   
@@ -602,3 +674,37 @@ window.addEventListener("scroll", () => {
 //     opacity: 0,
 //     x: -100,
 // });
+
+
+
+const play = document.querySelector('.playplace');
+const videocontainer = document.querySelector('.fabitsvideo');
+const video = document.querySelector('.thevideo');
+const closee = document.querySelector('.closekaro');
+
+
+play.addEventListener('click', function () {
+    videocontainer.classList.remove('d-none');
+    video.play();
+});
+
+closee.addEventListener('click', function () {
+    videocontainer.classList.add('d-none');
+    video.pause();
+});
+
+
+//  var clickFlag = 0;
+//  $('body').on('click', function () {
+//      if (clickFlag == 0) {
+//          videocontainer.classList.add('d-none');
+//      }
+//      else {
+//          clickFlag = 0;
+//      }
+//  });
+//  $('body').on('click', '.playplace', function (event) {
+//      clickFlag = 1;
+//      videocontainer.classList.remove('d-none');
+//  });
+
