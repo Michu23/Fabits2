@@ -281,6 +281,20 @@ ScrollTrigger.create({
   anticipatePin: 1,
 });
 
+gsap.from(".i1", {
+  scrollTrigger: {
+    trigger: ".second__slide__mob",
+    scrub: 1,
+    start: "top center",
+    end: "bottom bottom",
+    // markers: true,
+  },
+  opacity: 0,
+  y: -1000,
+  scale: 0.5,
+});
+
+
 
 gsap.from(".handimg", {
   scrollTrigger: {
