@@ -1,5 +1,72 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.from(".g1", {
+  scrollTrigger: {
+    trigger: ".gift__section",
+    // markers: true,
+    scrub: 1,
+    start: "top+=800 center",
+    end: "bottom center",
+  },
+
+  opacity: 0,
+  x: -300,
+});
+
+gsap.from(".g3", {
+  scrollTrigger: {
+    trigger: ".gift__section",
+    // markers: true,
+    scrub: 1,
+
+    start: "top+=800 center",
+    end: "bottom top",
+  },
+  opacity: 0,
+  x: 300,
+});
+
+const tl = gsap.timeline();
+
+tl.to(".gg3", {
+  x: 100,
+  opacity: 0,
+})
+  .from(".gg2", {
+    x: -100,
+    opacity: 0,
+  })
+  .to(".gg2", {
+    x: 0,
+    opacity: 1,
+  })
+  .to(".gg2", {
+    x: -100,
+    opacity: 0,
+  })
+  .from(".gg1", {
+    x: 100,
+    opacity: 0,
+  })
+  .to(".gg1", {
+    x: 0,
+    opacity: 1,
+  });
+
+ScrollTrigger.create({
+  animation: tl,
+  trigger: ".thegiftboxes__mob",
+  start: "top top",
+  end: "+=2500",
+  scrub: 1,
+  pin: true,
+  pinSpacing: true,
+  // markers: true,
+  anticipatePin: 1,
+});
+
+
+
 const ff1 = gsap.timeline();
 
 ScrollTrigger.create({
@@ -11,7 +78,7 @@ ScrollTrigger.create({
   pin: true,
   pinSpacing: true,
   anticipatePin: 1,
-  markers: true,
+  // markers: true,
 });
 
 ff1
@@ -70,12 +137,12 @@ ScrollTrigger.create({
   animation: m,
   trigger: ".first__animation__mob",
   start: "top top",
-  end: "+=3500",
+  end: "+=1500",
   scrub: 1,
   pin: true,
   pinSpacing: true,
   anticipatePin: 1,
-  markers: true,
+  // markers: true,
 });
 
 m.to(
@@ -124,8 +191,10 @@ m.to(
       x: 0,
       opacity: 1,
     },
-    "=-0.9"
+    "=-0.1"
   );
+
+  
 
 // const bull = gsap.timeline();
 
@@ -212,70 +281,6 @@ ScrollTrigger.create({
   anticipatePin: 1,
 });
 
-const tl = gsap.timeline();
-
-tl.to(".gg3", {
-  x: 100,
-  opacity: 0,
-})
-  .from(".gg2", {
-    x: -100,
-    opacity: 0,
-  })
-  .to(".gg2", {
-    x: 0,
-    opacity: 1,
-  })
-  .to(".gg2", {
-    x: -100,
-    opacity: 0,
-  })
-  .from(".gg1", {
-    x: 100,
-    opacity: 0,
-  })
-  .to(".gg1", {
-    x: 0,
-    opacity: 1,
-  });
-
-ScrollTrigger.create({
-  animation: tl,
-  trigger: ".thegiftboxes__mob",
-  start: "top top",
-  end: "+=2500",
-  scrub: 1,
-  pin: true,
-  pinSpacing: true,
-  //   markers: true,
-  anticipatePin: 1,
-});
-
-gsap.from(".g1", {
-  scrollTrigger: {
-    trigger: ".gift__section",
-    // markers: true,
-    scrub: 1,
-    start: "top center",
-    end: "bottom bottom",
-  },
-
-  opacity: 0,
-  x: -300,
-});
-
-gsap.from(".g3", {
-  scrollTrigger: {
-    trigger: ".gift__section",
-    // markers: true,
-    scrub: 1,
-
-    start: "top center",
-    end: "bottom bottom",
-  },
-  opacity: 0,
-  x: 300,
-});
 
 gsap.from(".handimg", {
   scrollTrigger: {
@@ -452,7 +457,7 @@ gsap.from(".s2", {
     end: "bottom bottom",
   },
   opacity: 0,
-  x: -100,
+  y: -100,
   duration: 3,
 });
 gsap.from(".s3", {
@@ -463,9 +468,57 @@ gsap.from(".s3", {
     end: "bottom bottom",
   },
   opacity: 0,
-  x: -100,
+  x: 100,
   duration: 3,
 });
+
+gsap.from(".whypara", {
+  scrollTrigger: {
+    trigger: ".why__container",
+    scrub: 0.5,
+    start: "top bottom",
+    end: "bottom bottom",
+  },
+  opacity: 0,
+  scale: 0.9,
+});
+
+gsap.from(".grad11", {
+  scrollTrigger: {
+    trigger: ".why__container",
+    scrub: 0.5,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 0,
+  y: 30,
+});
+gsap.from(".grad22", {
+  scrollTrigger: {
+    trigger: ".why__container",
+    scrub: 0.5,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 0,
+  y: 30,
+
+});
+
+
+gsap.from(".grad33", {
+  scrollTrigger: {
+    trigger: ".why__container",
+    scrub: 0.5,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 0,
+  y: 30,
+
+});
+
+
 
 gsap.from(".a6", {
   scrollTrigger: {
@@ -476,8 +529,6 @@ gsap.from(".a6", {
     end: "bottom bottom",
   },
   opacity: 0,
-  x: 100,
-  // scale : 0,
 });
 
 const hamburger = document.querySelector(".open");
@@ -754,3 +805,14 @@ closee2.addEventListener("click", function () {
 //      clickFlag = 1;
 //      videocontainer.classList.remove('d-none');
 //  });
+
+document.addEventListener("DOMContentLoaded", function () {
+    onkeydown = function (e) {
+        if (e.keyCode == 27) {
+            videocontainer.classList.add("d-none");
+            video.pause();
+            videocontainer2.classList.add("d-none");
+            video2.pause();
+        }
+    };
+});

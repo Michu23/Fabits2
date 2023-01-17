@@ -572,10 +572,9 @@ a {
 }
 
 .white__round {
-  max-height: 188px !important;
-  max-width: 245px !important;
-  min-height: 100px !important;
-  min-width: 140px !important;
+  height: 150px !important;
+  width: 150px !important;
+  
   border-radius: 50% 50% !important;
   background-color: #fff !important; 
 }
@@ -1126,6 +1125,10 @@ a {
   position: relative !important;
   z-index: 2 !important;
 }
+.overcome2 {
+  position: relative !important;
+  z-index: 888 !important;
+}
 
 .olol li {
   list-style: disc !important;
@@ -1145,14 +1148,13 @@ a {
 .playboy{
   width: fit-content;
   height: fit-content;
-  padding: 20px 22px;
-  padding-bottom: 13px;
+  padding: 25px;
   border-radius: 50%;
   background-color: rgb(177, 177, 177,0.5);
   border: #fff solid 5px;
   cursor: pointer !important;
   transition: 0.3s;
-  font-size: 40px; 
+  font-size: 30px; 
   color: #fff;
 }
 
@@ -1172,7 +1174,7 @@ a {
   border: #fff solid 5px;
   cursor: pointer !important;
   transition: 0.3s;
-  font-size: 40px; 
+  font-size: 30px; 
   color: #fff;
 }
 
@@ -1183,6 +1185,17 @@ a {
 }
 
 .hihi{
-  aspect-ratio: 16/9;
-  max-width: 70%;
+  aspect-ratio: 16/9 !important;
+  max-width: 80% !important;
+  height: fit-content !important;
+}
+.hihi2{
+  aspect-ratio: 1/1 !important;
+  max-width: 80% !important;
+  height: fit-content !important;
+}
+.hihi3{
+  aspect-ratio: 1/1 !important;
+  max-width: 80% !important;
+  height: fit-content !important;
 }
