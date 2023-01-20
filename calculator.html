@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    .ag-title_link {
+        display: block;
+        padding: 30px 0;
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: #007fff;
+    }
+
+    .ag-title {
+        padding: 30px 0;
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: #000;
+    }
+
+    .ag-format-container {
+        width: 1142px;
+        margin: 0 auto;
+    }
+
+    /* rangeslider */
+    .ag-calculator_input-wrap .rangeslider--horizontal {
+        display: inline-block;
+        height: 8px;
+        margin-top: 20px;
+        background-color: #9099a3;
+
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .ag-calculator_input-wrap .rangeslider__fill {
+        background-color: #78bc1e;
+
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .ag-calculator_input-wrap .rangeslider__handle {
+        height: 24px;
+        width: 24px;
+        border: 1px solid #e6e9eb;
+        background-image: none;
+
+        z-index: 5;
+        top: -7px;
+
+        -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+        -o-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+    }
+
+    .ag-calculator_input-wrap .rangeslider__handle:after {
+        display: none;
+    }
+
+    .ag-calculator_second-level-wrap .rangeslider--horizontal {
+        display: block;
+        float: right;
+        width: 90%;
+    }
+
+    /* /rangeslider */
+
+    .ag-base_btn-wrap {
+        width: 50%;
+        padding: 18px 0 0;
+
+        background-color: #F6F8F9;
+    }
+
+    .ag-base_btn {
+        display: inline-block;
+        line-height: .92;
+        padding: 20px 40px;
+        border: 0;
+        background-color: #78bc1e;
+
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        font-size: 13px;
+        color: #FFF;
+
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .ag-base_btn:hover,
+    .ag-base_btn:focus {
+        background-color: #5c9017;
+
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .ag-calculators-block {
+        padding: 60px 0;
+
+        text-align: center;
+    }
+
+    .ag-calculator-block {
+        display: block;
+        max-width: 528px;
+        width: 100%;
+        margin: 0 auto 60px;
+        background-color: #FFF;
+        border: 1px solid #e6e9eb;
+
+        -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
+        -moz-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
+        -o-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
+
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .ag-calculator_title {
+        display: inline-block;
+        line-height: 1.33;
+        width: 100%;
+        padding: 19px 24px;
+        border-bottom: 1px solid #e6e9eb;
+
+        font-weight: bold;
+        text-align: left;
+        font-size: 18px;
+        color: #4b545c;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .ag-calculator_input-wrap {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 24px;
+        text-align: left;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        position: relative;
+    }
+
+    .ag-calculator_label {
+        line-height: 1.29;
+        margin-top: 14px;
+        margin-bottom: 0;
+
+        font-weight: bold;
+        font-size: 14px;
+        color: #4b545c;
+    }
+
+    .ag-calculator_label-2 {
+        margin-left: 50px;
+    }
+
+    .ag-calculator_text-input {
+        float: right;
+        line-height: 1.5;
+        width: 60px;
+        padding: 9px 8px;
+        border: 1px solid #d3d8dc;
+        background-color: #FFF;
+
+        outline: 0;
+
+        font-size: 16px;
+        color: #4b545c;
+
+        -webkit-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
+        -moz-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
+        -o-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
+        box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
+
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .ag-calculator_percent {
+        display: inline-block;
+        line-height: 1.43;
+
+        font-size: 14px;
+        color: #9099a3;
+
+        position: absolute;
+        left: 24px;
+        bottom: 8px;
+    }
+
+    .ag-calculator_second-level-wrap {
+        display: none;
+    }
+
+    .ag-calculator_more-levels {
+        display: inline-block;
+        line-height: 1.5;
+        width: 100%;
+        padding: 10px 24px;
+
+        cursor: pointer;
+
+        text-decoration: none;
+        text-align: left;
+        font-size: 14px;
+        color: #149ecc;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .ag-calculator_more-levels:hover .ag-calculator_levels {
+        background-color: #f5f5f5;
+    }
+
+    .ag-calculator_levels {
+        display: inline-block;
+        line-height: 24px;
+        width: 100%;
+        padding: 7px 10px;
+        border: 1px solid #e6e9eb;
+
+        font-size: 16px;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .ag-calculator_levels:before {
+        display: inline-block;
+        line-height: 22px;
+        margin-right: 10px;
+
+        vertical-align: top;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .ag-calculator_removed-levels:before {
+        content: "-";
+    }
+
+    .ag-calculator_added-levels:before {
+        content: "+";
+    }
+
+    .ag-calculator_removed-levels {
+        display: none;
+    }
+
+    .js-ag-opened .ag-calculator_removed-levels {
+        display: inline-block;
+    }
+
+    .js-ag-opened .ag-calculator_added-levels {
+        display: none;
+    }
+
+    .ag-calculator_radio-box {
+        display: flex;
+        display: -webkit-flex;
+        width: 100%;
+        margin-top: 12px;
+
+        position: relative;
+    }
+
+    .ag-calculator_radio-box input[type=radio] {
+        visibility: hidden;
+
+        position: absolute;
+    }
+
+    .ag-calculator_radio-box input[type=radio]:checked+label {
+        background-color: #4b545c;
+        color: #FFF;
+    }
+
+    .ag-calculator_radio-label {
+        flex-grow: 1;
+        -webkit-flex-grow: 1;
+        flex-basis: 0;
+        -webkit-flex-basis: 0;
+    }
+
+    .ag-calculator_radio-label {
+        line-height: .92;
+        padding: 16px 10px;
+        border: 1px solid #d3d8dc;
+        background-color: #e6e9eb;
+
+        cursor: pointer;
+
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 13px;
+        color: #9099a3;
+    }
+
+    .ag-calculator_radio-label:nth-last-of-type(1) {
+        -webkit-border-radius: 0 5px 5px 0;
+        -moz-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .ag-calculator_radio-label:nth-of-type(1) {
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .ag-calculator_results-box {
+        display: flex;
+        display: -webkit-flex;
+        width: 100%;
+        padding: 25px 24px;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .ag-calculator_results-info {
+        display: inline-block;
+        width: 50%;
+        padding: 12px 0 0;
+        border-right: 1px solid #e6e9eb;
+        background-color: #f6f8f9;
+
+        text-align: center;
+    }
+
+    .ag-calculator_results-title {
+        line-height: 1.29;
+
+        font-weight: bold;
+        font-size: 14px;
+        color: #4b545c;
+    }
+
+    .ag-calculator_results-sum {
+        font-size: 48px;
+        color: #4b545c;
+    }
+
+    .ag-calculator_results-currency {
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 5px;
+
+        vertical-align: top;
+        font-size: 24px;
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        .ag-format-container {
+            width: 96%;
+        }
+
+    }
+
+    @media only screen and (max-width: 639px) {}
+
+    @media only screen and (max-width: 479px) {}
+
+    @media (min-width: 768px) and (max-width: 979px) {
+        .ag-format-container {
+            width: 750px;
+        }
+
+    }
+
+    @media (min-width: 980px) and (max-width: 1161px) {
+        .ag-format-container {
+            width: 960px;
+        }
+
+    }
+</style>
+
+<body>
+
+
+    <div class="ag-title">SIP CALCULATOR</div>
+
+    <div class="ag-calculators-block">
+        <div class="ag-format-container">
+            <div id="affiliate" class="ag-calculator-block">
+                <div class="ag-calculator_title">Calculate your returns</div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="level1-clients">Monthly Investment</label>
+                    <input id="level1-clients" class="js-calculator_text-input ag-calculator_text-input" type="number"
+                        name="level1-clients" min="0" max="100000" value="10000">
+                    <input class="js-calculator_range" step="1" type="range" name="level1-clients" min="0" max="100000"
+                        value="10000">
+                </div>
+                <!-- <a class="js-calculator_more-levels ag-calculator_more-levels">
+                    <span class="ag-calculator_levels ag-calculator_added-levels">Add three level commissions to
+                        calculations</span>
+                    <span class="ag-calculator_levels ag-calculator_removed-levels">Remove three level
+                        commission from calculation</span>
+                </a> -->
+                <div
+                    class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap">
+                    <label class="ag-calculator_label-2" for="level2-clients">2nd Level Clients attracted by
+                        your partners</label>
+                    <input id="level2-clients" class="js-calculator_text-input ag-calculator_text-input" type="number"
+                        name="level2-clients" min="0" max="100" value="0">
+                    <span class="ag-calculator_percent">16.7%</span>
+                    <input class="js-calculator_range" step="1" type="range" name="level2-clients" min="0" max="100"
+                        value="0">
+                </div>
+                <div
+                    class="js-calculator_input-wrap js-calculator_second-level-wrap ag-calculator_input-wrap ag-calculator_second-level-wrap">
+                    <label class="ag-calculator_label-2" for="level3-clients">3rd Level Clients attracted by
+                        your partners’
+                        partners</label>
+                    <input id="level3-clients" class="js-calculator_text-input ag-calculator_text-input" type="number"
+                        name="level3-clients" min="0" max="100" value="0">
+                    <span class="ag-calculator_percent">5.6%</span>
+                    <input class="js-calculator_range" step="1" type="range" name="level3-clients" min="0" max="100"
+                        value="0">
+                </div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="daily-orders">Expected Return Rate (p.a)</label>
+                    <input id="daily-orders" class="js-calculator_text-input ag-calculator_text-input" type="number"
+                        name="daily-orders" min="0" max="100" value="10">
+                    <input class="js-calculator_range" step="1" type="range" name="daily-orders" min="0" max="100"
+                        value="10">
+                </div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="commission">Time Period</label>
+                    <input id="commission" class="js-calculator_text-input ag-calculator_text-input" type="number"
+                        name="commission" min="0" max="40" value="3" step="0.5">
+                    <input class="js-calculator_range" step="0.5" type="range" name="commission" min="0" max="40"
+                        value="3">
+                </div>
+                <div class="ag-calculator_results-box">
+                    <div class="ag-calculator_results-info">
+                        <div class="ag-calculator_results-title">Your total monthly income</div>
+                        <div id="affiliate-result" class="ag-calculator_results-sum">
+                            25'428<span class="ag-calculator_results-currency">₹</span>
+                        </div>
+                    </div>
+                    <!-- <div class="ag-base_btn-wrap">
+                        <a href="#" class="ag-base_btn">Become a partner</a>
+                    </div> -->
+                </div>
+            </div>
+<!-- 
+            <div id="agent" class="ag-calculator-block">
+                <div class="ag-calculator_title">Calculate your reward</div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="clients-attracted">Clients attracted</label>
+                    <input id="clients-attracted" class="js-calculator_text-input ag-calculator_text-input"
+                        type="number" name="clients-attracted" min="0" max="100" value="15">
+                    <input class="js-calculator_range" step="1" type="range" name="clients-attracted" min="0" max="100"
+                        value="15">
+                </div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="daily-orders-per-client">Daily orders per
+                        client</label>
+                    <input id="daily-orders-per-client" class="js-calculator_text-input ag-calculator_text-input"
+                        type="number" name="daily-orders-per-client" min="0" max="100" value="10" step="1">
+                    <input class="js-calculator_range" step="1" type="range" name="daily-orders-per-client" min="0"
+                        max="100" value="10">
+                </div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="agent-commission">Copy commission share</label>
+                    <input id="agent-commission" class="js-calculator_text-input ag-calculator_text-input" type="number"
+                        name="agent-commission" min="0" max="8" value="3" step="0.5">
+                    <input class="js-calculator_range" step="0.5" type="range" name="agent-commission" min="0" max="8"
+                        value="3">
+                </div>
+                <div class="ag-calculator_results-box">
+                    <div class="ag-calculator_results-info">
+                        <div class="ag-calculator_results-title">Your total monthly income</div>
+                        <div id="agent-result" class="ag-calculator_results-sum">
+                            11'500<span class="ag-calculator_results-currency">$</span>
+                        </div>
+                    </div>
+                    <div class="ag-base_btn-wrap">
+                        <a href="#" class="ag-base_btn">Become a partner</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prostpmarkup" class="ag-calculator-block">
+                <div class="ag-calculator_title">Calculate your reward</div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <span class="ag-calculator_label">Level of partner reward</span>
+                    <div class="js-calculator_radio-box ag-calculator_radio-box">
+                        <input id="price2" class="js-calculator_radio" type="radio" name="partner-reward" value="7"
+                            checked="">
+                        <label class="ag-calculator_radio-label" for="price2">7$</label>
+                        <input id="price3" class="js-calculator_radio" type="radio" name="partner-reward" value="15">
+                        <label class="ag-calculator_radio-label" for="price3">15$</label>
+                        <input id="price4" class="js-calculator_radio" type="radio" name="partner-reward" value="30">
+                        <label class="ag-calculator_radio-label" for="price4">30$</label>
+                        <input id="price5" class="js-calculator_radio" type="radio" name="partner-reward" value="40">
+                        <label class="ag-calculator_radio-label" for="price5">40$</label>
+                        <input id="price6" class="js-calculator_radio" type="radio" name="partner-reward" value="50">
+                        <label class="ag-calculator_radio-label" for="price6">50$</label>
+                    </div>
+                </div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="stp-clients-attracted">Clients attracted</label>
+                    <input id="stp-clients-attracted" class="js-calculator_text-input ag-calculator_text-input"
+                        type="number" name="stp-clients-attracted" min="0" max="100" value="15">
+                    <input class="js-calculator_range" step="1" type="range" name="stp-clients-attracted" min="0"
+                        max="100" value="15">
+                </div>
+                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
+                    <label class="ag-calculator_label" for="stp-daily-orders-per-client">Daily orders per
+                        client</label>
+                    <input id="stp-daily-orders-per-client" class="js-calculator_text-input ag-calculator_text-input"
+                        type="number" name="stp-daily-orders-per-client" min="0" max="100" value="10" step="1">
+                    <input class="js-calculator_range" step="1" type="range" name="stp-daily-orders-per-client" min="0"
+                        max="100" value="15">
+                </div>
+                <div class="ag-calculator_results-box">
+                    <div class="ag-calculator_results-info">
+                        <div class="ag-calculator_results-title">Your total monthly income</div>
+                        <div id="pro-stp-result" class="ag-calculator_results-sum">
+                            1'050<span class="ag-calculator_results-currency">$</span>
+                        </div>
+                    </div>
+                    <div class="ag-base_btn-wrap">
+                        <a href="#" class="ag-base_btn">Become a partner</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script
+        src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.min.js"></script>
+    <script>
+
+
+        (function ($) {
+            $(function () {
+
+
+                $("input[type=range]").rangeslider({ polyfill: true });
+
+                var t = $("#level1-clients"),
+                    a = $("#level2-clients"),
+                    n = $("#level3-clients"),
+                    e = $("#daily-orders"),
+                    i = $("#commission"),
+                    l = $("#affiliate-result"),
+                    s = $("#clients-attracted"),
+                    r = $("#daily-orders-per-client"),
+                    p = $("#agent-result"),
+                    o = $("#agent-commission"),
+                    c = $("#stp-clients-attracted"),
+                    d = $("#stp-daily-orders-per-client"),
+                    v = $("#pro-stp-result"),
+                    u = $(".tab-pane.active").attr("id"),
+                    h = $(".js-calculator_second-level-wrap"),
+                    etf__returns = 10,
+                    mf__returns = 8.7;
+
+
+
+                function agFormula() {
+                    l.html(parseInt(t.val() * (10 * e.val()) + i.val() * t.val() * e.val() + a.val() * e.val() * 10 * .167 + n.val() * e.val() * 10 * .056)).digits().append("<span class=\"ag-calculator_results-currency\">₹</span>");
+                    //l.html(parseInt(t.val() * (1 + etf__returns / 12) * ((1+etf__returns/12)^(i*12)-1 )/(etf__returns/12) ).digits().append("<span class=\"ag-calculator_results-currency\">₹</span>");
+                    v.html(parseInt($(".js-calculator_radio-box").find("input[name=partner-reward]:checked").val() * c.val() * d.val())).digits().append("<span class=\"ag-calculator_results-currency\">₹</span>");
+                    p.html(parseInt(s.val() * (15 * r.val()) + o.val() * s.val() * r.val())).digits().append("<span class=\"ag-calculator_results-currency\">₹</span>");
+                }
+                $(".js-calculator_input-wrap > .js-calculator_text-input").on("change input", function () {
+                    $(this).parent().find(".js-calculator_range").val($(this).val()).change();
+                    agFormula();
+                });
+
+                $(".js-calculator_input-wrap > .js-calculator_range").on("change input", function () {
+                    $(this).parent().find(".js-calculator_text-input").val($(this).val());
+
+                    agFormula();
+                });
+
+                $(".js-calculator_input-wrap > .js-calculator_radio-box > .js-calculator_radio").on("change input", function () {
+                    agFormula();
+                });
+
+                $(".js-calculator_more-levels").click(function (t) {
+                    if ($(this).hasClass("js-ag-opened")) {
+                        h.hide();
+                        h.find(".js-calculator_text-input").val(0);
+                        h.find(".js-calculator_range").val(0).change();
+                        $(this).removeClass("js-ag-opened");
+                    } else {
+                        h.css("display", "inline-block");
+                        h.find(".js-calculator_text-input").val(15);
+                        h.find(".js-calculator_range").val(15).change();
+                        $(this).addClass("js-ag-opened");
+                    }
+                    agFormula();
+                    t.preventDefault();
+                });
+
+                $.fn.digits = function () {
+                    return this.each(function () {
+                        $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1'"));
+                    });
+                };
+
+                agFormula();
+
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>

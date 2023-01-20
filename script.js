@@ -137,18 +137,17 @@ ScrollTrigger.create({
   animation: m,
   trigger: ".first__animation__mob",
   start: "top top",
-  end: "+=1500",
+  end: "+=500",
   scrub: 1,
   pin: true,
   pinSpacing: true,
   anticipatePin: 1,
-  // markers: true,
 });
 
 m.to(
   ".m3",
   {
-    x: -100,
+    x: -150,
     opacity: 0,
   },
   "=-0.1"
@@ -156,7 +155,7 @@ m.to(
   .from(
     ".m2",
     {
-      x: 100,
+      x: 150,
       opacity: 0,
     },
     "=-0.1"
@@ -172,7 +171,7 @@ m.to(
   .to(
     ".m2",
     {
-      x: -100,
+      x: -150,
       opacity: 0,
     },
     "=-0.1"
@@ -180,7 +179,7 @@ m.to(
   .from(
     ".m1",
     {
-      x: 100,
+      x: 150,
       opacity: 0,
     },
     "=-0.1"
@@ -830,3 +829,169 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
