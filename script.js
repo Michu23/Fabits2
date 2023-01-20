@@ -137,7 +137,7 @@ ScrollTrigger.create({
   animation: m,
   trigger: ".first__animation__mob",
   start: "top top",
-  end: "+=500",
+  end: "+=1000",
   scrub: 1,
   pin: true,
   pinSpacing: true,
