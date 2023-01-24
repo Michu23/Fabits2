@@ -137,7 +137,7 @@ ScrollTrigger.create({
   animation: m,
   trigger: ".first__animation__mob",
   start: "top top",
-  end: "+=1000",
+  end: "+=1200",
   scrub: 1,
   pin: true,
   pinSpacing: true,
@@ -192,8 +192,7 @@ m.to(
     },
     "=-0.1"
   );
-
-  
+ 
 
 // const bull = gsap.timeline();
 
