@@ -1197,7 +1197,7 @@ a {
 
 .hihi{
   aspect-ratio: 16/9 !important;
-  max-width: 80% !important;
+  max-width: 100% !important;
   height: fit-content !important;
 }
 .hihi2{
