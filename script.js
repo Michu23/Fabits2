@@ -363,11 +363,11 @@ gsap.from(".handhh", {
   scrollTrigger: {
     trigger: ".hand__section__mob",
     // markers: true,
-    scrub: 1,
-    start: "top center",
+    scrub: 0.3,
+    start: "top bottom",
     end: "bottom bottom",
   },
-  opacity: 1,
+  opacity: 0,
   y: -50,
   // scale : 0,
 });
