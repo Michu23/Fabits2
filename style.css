@@ -553,6 +553,17 @@ a {
   background-position: top center !important;
   background-repeat: no-repeat !important;
 }
+.second__content22 {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 30, 0.5) 90%,
+    rgba(0, 0, 30, 0.5) 97.14%
+  ) !important;
+  /* background-image: url(./FabitsAssets/Images/calm-businesswoman-relaxing-with-breath-gymnastics.jpg) !important; */
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+}
 
 .second__container {
   margin: 0 !important;

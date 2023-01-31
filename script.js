@@ -131,67 +131,67 @@ ff1
     "=-0.1"
   );
 
-const m = gsap.timeline();
+// const m = gsap.timeline();
 
-ScrollTrigger.create({
-  animation: m,
-  trigger: ".first__animation__mob",
-  start: "top top",
-  end: "+=1200",
-  scrub: 1,
-  pin: true,
-  pinSpacing: true,
-  anticipatePin: 1,
-});
+// ScrollTrigger.create({
+//   animation: m,
+//   trigger: ".first__animation__mob",
+//   start: "top top",
+//   end: "+=1200",
+//   scrub: 1,
+//   pin: true,
+//   pinSpacing: true,
+//   anticipatePin: 1,
+// });
 
-m.to(
-  ".m3",
-  {
-    x: -150,
-    opacity: 0,
-  },
-  "=-0.1"
-)
-  .from(
-    ".m2",
-    {
-      x: 150,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".m2",
-    {
-      x: 0,
-      opacity: 1,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".m2",
-    {
-      x: -150,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .from(
-    ".m1",
-    {
-      x: 150,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".m1",
-    {
-      x: 0,
-      opacity: 1,
-    },
-    "=-0.1"
-  );
+// m.to(
+//   ".m3",
+//   {
+//     x: -150,
+//     opacity: 0,
+//   },
+//   "=-0.1"
+// )
+//   .from(
+//     ".m2",
+//     {
+//       x: 150,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".m2",
+//     {
+//       x: 0,
+//       opacity: 1,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".m2",
+//     {
+//       x: -150,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .from(
+//     ".m1",
+//     {
+//       x: 150,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".m1",
+//     {
+//       x: 0,
+//       opacity: 1,
+//     },
+//     "=-0.1"
+//   );
  
 
 // const bull = gsap.timeline();
