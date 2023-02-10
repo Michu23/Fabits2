@@ -57,7 +57,7 @@ ScrollTrigger.create({
   animation: tl,
   trigger: ".thegiftboxes__mob",
   start: "top top",
-  end: "+=2500",
+  end: "+=5500",
   scrub: 1,
   pin: true,
   pinSpacing: true,
@@ -65,7 +65,69 @@ ScrollTrigger.create({
   anticipatePin: 1,
 });
 
+const secure = gsap.timeline();
 
+secure.to(
+  ".secure__phone",
+  {
+    y: -150,
+    opacity: 0,
+  },
+  "=-0.1"
+);
+
+ScrollTrigger.create({
+  animation: secure,
+  trigger: ".secure",
+  start: "top+=1000 top",
+  end: "+=2000",
+  scrub: 1,
+  // pin: true,
+  pinSpacing: true,
+  anticipatePin: 1,
+
+  markers: true,
+});
+
+const mockup = gsap.timeline();
+
+mockup
+  .to(
+    ".phone",
+    {
+      y: -150,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".phone2",
+    {
+      y: -150,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".phone3",
+    {
+      y: 0,
+      opacity: 1,
+    },
+    "=-0.1"
+  );
+
+ScrollTrigger.create({
+  animation: mockup,
+  trigger: ".mockupssss",
+  start: "top top",
+  end: "+=2000",
+  scrub: 1,
+  pin: true,
+  pinSpacing: true,
+  anticipatePin: 1,
+  // markers: true,
+});
 
 const ff1 = gsap.timeline();
 
@@ -192,7 +254,6 @@ ff1
 //     },
 //     "=-0.1"
 //   );
- 
 
 // const bull = gsap.timeline();
 
@@ -291,8 +352,6 @@ gsap.from(".i1", {
   y: -1000,
   scale: 0.5,
 });
-
-
 
 gsap.from(".handimg", {
   scrollTrigger: {
@@ -514,9 +573,7 @@ gsap.from(".grad22", {
   },
   opacity: 0,
   y: 30,
-
 });
-
 
 gsap.from(".grad33", {
   scrollTrigger: {
@@ -527,10 +584,7 @@ gsap.from(".grad33", {
   },
   opacity: 0,
   y: 30,
-
 });
-
-
 
 gsap.from(".a6", {
   scrollTrigger: {
@@ -819,178 +873,12 @@ closee2.addEventListener("click", function () {
 //  });
 
 document.addEventListener("DOMContentLoaded", function () {
-    onkeydown = function (e) {
-        if (e.keyCode == 27) {
-            videocontainer.classList.add("d-none");
-            video.pause();
-            videocontainer2.classList.add("d-none");
-            video2.pause();
-        }
-    };
+  onkeydown = function (e) {
+    if (e.keyCode == 27) {
+      videocontainer.classList.add("d-none");
+      video.pause();
+      videocontainer2.classList.add("d-none");
+      video2.pause();
+    }
+  };
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
