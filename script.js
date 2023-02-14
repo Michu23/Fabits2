@@ -1,5 +1,200 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const hamburger = document.querySelector(".open");
+const navs = document.querySelector(".navs");
+const header = document.querySelector(".headertag");
+const close = document.querySelector(".close");
+const pro = document.querySelector(".product__nav");
+const nav__dropdown = document.querySelector(".product__nav__dropdown");
+
+const play = document.querySelector(".playplace");
+const play2 = document.querySelector(".playplace2");
+const videocontainer = document.querySelector(".fabitsvideo");
+const videocontainer2 = document.querySelector(".fabitsvideo2");
+const video = document.querySelector(".thevideo");
+const video2 = document.querySelector(".thevideo2");
+const closee = document.querySelector(".closekaro");
+const closee2 = document.querySelector(".closekaro2");
+
+var mockup__desktop = gsap.timeline({
+  repeat: -1,
+});
+
+mockup__desktop
+  .from(
+    ".content",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    0
+  )
+  .from(
+    ".phone",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    0
+  )
+  .to(
+    ".phone",
+    {
+      y: -500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    5
+  )
+  .to(
+    ".content1",
+    {
+      y: -500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    5
+  )
+  .from(
+    ".content2",
+    {
+      y: 500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    5
+  )
+  .from(
+    ".phone2",
+    {
+      y: 500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    5
+  )
+  .to(
+    ".phone2",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    5
+  )
+
+  .to(
+    ".content2",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    5
+  )
+  .to(
+    ".phone2",
+    {
+      y: -500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    10
+  )
+
+  .to(
+    ".content2",
+    {
+      y: -500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    10
+  )
+  .from(
+    ".content3",
+    {
+      y: 500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    10
+  )
+  .from(
+    ".phone3",
+    {
+      y: 500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    10
+  )
+  .to(
+    ".content3",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    15
+  )
+  .to(
+    ".phone3",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    15
+  )
+  .to(
+    ".phone3",
+    {
+      y: -500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    15
+  )
+  .to(
+    ".content3",
+    {
+      y: -500,
+      display: "none",
+      ease: "ease.inOut(1.7)",
+    },
+    15
+  )
+
+  .from(
+    ".content",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    15
+  )
+  .from(
+    ".phone",
+    {
+      y: 0,
+      display: "block",
+      ease: "ease.inOut(1.7)",
+    },
+    15
+  );
+
+ScrollTrigger.create({
+  animation: mockup__desktop,
+  trigger: ".mockups",
+  start: "top top",
+  end: "+=2000",
+  // markers: true,
+});
+
 gsap.from(".g1", {
   scrollTrigger: {
     trigger: ".gift__section",
@@ -16,9 +211,7 @@ gsap.from(".g1", {
 gsap.from(".g3", {
   scrollTrigger: {
     trigger: ".gift__section",
-    // markers: true,
     scrub: 1,
-
     start: "top+=800 center",
     end: "bottom top",
   },
@@ -65,69 +258,27 @@ ScrollTrigger.create({
   anticipatePin: 1,
 });
 
-const secure = gsap.timeline();
+function pauseTheVideo() {
+  console.log("pause");
+  video.pause();
+  video2.pause;
+  if (video.paused) {
+    video.currentTime = 0;
+    video.play();
+    video.muted = false;
+  }
+}
 
-secure.to(
-  ".secure__phone",
-  {
-    y: -150,
-    opacity: 0,
-  },
-  "=-0.1"
-);
+function playTheVideo() {
+  video.play();
+  video2.pause();
+  video.muted = false;
+  console.log("play");
+}
 
-ScrollTrigger.create({
-  animation: secure,
-  trigger: ".secure",
-  start: "top+=1000 top",
-  end: "+=2000",
-  scrub: 1,
-  // pin: true,
-  pinSpacing: true,
-  anticipatePin: 1,
-
-  markers: true,
-});
-
-const mockup = gsap.timeline();
-
-mockup
-  .to(
-    ".phone",
-    {
-      y: -150,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".phone2",
-    {
-      y: -150,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".phone3",
-    {
-      y: 0,
-      opacity: 1,
-    },
-    "=-0.1"
-  );
-
-ScrollTrigger.create({
-  animation: mockup,
-  trigger: ".mockupssss",
-  start: "top top",
-  end: "+=2000",
-  scrub: 1,
-  pin: true,
-  pinSpacing: true,
-  anticipatePin: 1,
-  // markers: true,
-});
+function functionName() {
+  video.muted = false;
+}
 
 const ff1 = gsap.timeline();
 
@@ -136,51 +287,57 @@ ScrollTrigger.create({
   trigger: ".first__animation",
   start: "top top",
   end: "+=1000",
-  scrub: 1,
+  scrub: true,
   pin: true,
   pinSpacing: true,
-  anticipatePin: 1,
+  anticipatePin: 0.1,
   // markers: true,
 });
 
 ff1
+  .call(functionName, null)
   .to(
     ".fff3",
     {
-      x: -100,
-      opacity: 0,
+      // x: -100,
+      // opacity: 0,
+      display: "none",
     },
     "=-0.1"
   )
+  // call a function next before the next animation
+  .call(pauseTheVideo, null)
   .from(
     ".fff2",
     {
-      x: 100,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".fff2",
-    {
       x: 0,
-      opacity: 1,
+      // opacity: 0,
     },
     "=-0.1"
   )
   .to(
     ".fff2",
     {
-      x: -100,
-      opacity: 0,
+      // x: 0,
+      // opacity: 1,
+      display: "none",
     },
     "=-0.1"
   )
+  // .to(
+  //   ".fff2",
+  //   {
+  //     x: -100,
+  //     opacity: 0,
+  //     'display': 'none',
+  //   },
+  //   "=-0.1"
+  // )
   .from(
     ".ffff1",
     {
       x: 100,
-      opacity: 0,
+      // opacity: 0,
     },
     "=-0.1"
   )
@@ -192,6 +349,42 @@ ff1
     },
     "=-0.1"
   );
+
+var b1 = gsap.timeline({
+  defaults: {
+    duration: 0.5,
+    ease: "Back.easeOut.config(2)",
+    opacity: 0,
+  },
+  scrollTrigger: {
+    trigger: ".secure",
+    start: "top-=100 top",
+    end: "+=1",
+    // markers: true,
+  },
+});
+
+b1.from(".go1", {
+  x: -10,
+  transformOrigin: "left",
+  delay: 0,
+});
+
+b1.from(".go2", {
+  x: -10,
+  transformOrigin: "left",
+  delay: 0.1,
+});
+
+b1.from(".go3", {
+  x: -10,
+  transformOrigin: "left",
+});
+
+b1.from(".go4", {
+  x: -10,
+  transformOrigin: "left",
+});
 
 // const m = gsap.timeline();
 
@@ -597,13 +790,6 @@ gsap.from(".a6", {
   opacity: 0,
 });
 
-const hamburger = document.querySelector(".open");
-const navs = document.querySelector(".navs");
-const header = document.querySelector(".headertag");
-const close = document.querySelector(".close");
-const pro = document.querySelector(".product__nav");
-const nav__dropdown = document.querySelector(".product__nav__dropdown");
-
 const product__nav = document.querySelector(".product__nav");
 
 hamburger.addEventListener("click", () => {
@@ -829,18 +1015,16 @@ window.addEventListener("scroll", () => {
 //     x: -100,
 // });
 
-const play = document.querySelector(".playplace");
-const play2 = document.querySelector(".playplace2");
-const videocontainer = document.querySelector(".fabitsvideo");
-const videocontainer2 = document.querySelector(".fabitsvideo2");
-const video = document.querySelector(".thevideo");
-const video2 = document.querySelector(".thevideo2");
-const closee = document.querySelector(".closekaro");
-const closee2 = document.querySelector(".closekaro2");
-
 play.addEventListener("click", function () {
   videocontainer.classList.remove("d-none");
   video.play();
+});
+
+video.addEventListener("click", function () {
+  function toggleMute() {
+    video.muted = !video.muted;
+  }
+  toggleMute();
 });
 
 closee.addEventListener("click", function () {
@@ -882,3 +1066,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+// const secure = gsap.timeline();
+
+// secure.to(
+//   ".secure__phone",
+//   {
+//     y: -150,
+//     opacity: 0,
+//   },
+//   "=-0.1"
+// );
+
+// const mockup = gsap.timeline();
+// mockup
+//   .to(
+//     ".phone",
+//     {
+//       y: -150,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".phone2",
+//     {
+//       y: -150,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".phone3",
+//     {
+//       y: 0,
+//       opacity: 1,
+//     },
+//     "=-0.1"
+//   );

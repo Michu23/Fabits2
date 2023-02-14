@@ -446,8 +446,23 @@ body::-webkit-scrollbar {
   letter-spacing: -0.02em !important;
   height: 40px;
   color: #000000;
-  /* margin-right: 100px !important; */
-  /* bottom: 10% !important; */
+  border: 0px !important;
+}
+
+
+.about__fabits4 {
+  color: #fff !important;
+  background: linear-gradient(180deg, #2e2e2e 0%, #222222 100%);
+  border-radius: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 16px;
+  padding: 5px 20px !important;
+  line-height: 20px;
+  letter-spacing: -0.02em !important;
+  height: 40px;
+  color: #000000;
   border: 0px !important;
 }
 
@@ -602,12 +617,20 @@ a {
   padding-top: 10px;
 }
 
+.op{
+  display: none;
+}
+
+.oc{
+  object-fit: cover !important;
+}
+
 .white__round {
   height: 150px !important;
   width: 150px !important;
 
   border-radius: 50% 50% !important;
-  background-color: rgb(232, 230, 255) !important;
+  background-color: #e9e8f0 !important;
 }
 
 .white__round2 {
@@ -1030,9 +1053,9 @@ a {
   opacity: 0.8 !important;
 }
 
-.fabitslogo {
-  width: clamp(200px, 60%, 400px) !important;
-}
+/* .fabitslogo {
+  width: clamp(100px, 60%, 300px) !important;
+} */
 
 .justify {
   text-align: justify !important;
@@ -1051,7 +1074,7 @@ a {
 
 .vertically__align {
   position: absolute !important;
-  top: 50%;
+  top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
 }
@@ -1072,6 +1095,14 @@ a {
 .vertically__align4 {
   position: absolute !important;
   top: 50%;
+
+}
+.vertically__align5 {
+  position: absolute !important;
+  top: 50%;
+  left:  90% !important;
+  transform: translate(-50%, -50%) !important;
+
 
 }
 
@@ -1096,6 +1127,31 @@ a {
   text-align: justify !important;
   padding: 0 !important;
   margin-bottom: 5px;
+}
+.conn p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px !important;
+  /* or 160% */
+  text-align: justify !important;
+  padding: 0 !important;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.con p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px !important;
+  /* or 160% */
+  text-align: justify !important;
+  padding: 0 !important;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .proimage {
@@ -1181,7 +1237,7 @@ a {
 }
 
 .video__tag {
-  filter: brightness(0.3) !important;
+  filter: brightness(0.2) !important;
 }
 .video__tag2 {
   filter: brightness(0.3) !important;
@@ -1668,6 +1724,14 @@ body {
   }
 }
 
+/* .blend{
+  mix-blend-mode: color-burn;
+} */
+
+
+.bggg{
+  background-color: #e9e8f0 !important;
+}
 
 .accordion-button:not(.collapsed) {
   /* color: #fff; */
@@ -1972,4 +2036,9 @@ body {
 
         .heads h4{
           color: var(--yellow);
+        }
+
+        .con{
+          max-height:  500px;
+          overflow-y: hidden;
         }
