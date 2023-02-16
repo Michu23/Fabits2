@@ -637,6 +637,40 @@ gsap.from(".handh", {
   // scale : 0,
 });
 
+gsap.from(".person1", {
+  scrollTrigger: {
+    trigger: ".customers",
+    // markers: true,
+    scrub: 4,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 1,
+  x: -50,
+});
+gsap.from(".person2", {
+  scrollTrigger: {
+    trigger: ".customers",
+    // markers: true,
+    scrub: 4,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 1,
+  y: 50,
+});
+gsap.from(".person3", {
+  scrollTrigger: {
+    trigger: ".customers",
+    // markers: true,
+    scrub: 4,
+    start: "top center",
+    end: "bottom bottom",
+  },
+  opacity: 1,
+  x: 50,
+});
+
 gsap.from(".a1", {
   scrollTrigger: {
     trigger: ".second_slide_pc",
@@ -1104,3 +1138,4 @@ document.addEventListener("DOMContentLoaded", function () {
 //     },
 //     "=-0.1"
 //   );
+
