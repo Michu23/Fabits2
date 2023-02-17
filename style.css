@@ -639,6 +639,10 @@
         border-radius: 50% 50% !important;
         background-color: #e9e8f0 !important;
       }
+
+      .iphone__img{
+        max-height: 140px !important;
+      }
       
       .mockupyo{
         max-width: 350px !important;
