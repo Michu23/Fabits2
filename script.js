@@ -69,7 +69,7 @@ ScrollTrigger.create({
 });
 
 ff1
-  .call(functionName, null)
+  // .call(functionName, null)
   .to(
     ".fff3",
     {
@@ -145,76 +145,123 @@ b1.from(".go4", {
 
 
 
-const tl2 = gsap.timeline();
+// const tl2 = gsap.timeline();
 
-tl2
-  .from(
-    ".s11",
-    {
-      x: 100,
-      opacity: 0,
+// tl2
+//   .from(
+//     ".s11",
+//     {
+//       x: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".s11",
+//     {
+//       x: 100,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .from(
+//     ".s22",
+//     {
+//       x: -100,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".s22",
+//     {
+//       x: 0,
+//       opacity: 1,
+//     },
+//     "=-0.1"
+//   )
+//   .to(
+//     ".s22",
+//     {
+//       x: -100,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+//   .from(
+//     ".s33",
+//     {
+//       x: 100,
+//       opacity: 0,
+//     },
+//     "=-0.1"
+//   )
+
+// ScrollTrigger.create({
+//   animation: tl2,
+//   trigger: ".second__slide__mob",
+//   start: "top top",
+//   end: "+=1500",
+//   scrub: 1,
+//   onLeave: function (self) {
+//     let start = self.start;
+//     self.scroll(self.start);
+//     self.disable();
+//     self.animation.progress(1);
+//     ScrollTrigger.refresh();
+//     window.scrollTo(0, start);
+//   }
+// });
+
+const gs2 = gsap.timeline(
+  {
+    defaults: {
+      duration: 2,
+      ease: "Back.easeOut.config(2)",
+      // repeat: 1,
+      repeatDelay: 0.5,
+
     },
-    "=-0.1"
-  )
-  .to(
-    ".s11",
-    {
-      x: 100,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .from(
-    ".s22",
-    {
-      x: -100,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".s22",
-    {
-      x: 0,
-      opacity: 1,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".s22",
-    {
-      x: -100,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .from(
-    ".s33",
-    {
-      x: 100,
-      opacity: 0,
-    },
-    "=-0.1"
-  )
-  .to(
-    ".s33",
-    {
-      x: -100,
-      opacity: 0,
-    },
-    "=-0.1"
-  );
+  },
+   
+)
+
+gs2 
+  .from(".s11", {
+    x: 0,
+  })
+  .to(".s11", {
+    opacity: 1,
+  })
+  .to(".s11", {
+    opacity: 0,
+  })
+  .from(".s22", {
+    opacity: 0,
+  })
+  .to(".s22", {
+    opacity: 1,
+  })
+
+  .to(".s22", {
+    opacity: 0,
+  })
+  .from(".s33", {
+    opacity: 0,
+  })
+  .to(".s33", {
+    opacity: 1,
+  })
+
 
 ScrollTrigger.create({
-  animation: tl2,
+  animation: gs2,
   trigger: ".second__slide__mob",
   start: "top top",
-  end: "+=2500",
-  scrub: 1,
-  pin: true,
-  pinSpacing: true,
-  anticipatePin: 1,
+  end: "+=2000",
+  
 });
+
+  
 
 
 gsap.from(".handimg", {
@@ -407,4 +454,48 @@ window.addEventListener("scroll", () => {
   scrollProgresss.style.width = `${(scrollTop / heightt) * 100}%`;
 });
 
+
+gsap.from(".slide", {
+  duration: 2,
+  scale: 0.5, 
+  scrollTrigger: {
+    trigger: ".partners",
+    start: "top center",
+  // markers: true,
+
+  },
+  opacity: 0, 
+  delay: 0.5, 
+  stagger: 0.2,
+  ease: "elastic", 
+  force3D: true
+});
+
+document.querySelectorAll(".box").forEach(function(box) {
+  box.addEventListener("click", function() {
+    gsap.to(".box", {
+      duration: 0.5, 
+      opacity: 0, 
+      scrollTrigger: {
+        trigger: ".partners",
+        start: "top center",
+        // markers: true,
+      },
+      y: -100, 
+      stagger: 0.1,
+      ease: "back.in"
+    });
+  });
+});
+
+const blob = document.getElementById("blob");
+
+document.body.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
 
