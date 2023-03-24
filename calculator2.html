@@ -6,421 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link src="dist/apexcharts.css" rel="stylesheet" type="text/css">
 </head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<style>
-    .ag-title_link {
-        display: block;
-        padding: 30px 0;
-
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        color: #007fff;
-    }
-
-    .ag-title {
-        padding: 30px 0;
-
-        text-align: center;
-        font-weight: bold;
-        font-size: 30px;
-        color: #000;
-    }
-
-    .ag-format-container {
-        width: 1142px;
-        margin: 0 auto;
-    }
-
-    /* rangeslider */
-    .ag-calculator_input-wrap .rangeslider--horizontal {
-        display: inline-block;
-        height: 8px;
-        margin-top: 20px;
-        background-color: #9099a3;
-
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-    }
-
-    .ag-calculator_input-wrap .rangeslider__fill {
-        background-color: #78bc1e;
-
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-    }
-
-    .ag-calculator_input-wrap .rangeslider__handle {
-        height: 24px;
-        width: 24px;
-        border: 1px solid #e6e9eb;
-        background-image: none;
-
-        z-index: 5;
-        top: -7px;
-
-        -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
-        -moz-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
-        -o-box-shadow: 0 0 7px rgba(0, 0, 0, .3);
-        box-shadow: 0 0 7px rgba(0, 0, 0, .3);
-    }
-
-    .ag-calculator_input-wrap .rangeslider__handle:after {
-        display: none;
-    }
-
-    .ag-calculator_second-level-wrap .rangeslider--horizontal {
-        display: block;
-        float: right;
-        width: 90%;
-    }
-
-    /* /rangeslider */
-
-    .ag-base_btn-wrap {
-        width: 50%;
-        padding: 18px 0 0;
-
-        background-color: #F6F8F9;
-    }
-
-    .ag-base_btn {
-        display: inline-block;
-        line-height: .92;
-        padding: 20px 40px;
-        border: 0;
-        background-color: #78bc1e;
-
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        font-size: 13px;
-        color: #FFF;
-
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-    }
-
-    .ag-base_btn:hover,
-    .ag-base_btn:focus {
-        background-color: #5c9017;
-
-        text-decoration: none;
-        color: #FFF;
-    }
-
-    .ag-calculators-block {
-        padding: 60px 0;
-
-        text-align: center;
-    }
-
-    .ag-calculator-block {
-        display: block;
-        max-width: 528px;
-        width: 100%;
-        margin: 0 auto 60px;
-        background-color: #FFF;
-        border: 1px solid #e6e9eb;
-
-        -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
-        -moz-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
-        -o-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
-        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
-
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-    }
-
-    .ag-calculator_title {
-        display: inline-block;
-        line-height: 1.33;
-        width: 100%;
-        padding: 19px 24px;
-        border-bottom: 1px solid #e6e9eb;
-
-        font-weight: bold;
-        text-align: left;
-        font-size: 18px;
-        color: #4b545c;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    .ag-calculator_input-wrap {
-        display: inline-block;
-        width: 100%;
-        padding: 15px 24px;
-        text-align: left;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-
-        position: relative;
-    }
-
-    .ag-calculator_label {
-        line-height: 1.29;
-        margin-top: 14px;
-        margin-bottom: 0;
-
-        font-weight: bold;
-        font-size: 14px;
-        color: #4b545c;
-    }
-
-    .ag-calculator_label-2 {
-        margin-left: 50px;
-    }
-
-    .ag-calculator_text-input {
-        float: right;
-        line-height: 1.5;
-        width: 60px;
-        padding: 9px 8px;
-        border: 1px solid #d3d8dc;
-        background-color: #FFF;
-
-        outline: 0;
-
-        font-size: 16px;
-        color: #4b545c;
-
-        -webkit-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
-        -moz-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
-        -o-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
-        box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, .12);
-
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-    }
-
-    .ag-calculator_percent {
-        display: inline-block;
-        line-height: 1.43;
-
-        font-size: 14px;
-        color: #9099a3;
-
-        position: absolute;
-        left: 24px;
-        bottom: 8px;
-    }
-
-    .ag-calculator_second-level-wrap {
-        display: none;
-    }
-
-    .ag-calculator_more-levels {
-        display: inline-block;
-        line-height: 1.5;
-        width: 100%;
-        padding: 10px 24px;
-
-        cursor: pointer;
-
-        text-decoration: none;
-        text-align: left;
-        font-size: 14px;
-        color: #149ecc;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    .ag-calculator_more-levels:hover .ag-calculator_levels {
-        background-color: #f5f5f5;
-    }
-
-    .ag-calculator_levels {
-        display: inline-block;
-        line-height: 24px;
-        width: 100%;
-        padding: 7px 10px;
-        border: 1px solid #e6e9eb;
-
-        font-size: 16px;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-    }
-
-    .ag-calculator_levels:before {
-        display: inline-block;
-        line-height: 22px;
-        margin-right: 10px;
-
-        vertical-align: top;
-        text-align: center;
-        font-size: 22px;
-    }
-
-    .ag-calculator_removed-levels:before {
-        content: "-";
-    }
-
-    .ag-calculator_added-levels:before {
-        content: "+";
-    }
-
-    .ag-calculator_removed-levels {
-        display: none;
-    }
-
-    .js-ag-opened .ag-calculator_removed-levels {
-        display: inline-block;
-    }
-
-    .js-ag-opened .ag-calculator_added-levels {
-        display: none;
-    }
-
-    .ag-calculator_radio-box {
-        display: flex;
-        display: -webkit-flex;
-        width: 100%;
-        margin-top: 12px;
-
-        position: relative;
-    }
-
-    .ag-calculator_radio-box input[type=radio] {
-        visibility: hidden;
-
-        position: absolute;
-    }
-
-    .ag-calculator_radio-box input[type=radio]:checked+label {
-        background-color: #4b545c;
-        color: #FFF;
-    }
-
-    .ag-calculator_radio-label {
-        flex-grow: 1;
-        -webkit-flex-grow: 1;
-        flex-basis: 0;
-        -webkit-flex-basis: 0;
-    }
-
-    .ag-calculator_radio-label {
-        line-height: .92;
-        padding: 16px 10px;
-        border: 1px solid #d3d8dc;
-        background-color: #e6e9eb;
-
-        cursor: pointer;
-
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 13px;
-        color: #9099a3;
-    }
-
-    .ag-calculator_radio-label:nth-last-of-type(1) {
-        -webkit-border-radius: 0 5px 5px 0;
-        -moz-border-radius: 0 5px 5px 0;
-        border-radius: 0 5px 5px 0;
-    }
-
-    .ag-calculator_radio-label:nth-of-type(1) {
-        -webkit-border-radius: 5px 0 0 5px;
-        -moz-border-radius: 5px 0 0 5px;
-        border-radius: 5px 0 0 5px;
-    }
-
-    .ag-calculator_results-box {
-        display: flex;
-        display: -webkit-flex;
-        width: 100%;
-        padding: 25px 24px;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    .ag-calculator_results-info {
-        display: inline-block;
-        width: 50%;
-        padding: 12px 0 0;
-        border-right: 1px solid #e6e9eb;
-        background-color: #f6f8f9;
-
-        text-align: center;
-    }
-
-    .ag-calculator_results-title {
-        line-height: 1.29;
-
-        font-weight: bold;
-        font-size: 14px;
-        color: #4b545c;
-    }
-
-    .ag-calculator_results-sum {
-        font-size: 48px;
-        color: #4b545c;
-    }
-
-    .ag-calculator_results-currency {
-        display: inline-block;
-        margin-left: 5px;
-        margin-top: 5px;
-
-        vertical-align: top;
-        font-size: 24px;
-    }
-
-
-    @media only screen and (max-width: 767px) {
-        .ag-format-container {
-            width: 96%;
-        }
-
-    }
-
-    @media only screen and (max-width: 639px) {}
-
-    @media only screen and (max-width: 479px) {}
-
-    @media (min-width: 768px) and (max-width: 979px) {
-        .ag-format-container {
-            width: 750px;
-        }
-
-    }
-
-    @media (min-width: 980px) and (max-width: 1161px) {
-        .ag-format-container {
-            width: 960px;
-        }
-
-    }
-</style>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <body>
-
-
+    <div id="chart">
+    </div>
     <div class="ag-title">SIP CALCULATOR</div>
-
     <div class="ag-calculators-block">
         <div class="ag-format-container">
             <div id="affiliate" class="ag-calculator-block">
@@ -428,32 +25,35 @@
                 <div class="js-calculator_input-wrap ag-calculator_input-wrap">
                     <label class="ag-calculator_label" for="monthly_investment">Monthly Investment</label>
                     <input id="monthly_investment" class="js-calculator_text-input ag-calculator_text-input"
-                        type="number" name="monthly_investment" min="0" max="100000" value="10000">
+                        onchange="abc()" type="number" name="monthly_investment" min="0" max="100000"
+                        value="10000">
                     <input class="js-calculator_range" step="1" type="range" name="monthly_investment" min="0"
                         max="100000" value="10000">
                 </div>
                 <div class="js-calculator_input-wrap ag-calculator_input-wrap">
-                    <label class="ag-calculator_label" for="daily-orders">Expected Return Rate (p.a)</label>
-                    <input id="daily-orders" class="js-calculator_text-input ag-calculator_text-input" type="number"
-                        name="daily-orders" min="0" max="100" value="10">
-                    <input class="js-calculator_range" step="1" type="range" name="daily-orders" min="0" max="100"
-                        value="10">
-                </div>
-                <div class="js-calculator_input-wrap ag-calculator_input-wrap">
                     <label class="ag-calculator_label" for="time__period">Time Period</label>
                     <input id="time__period" class="js-calculator_text-input ag-calculator_text-input" type="number"
-                        name="time__period" min="0" max="40" value="3" step="0.5">
+                        onchange="abc()" name="time__period" min="0" max="40" value="1" step="0.5">
                     <input class="js-calculator_range" step="0.5" type="range" name="time__period" min="0" max="40"
                         value="3">
                 </div>
                 <div class="ag-calculator_results-box">
                     <div class="ag-calculator_results-info">
-                        <div class="ag-calculator_results-title">Your total monthly income</div>
+                        <div class="ag-calculator_results-title">Your Fabits Return</div>
                         <div id="affiliate-result" class="ag-calculator_results-sum">
                             <span class="ag-calculator_results-currency">₹</span>
                         </div>
                     </div>
                 </div>
+                <div class="ag-calculator_results-box">
+                    <div class="ag-calculator_results-info">
+                        <div class="ag-calculator_results-title">Your Mutual funds Return</div>
+                        <div id="affiliate-result2" class="ag-calculator_results-sum">
+                            <span class="ag-calculator_results-currency">₹</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -464,9 +64,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <script
         src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.min.js"></script>
+    <script src="dist/apexcharts.min.js"></script>
+
     <script>
-
-
         (function ($) {
             $(function () {
 
@@ -476,19 +76,31 @@
                     e = $("#daily-orders"),
                     i = $("#time__period"),
                     l = $("#affiliate-result"),
+                    m = $("#affiliate-result2"),
                     p = $("#agent-result"),
                     u = $(".tab-pane.active").attr("id"),
                     h = $(".js-calculator_second-level-wrap"),
-                    etf__returns = 10,
-                    mf__returns = 8.2;
+                    chart = $(".charts"),
+                    etf__returns = 0.0083333,
+                    mf__returns = 0.0067916;
 
                 function agFormula() {
-                    l.html(parseInt(t.val() * (1 + etf__returns / 12) * ((1 + etf__returns / 12) ^ (i * 12) - 1) / (etf__returns / 12))).digits().append("<span class=\"ag-calculator_results-currency\">₹</span>");
+                    l.html(parseInt(t.val() * (1 + etf__returns) * (Math.pow((1 + etf__returns), (i.val() * 12)) - 1) / (etf__returns))).digits().append("<span class=\"ag-calculator_results-currency\">₹</span>");
+                    m.html(parseInt(t.val() * (1 + mf__returns) * (Math.pow((1 + mf__returns), (i.val() * 12)) - 1) / (mf__returns))).digits().append("<span class=\"ag-calculator_results-currency\">₹</span>");
                 }
-                $(".js-calculator_input-wrap > .js-calculator_range").on("change input", function () {
-                    $(this).parent().find(".js-calculator_text-input").val($(this).val());
-                    agFormula();
-                });
+
+                    $(".js-calculator_input-wrap > .js-calculator_range").on("change input", function () {
+                        $(this).parent().find(".js-calculator_text-input").val($(this).val());
+                        agFormula();
+                    });
+
+                    $(".js-calculator_input-wrap > .js-calculator_text-input").on("change input", function () {
+                        $(this).parent().find(".js-calculator_range").val($(this).val());
+                        agFormula();
+                    });
+        
+
+
 
                 $.fn.digits = function () {
                     return this.each(function () {
@@ -497,8 +109,88 @@
                     });
                 };
                 agFormula();
+                agFormulas();
             });
         })(jQuery);
+
+        //    var options = {
+        //        chart: {
+        //          type: 'line'
+        //        },
+        //        series: [{
+        //          name: 'Total amount',
+        //          data: [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000]
+        //     
+        //        }],
+        //        xaxis: {
+        //          categories: [
+        //            "1 year" , 
+        //            "2 years",
+        //            "3 years",
+        //            "4 years",
+        //            "5 years",
+        //            "6 years",
+        //            "7 years",
+        //            "8 years",
+        //            "9 years",
+        //          ]
+        //        }
+        //      }
+        //      
+        //      var chart = new ApexCharts(document.querySelector("#chart"), options);
+        //      
+        //      chart.render();
+
+        var options = {
+            series: [{
+                name: 'ETF',
+                data: [100, 200, 300, 400, 500]
+            }, {
+                name: 'MF',
+                data: [50, 150, 250, 350, 450]
+            }],
+            chart: {
+                type: 'line',
+                height: 350
+            },
+            stroke: {
+                width: [4, 4]
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+        // Update chart data using agFormula function
+        function agFormulas() {
+            var etfData = [];
+            var mfData = [];
+
+            // Generate ETF and MF data dynamically with the help of loop and the i.val will be years and it will iterate
+
+            for (var j = 1; j <= 5; i++) {
+                etfData.push(parseInt(t.val() * (1 + etf__returns) * (Math.pow((1 + etf__returns), (i.val() * 12)) - 1) / (etf__returns)));
+                mfData.push(parseInt(t.val() * (1 + mf__returns) * (Math.pow((1 + mf__returns), (i.val() * 12)) - 1) / (mf__returns)));
+            }
+
+            console.log(etfData);
+            console.log(mfData);
+
+            // etfData.push(parseInt(t.val() * (1 + etf__returns / 12) * ((1 + etf__returns / 12) ^ (i.val() - 1)) / (etf__returns / 12)));
+            // mfData.push(parseInt(t.val() * (1 + mf__returns / 12) * ((1 + mf__returns / 12) ^ (i.val() - 1)) / (mf__returns / 12)));  
+
+            // Update chart series with new data
+            chart.updateSeries([{
+                name: 'ETF',
+                data: etfData
+            }, {
+                name: 'MF',
+                data: mfData
+            }]);
+
+        }
+
+
     </script>
 
 </body>
