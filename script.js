@@ -37,6 +37,86 @@ gsap.from(".g3", {
 });
 
 
+var h1 = gsap.timeline();
+
+h1
+  .from(
+    ".headline1",
+    {
+      x: -100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".headline1",
+    {
+      x: 0,
+      opacity: 1,
+    },
+    "=-0.1"
+  )
+  .from(
+    ".headline2",
+    {
+      x: -100,
+      opacity: 0,
+    },
+    "=-0.1"
+  )
+  .to(
+    ".headline2",
+    {
+      x: 0,
+      opacity: 1,
+
+    },
+    "=-0.1"
+  )
+  .from(
+    ".headline3",
+    {
+      x: -100,
+      opacity: 0,
+    },
+    "=-0.1"
+
+  )
+  .to(
+    ".headline3",
+    {
+      x: 0,
+      opacity: 1,
+    },
+    "=-0.1"
+  )
+
+ScrollTrigger.create({
+  animation: h1,
+  trigger: ".headlines",
+  start: "top center",
+});
+
+gsap.from(".firstt", {
+  scrollTrigger: {
+    trigger: ".w1",
+    start: "top top",
+    scrub: true,
+  },
+});
+
+gsap.to(".firstt", {
+  scrollTrigger: {
+    trigger: ".w1",
+    start: "top top+=100",
+    end: "bottom top+=300",
+    scrub: true,
+    pin: true,
+  },
+});
+
+
+
 
 function pauseTheVideo() {
   console.log("pause");
@@ -488,7 +568,9 @@ document.querySelectorAll(".box").forEach(function(box) {
   });
 });
 
-const blob = document.getElementById("blob");
+
+const blob = document.querySelector(".blob");
+
 
 document.body.onpointermove = event => { 
   const { clientX, clientY } = event;
