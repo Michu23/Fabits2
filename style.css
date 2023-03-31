@@ -14,6 +14,13 @@ body {
   cursor: pointer;
 }
 
+.minha{
+  min-height: 200px !important;
+  padding-top: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
 html {
   height: -webkit-fill-available !important;
   scroll-behavior: smooth;

@@ -6,9 +6,18 @@ const header = document.querySelector(".headertag");
 const close = document.querySelector(".close");
 const pro = document.querySelector(".product__nav");
 const nav__dropdown = document.querySelector(".product__nav__dropdown");
+const business = document.querySelector(".business__nav");
+const business__dropdown = document.querySelector(".business__nav__dropdown");
 
 const video = document.querySelector(".thevideo");
 const video2 = document.querySelector(".thevideo2");
+
+
+
+business.addEventListener("click", () => {
+  business__dropdown.classList.toggle("d-none");
+});
+
 
 
 
