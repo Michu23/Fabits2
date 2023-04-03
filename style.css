@@ -1649,12 +1649,13 @@ section.client .section-title {
   font-weight: 400;
   font-size: 1rem;
   line-height: 25px;
-  /* padding-top: 10px !important; */
   padding-bottom: 15px !important;
-  /* text-align: justify; */
-  /* text-justify: inter-word; */
   text-align: center;
-  margin-top: -10px !important;
+  margin-top: -30px !important;
+}
+
+.subshr{
+  display: none;
 }
 
 .price__table {
