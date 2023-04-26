@@ -18,7 +18,10 @@ business.addEventListener("click", () => {
   business__dropdown.classList.toggle("d-none");
 });
 
-
+window.addEventListener('beforeunload', function(event) {
+  event.preventDefault();
+  event.returnValue = 'Are you sure you want to exit?';
+});
 
 
 gsap.from(".g1", {

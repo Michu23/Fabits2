@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabits - Financial Habits</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Fabits | Financial Habits">
+	<meta property="og:description" content="At Fabits, we help people meet their financial needs and goals. Our expert advisors can help you build a budget, save for retirement, and invest wisely.">
+	<meta name="keywords" content="Fabits, Financial Habits, budget, Retirement, Investment,Financial Advisor, Bangalore">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.fabits.com">
+	<meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/fabits.com/FabitsOG.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <link rel="icon" href="fabits__favicon.ico" type="image/png" sizes="16x16">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,6 +24,14 @@
     <link rel="stylesheet" href="style.css">
     <link src="dist/apexcharts.css" rel="stylesheet" type="text/css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BLGMXFFK1P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BLGMXFFK1P');
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
@@ -156,11 +173,12 @@
         -moz-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
         -o-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
         box-shadow: 0 12px 24px 0 rgba(0, 0, 0, .06);
-        margin: 40px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px;
     }
+
+
 
     .ag-calculator_title {
         display: inline-block;
@@ -424,7 +442,13 @@
 
 
 
-    #chart {
+    .chart {
+        width: 500px;
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .chartt {
         width: 500px;
         height: 500px;
         margin-top: 20px;
@@ -559,8 +583,7 @@
                             <div class="nav__item cp py-2 ">
                                 <h5 class="business__nav">
                                     For Business
-                                    <ion-icon name="caret-down-outline"
-                                        style="margin-bottom: -2px;"></ion-icon>
+                                    <ion-icon name="caret-down-outline" style="margin-bottom: -2px;"></ion-icon>
                                 </h5>
                                 <div class="business__nav__dropdown d-none ">
                                     <div class="nav__item py-2">
@@ -573,7 +596,7 @@
                                     <div class="nav__item py-2">
                                         <a href="https://fabits.com/advisor" class="nav__link font__green">
                                             <h5>
-                                               For Advisors
+                                                For Advisors
                                             </h5>
                                         </a>
                                     </div>
@@ -751,6 +774,7 @@
         </div>
         <div id="scroll-progresss" class="mt-3"></div>
     </header>
+   
     <div class="container-fluid p-0 first display__desktop position-relative ">
         <div class="d-flex justify-content-center first__animation">
             <div class="position-absolute w-100 second__content" style="overflow: hidden;">
@@ -1212,7 +1236,6 @@
                 <div class="container  fh d-flex justify-content-start ">
                     <div class=" max__width w-100 pe-3 py-5 ">
                         <div class="handhh pt-5">
-
                             <h1 class="heading">
                                 Get a feel<br /> for <span class="font__yellow">your<br />investment</span><br />
                                 journey
@@ -1269,7 +1292,6 @@
             </div>
         </section>
     </div>
-
     <div class="container-fluid p-0 display__deskop full__purple ">
         <section class="fourth__slide p-0 w-100 m-0 position-relative display__desktop" style="overflow-x: hidden;">
             <div class="container-fluid p-0 m-0 fourth__content m-auto w-100 display__desktop positon-relative">
@@ -1364,7 +1386,6 @@
     <div class="container-fluid p-0 display__mobile full__purple ">
         <section class="fourth__slide p-0 w-100 m-0 position-relative display__mobile" style="overflow-x: hidden;">
             <div class="container-fluid p-0 m-0 fourth__content m-auto w-100 display__mobile">
-
                 <div class="container position-relative  d-flex justify-content-center  display__mobile">
                     <div class=" w-100 pe-3 text-center display__mobile">
                         <div class="row w-100 p-0 m-0 text-center pt-5 full__purple mockups position-relative my-5">
@@ -1452,8 +1473,6 @@
             </div>
         </section>
     </div>
-
-
     <div class="container-fluid p-0 display__desktop position-relative text-dark bg-light">
         <div class="secure">
             <section class="fourth__slide fh p-0 w-100 m-0 position-relative " style="overflow-x: hidden;">
@@ -1571,7 +1590,7 @@
                                 style="max-width: 1000px;">
                                 <div class="col-12 py-3 text-start go1">
                                     <div class="row">
-                                        <div class="col-1">
+                                        <div class="col-1 display__desktop">
                                             <ion-icon name="checkmark-done-outline" class="mt-1 "
                                                 style=" font-size: 25px; "></ion-icon>
                                         </div>
@@ -1584,7 +1603,7 @@
                                 </div>
                                 <div class="col-12 py-3 text-start go2">
                                     <div class="row">
-                                        <div class="col-1">
+                                        <div class="col-1 display__desktop">
                                             <ion-icon name="checkmark-done-outline" class="mt-1 "
                                                 style=" font-size: 25px; "></ion-icon>
                                         </div>
@@ -1597,7 +1616,7 @@
                                 </div>
                                 <div class="col-12 py-3 text-start go3">
                                     <div class="row">
-                                        <div class="col-1">
+                                        <div class="col-1 display__desktop">
                                             <ion-icon name="checkmark-done-outline" class="mt-1 "
                                                 style=" font-size: 25px; "></ion-icon>
                                         </div>
@@ -1611,7 +1630,7 @@
                                 </div>
                                 <div class="col-12 py-3 text-start go4">
                                     <div class="row">
-                                        <div class="col-1">
+                                        <div class="col-1 display__desktop">
                                             <ion-icon name="checkmark-done-outline" class="mt-1 "
                                                 style=" font-size: 25px; "></ion-icon>
                                         </div>
@@ -1619,7 +1638,6 @@
                                             <h4>
                                                 Backed by AWS, Fabits stores and protects data with state-of-the-art
                                                 encryption
-
                                             </h4>
                                         </div>
                                     </div>
@@ -1662,28 +1680,31 @@
             </div>
         </section>
     </div>
-    <div class="container-fluid p-0 m-0 product__page signup__bg pb-5 ">
+    <div class="container-fluid p-0 m-0 product__page signup__bg ">
         <div class="container">
-            <div class="py-5 p-0 m-0"></div>
-            <div class="p-3 row siprow">
-
-
+            <div class="py-5 p-0 m-0 display__desktop"></div>
+            <div class="py-2 p-0 m-0 display__mobile"></div>
+            <div class=" row siprow p-0 m-0">
                 <div class="ag-title">ETF Fees Vs Mutual Funds Fees</div>
-                <div class="row w-100">
-                    <div class="col-12 col-md-6">
+                <div class="row w-100 p-0 m-0">
+                    <div class="col-12 col-md-6 display__desktop">
                         <div class="w-100 d-flex justify-content-center sibs">
-                            <div id="chart">
+                            <div class="chart">
                             </div>
                         </div>
-                        <p class="text-center" style="margin-top: -100px;">
+                        <p class="text-start"
+                            style="margin-top: -100px; font-size: small; line-height: 1.1; opacity: 0.7;">
                             *Assuming both yielded same returns.
                             <br>
                             However, ETFs outperform mutual funds so the wealth creation is significantly more.
                             <br>
-                            <a href="https://fabits.com/etfs" class="font__yellow">
-                                Explore the magic of ETFs
-                            </a>
+                           
                         </p>
+                        <a href="https://fabits.com/etfs" class="w-100 d-flex justify-content-center pb-5">
+                            <button class="sb bg__green text-white">
+                                Explore the magic of ETFs
+                            </button>
+                        </a>
                     </div>
                     <div class="col-12 col-md-12 col-lg-6">
                         <div class="ag-calculators-block">
@@ -1691,43 +1712,38 @@
                                 <div id="affiliate" class="ag-calculator-block">
                                     <div class="ag-calculator_title">Calculate your returns</div>
                                     <div class="js-calculator_input-wrap ag-calculator_input-wrap ">
-                                        <label class="ag-calculator_label" for="monthly_investment">Monthly
+                                        <label class="ag-calculator_label" for="monthly_investment">Monthly<br>
                                             Investment</label>
                                         <input id="monthly_investment"
-                                            class="js-calculator_text-input ag-calculator_text-input" type="number"
-                                            name="monthly_investment" min="0" max="100000" value="10000">
+                                            class="js-calculator_text-input ag-calculator_text-input monthly_investment"
+                                            type="number" name="monthly_investment" min="0" max="100000" value="10000">
                                         <input class="js-calculator_range w-100" step="1" type="range"
                                             name="monthly_investment" min="0" max="100000" value="10000">
                                     </div>
                                     <div class="js-calculator_input-wrap ag-calculator_input-wrap">
                                         <label class="ag-calculator_label" for="time__period">Time Period</label>
                                         <input id="time__period"
-                                            class="js-calculator_text-input ag-calculator_text-input" type="number"
-                                            name="time__period" min="0" max="20" value="3" step="1">
+                                            class="js-calculator_text-input ag-calculator_text-input time__period"
+                                            type="number" name="time__period" min="0" max="20" value="3" step="1">
                                         <input class="js-calculator_range w-100" step="1" type="range"
                                             name="time__period" min="0" max="20" value="3">
                                     </div>
-
                                     <div class="">
                                         <div class="row px-4 mt-2">
                                             <div class="ag-calculator_results-title2 text-start col-12 col-md-7 mt-2">
                                                 Amount
                                                 Invested</div>
-
                                             <div class="d-flex justify-content-end col-12 col-md-5">
                                                 <span class="ag-calculator_results-currency mt-1 me-2">₹</span>
-
                                                 <div id="mf_invested" class="ag-calculator_results-sum">
                                                     <span class="ag-calculator_results-currency">₹</span>
                                                 </div>
-
                                             </div>
                                         </div>
                                         <div class="row px-4 mt-2">
                                             <div class="ag-calculator_results-title2 text-start col-12 col-md-7 mt-2">
                                                 Mutual funds
                                                 Return</div>
-
                                             <div class="d-flex justify-content-end col-12 col-md-5">
                                                 <span class="ag-calculator_results-currency mt-1 me-2">₹</span>
 
@@ -1748,14 +1764,8 @@
                                                 <div class="ag-calculator_results-sum affiliate-result">
                                                     <span class="ag-calculator_results-currency"></span>
                                                 </div>
-
                                             </div>
                                         </div>
-
-
-
-
-
                                         <div class="row px-4 mt-2 difference">
                                             <div class="ag-calculator_results-title2 text-start col-12 col-md-7 mt-2">
                                                 Additional Returns
@@ -1763,15 +1773,11 @@
                                             </div>
                                             <div class="d-flex justify-content-end col-12 col-md-5 font__yellow">
                                                 <span class="ag-calculator_results-currency mt-1 me-2">₹</span>
-
-
                                                 <div id="affiliate-result3"
                                                     class="ag-calculator_results-sum font__yellow">
                                                     <span class="ag-calculator_results-currency"></span>
                                                 </div>
-
                                             </div>
-
                                         </div>
                                         <div class="row px-4 mt-2">
                                             <div class="ag-calculator_results-title2 text-start col-12 col-md-7 mt-2">
@@ -1779,26 +1785,42 @@
                                             </div>
                                             <div class="d-flex justify-content-end col-12 col-md-5 font__yellow">
                                                 <span class="ag-calculator_results-currency mt-1 me-2">₹</span>
-
-
-                                                <div id="20d" class="ag-calculator_results-sum font__yellow">
+                                                <div id="20d" class="ag-calculator_results-sum font__yellow 20d">
                                                     <span class="ag-calculator_results-currency"></span>
                                                 </div>
-
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
+                    <div class="col-12 col-md-6 display__mobile">
+                        <div class="w-100 d-flex justify-content-center sibs">
+                            <div class="chartt">
+                            </div>
+                        </div>
+                        <p class="text-start"
+                            style="margin-top: -100px; font-size: small; line-height: 1.1; opacity: 0.7;">
+                            *Assuming both yielded same returns.
+                            <br>
+                            However, ETFs outperform mutual funds so the wealth creation is significantly more.
+                            <br>
+                           
+                        </p>
+                        <a href="https://fabits.com/etfs" class="w-100 d-flex justify-content-center pb-5">
+                            <button class="sb bg__green text-white">
+                                Explore the magic of ETFs
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="py-5 p-0 m-0 display__desktop"></div>
+        <div class="py-2 p-0 m-0 display__mobile"></div>
     </div>
+
     <div class="container-fluid p-0 display__desktop customers bg-light">
         <section class=" p-0 w-100 m-0 position-relative fhh  " style="overflow-x: hidden; height: fit-content;">
             <div class="container-fluid p-0 m-0  w-100" style="overflow-x: hidden; height: fit-content;">
@@ -2348,7 +2370,6 @@
                         </div>
         </section>
     </div>
-
     <div class="container-fluid p-0  ">
         <section class="p-0 w-100 m-0 position-relative" style="overflow-x: hidden;">
             <div class="container-fluid p-0 m-0 contact__content w-100">
@@ -2618,12 +2639,7 @@
                 $('iframe').attr('src', $('iframe').attr('src'));
             });
         });
-
-
-
     </script>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
@@ -2631,15 +2647,12 @@
     <script
         src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/calculator/plugins/rangeslider/rangeslider.min.js"></script>
     <script src="dist/apexcharts.min.js"></script>
-
     <script>
         (function ($) {
             $(function () {
-
                 $("input[type=range]").rangeslider({ polyfill: true });
-
-                var t = $("#monthly_investment"),
-                    i = $("#time__period"),
+                var t = $(".monthly_investment"),
+                    i = $(".time__period"),
                     l = $(".affiliate-result"),
                     m = $("#affiliate-result2"),
                     n = $("#affiliate-result3"),
@@ -2648,13 +2661,11 @@
                     h = $(".js-calculator_second-level-wrap"),
                     e = $("#etf_result"),
                     me = $("#mf_result"),
-                    chart = $(".charts"),
                     e20 = $("#20etf_result")
                 m20 = $("#20mf_result"),
-                    d20 = $("#20d")
+                    d20 = $(".20d")
                 etf__returns = 0.0083333,
                     mf__returns = 0.0067916,
-
                     mf_invested = $("#mf_invested"),
                     mf_earned = $("#mf_earned"),
                     mf_total = $("#mf_total"),
@@ -2662,10 +2673,6 @@
                     etf_invested = $("#etf_invested"),
                     etf_earned = $("#etf_earned"),
                     etf_total = $("#etf_total");
-
-
-
-
 
                 function agFormula() {
                     l.html(parseInt(t.val() * (1 + etf__returns) * (Math.pow((1 + etf__returns), (i.val() * 12)) - 1) / (etf__returns))).digits();
@@ -2686,8 +2693,6 @@
                     etf_total.html(parseInt(t.val() * (1 + etf__returns) * (Math.pow((1 + etf__returns), (i.val() * 12)) - 1) / (etf__returns))).digits();
 
                     dy.html(parseInt(i.val())).digits();
-
-
 
                 }
 
@@ -2735,7 +2740,6 @@
                 offsetX: 110
             },
 
-
             labels: [
                 '2',
                 '4',
@@ -2762,17 +2766,21 @@
             },
         };
 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart = new ApexCharts(document.querySelector(".chart"), options);
         chart.render();
+        var chartt = new ApexCharts(document.querySelector(".chartt"), options);
+        chartt.render();
 
         function agFormulas(t) {
             const years = [2, 4, 6, 8, 10, 12, 14, 16, 18];
+
             const etf_data = years.map(year => {
                 return parseInt(t.val() * (1 + 0.0083333) * (Math.pow((1 + 0.0083333), (year * 12)) - 1) / (0.0083333))
             });
             const mf_data = years.map(year => {
                 return parseInt(t.val() * (1 + 0.0067916) * (Math.pow((1 + 0.0067916), (year * 12)) - 1) / (0.0067916))
             });
+
             chart.updateSeries([{
                 name: 'ETF',
                 data: etf_data
