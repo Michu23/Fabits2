@@ -8,6 +8,9 @@ const pro = document.querySelector(".product__nav");
 const nav__dropdown = document.querySelector(".product__nav__dropdown");
 const business = document.querySelector(".business__nav");
 const business__dropdown = document.querySelector(".business__nav__dropdown");
+const about = document.querySelector(".about__nav")
+const about__dropdown = document.querySelector(".about__nav__dropdown");
+
 
 const video = document.querySelector(".thevideo");
 const video2 = document.querySelector(".thevideo2");
@@ -18,21 +21,18 @@ business.addEventListener("click", () => {
   business__dropdown.classList.toggle("d-none");
 });
 
-window.addEventListener('beforeunload', function(event) {
-  event.preventDefault();
-  event.returnValue = 'Are you sure you want to exit?';
-});
+about.addEventListener("click",()=>{
+  about__dropdown.classList.toggle("d-none");
+})
 
 
 gsap.from(".g1", {
   scrollTrigger: {
     trigger: ".gift__section",
-    // markers: true,
-    scrub: 1,
-    start: "top+=800 center",
+    scrub: 0.1,
+    start: "top-=200 center",
     end: "bottom center",
   },
-
   opacity: 0,
   x: -300,
 });
@@ -40,9 +40,9 @@ gsap.from(".g1", {
 gsap.from(".g3", {
   scrollTrigger: {
     trigger: ".gift__section",
-    scrub: 1,
-    start: "top+=800 center",
-    end: "bottom top",
+    scrub: 0.1,
+    start: "top-=200 center",
+    end: "bottom center",
   },
   opacity: 0,
   x: 300,
@@ -128,8 +128,6 @@ gsap.to(".firstt", {
 });
 
 
-
-
 function pauseTheVideo() {
   console.log("pause");
   video.pause();
@@ -161,11 +159,11 @@ ScrollTrigger.create({
 });
 
 ff1
-  // .call(functionName, null)
   .to(
     ".fff3",
     {
       display: "none",
+
     },
     "=-0.1"
   )
@@ -173,7 +171,7 @@ ff1
   .from(
     ".fff2",
     {
-      x: 0,
+      x: 100,
     },
     "=-0.1"
   )

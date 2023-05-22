@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabits - Financial Habits</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Fabits | Financial Habits">
-	<meta property="og:description" content="At Fabits, we help people meet their financial needs and goals. Our expert advisors can help you build a budget, save for retirement, and invest wisely.">
-	<meta name="keywords" content="Fabits, Financial Habits, budget, Retirement, Investment,Financial Advisor, Bangalore">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://www.fabits.com">
-	<meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/fabits.com/FabitsOG.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Fabits | Financial Habits">
+    <meta property="og:description"
+        content="At Fabits, we help people meet their financial needs and goals. Our expert advisors can help you build a budget, save for retirement, and invest wisely.">
+    <meta name="keywords"
+        content="Fabits, Financial Habits, budget, Retirement, Investment,Financial Advisor, Bangalore">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fabits.com">
+    <meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/fabits.com/FabitsOG.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta name="google-site-verification" content="iC6GkbvOi84CsQ800HRwIn3FG5VCjgTbzxi2atg5-i0" />
     <link rel="icon" href="fabits__favicon.ico" type="image/png" sizes="16x16">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,14 +26,32 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link src="dist/apexcharts.css" rel="stylesheet" type="text/css">
+
 </head>
+
+<!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+        var u = "https://fabits.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.async = true; g.src = '//cdn.matomo.cloud/fabits.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLGMXFFK1P"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BLGMXFFK1P');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BLGMXFFK1P');
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -506,7 +527,7 @@
 
 
 <body>
-    <header class="display__mobile mh">
+    <header class="display__mobilee mh">
         <div class="d-flex justify-content-between">
             <div>
                 <a href="/">
@@ -616,12 +637,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="nav__item py-2">
-                                <a href="https://fabits.com/team" class="nav__link">
-                                    <h5>
-                                        About Us
-                                    </h5>
-                                </a>
+                            <div class="nav__item cp py-2 ">
+                                <h5 class="about__nav">
+                                    About Us
+                                    <ion-icon name="caret-down-outline" style="margin-bottom: -2px;"></ion-icon>
+                                </h5>
+                                <div class="about__nav__dropdown d-none ">
+                                    <div class="nav__item py-2">
+                                        <a href="https://fabits.com/team" class="nav__link font__green">
+                                            <h5>
+                                                Our Story
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <div class="nav__item py-2">
+                                        <a href="https://blog.fabits.com" class="nav__link font__green">
+                                            <h5>
+                                                Blog
+                                            </h5>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="nav__item py-2">
                                 <a href="https://fabits.com/support" class="nav__link">
@@ -636,7 +672,7 @@
                             <div class="nav__item py-2">
                                 <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
                                     <button class="sb w-50 bg__green boxshadow text-white">
-                                        Let's get started
+                                        Let's Get Started
                                     </button>
                                 </a>
                             </div>
@@ -648,7 +684,7 @@
         </div>
         <div id="scroll-progress" style="margin-top: 13.5px;"></div>
     </header>
-    <header class="display__desktop dh py-3">
+    <header class="display__desktopp dh py-3">
         <div class="d-flex justify-content-between ">
             <div>
                 <a href="/">
@@ -659,50 +695,6 @@
                 </a>
             </div>
             <div class="d-flex justify-content-end pt-4 desk__head">
-                <div class="nav__item mx-3 ">
-                    <a href="/" class="nav__link">
-                        <h6>
-                            Home
-                        </h6>
-                    </a>
-                </div>
-                <div class="nav__item mx-3 cp  product__navv">
-
-                    <h6 style="cursor:default">
-                        For Business
-                    </h6>
-                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
-                        style="margin-left: -20px;">
-                        <div class="nav__item py-3 px-3 pe-5 no">
-                            <a href="https://fabits.com/employers" class="nav__link font__green">
-                                <h6>
-                                    Fabits for Employers
-                                </h6>
-                            </a>
-                        </div>
-                        <div class="nav__item py-3 px-3 pe-5 no ">
-                            <a href="https://fabits.com/advisor" class="nav__link font__green">
-                                <h6>
-                                    Fabits for Advisors
-                                </h6>
-                            </a>
-                        </div>
-                        <div class="nav__item py-3 px-3 pe-5 no">
-                            <a href="https://fabits.com/partners" class="nav__link font__green">
-                                <h6>
-                                    Partner with Us
-                                </h6>
-                            </a>
-                        </div>
-                        <div class="nav__item py-3 px-3 pe-5 no">
-                            <a href="https://fabits.com/partners#demo" class="nav__link font__green">
-                                <h6>
-                                    Request a Demo
-                                </h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div class="nav__item mx-3 cp  product__navv">
                     <a href="https://fabits.com/product">
                         <h6>
@@ -741,12 +733,66 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav__item mx-3 ">
-                    <a href="https://fabits.com/team" class="nav__link">
-                        <h6>
-                            About Us
-                        </h6>
-                    </a>
+                <div class="nav__item mx-3 cp  product__navv">
+
+                    <h6 style="cursor:default">
+                        For Business
+                    </h6>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px;">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="https://fabits.com/employers" class="nav__link font__green">
+                                <h6>
+                                    Fabits for Employers
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="https://fabits.com/advisor" class="nav__link font__green">
+                                <h6>
+                                    Fabits for Advisors
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="https://fabits.com/partners" class="nav__link font__green">
+                                <h6>
+                                    Partner with Us
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="https://fabits.com/partners#demo" class="nav__link font__green">
+                                <h6>
+                                    Request a Demo
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav__item mx-3 cp  product__navv">
+
+                    <h6 style="cursor:default">
+                        About Us
+                    </h6>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px;">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="https://fabits.com/team" class="nav__link font__green">
+                                <h6>
+                                    Our Story
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="https://blog.fabits.com" target="_blank" class="nav__link font__green">
+                                <h6>
+                                    Blog
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="nav__item mx-3 ">
                     <a href="https://fabits.com/pricing" class="nav__link">
@@ -755,18 +801,34 @@
                         </h6>
                     </a>
                 </div>
-                <div class="nav__item mx-3 ">
-                    <a href="https://fabits.com/support" class="nav__link">
-                        <h6>
-                            Support
-                        </h6>
-                    </a>
+                <div class="nav__item mx-3 cp  product__navv">
+
+                    <h6 style="cursor:default">
+                        Contact
+                    </h6>
+                    <div class="product__nav__dropdownn position-absolute bg-light  pt-4 boxshadow d-none"
+                        style="margin-left: -20px;">
+                        <div class="nav__item py-3 px-3 pe-5 no">
+                            <a href="https://fabits.com/support" class="nav__link font__green">
+                                <h6>
+                                    Support
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="nav__item py-3 px-3 pe-5 no ">
+                            <a href="https://linktr.ee/fabits.social" target="_blank" class="nav__link font__green">
+                                <h6>
+                                    Social Media
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="nav__item mx-3 ms-5 ">
                     <a href="https://mywealth.fabits.com/" target="_blank" class="nav__link">
                         <button class="sb bg__green boxshadow text-white start px-4"
                             style="width: fit-content; margin-top: -100px;">
-                            Let's get started
+                            Let's Get Started
                         </button>
                     </a>
                 </div>
@@ -774,7 +836,6 @@
         </div>
         <div id="scroll-progresss" class="mt-3"></div>
     </header>
-   
     <div class="container-fluid p-0 first display__desktop position-relative ">
         <div class="d-flex justify-content-center first__animation">
             <div class="position-absolute w-100 second__content" style="overflow: hidden;">
@@ -931,7 +992,7 @@
                         </div>
                     </section>
                 </div>
-            </div>
+        </div>
         </div>
     </div>
     <div class="container-fluid p-0 first display__mobile f1_s1_mob second__content first__animation__mob">
@@ -972,15 +1033,6 @@
                                     </p>
                                     <a href="https://fabits.com/team">
                                         <button class="about__fabits w-100 pt-5 mt-3">About Fabits > ></button></a>
-                                    <!-- <div class="d-flex justify-content-center pt-2">
-                                            <div class="nav__slide__active">
-                                            </div>
-                                            <div class="nav__slide">
-                                            </div>
-                                            <div class="nav__slide">
-                                            </div>
-                                        </div> -->
-
                                 </div>
                             </div>
                         </div>
@@ -1292,10 +1344,9 @@
             </div>
         </section>
     </div>
-    <div class="container-fluid p-0 display__deskop full__purple ">
+    <!-- <div class="container-fluid p-0 display__deskop full__purple ">
         <section class="fourth__slide p-0 w-100 m-0 position-relative display__desktop" style="overflow-x: hidden;">
             <div class="container-fluid p-0 m-0 fourth__content m-auto w-100 display__desktop positon-relative">
-
                 <div class="container position-relative  d-flex justify-content-center  display__desktop ">
                     <div class=" w-100 pe-3 text-center display__desktop">
                         <div class="row w-100  text-center pt-5  fh mockups position-relative my-5">
@@ -1329,7 +1380,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <hr class="w-100 hrtag">
@@ -1367,8 +1417,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                         <div class="row w-100 full__purple pb-5">
@@ -1390,9 +1438,7 @@
                     <div class=" w-100 pe-3 text-center display__mobile">
                         <div class="row w-100 p-0 m-0 text-center pt-5 full__purple mockups position-relative my-5">
                             <div class="col-12 position-relative mb-5  ">
-
                                 <div class="position-relative conn w-100">
-
                                     <h1 class="heading00 text-start">
                                         <span class="font__yellow">Plan it </span> and
                                         <span class="font__yellow">Forget it</span>
@@ -1414,11 +1460,6 @@
                                     <p class="font__white pt-3 paragraph2 text-start">
                                         Tell us your goals & risk tolerance. We’ll do the hard stuff.
                                     </p>
-                                    <!-- <div class=" w-100 mt-3 text-start">
-                                            <a href="https://mywealth.fabits.com/" class="w-100">
-                                                <button class="about__fabits3 w-50">Experience the drive > ></button>
-                                            </a>
-                                        </div> -->
                                 </div>
                             </div>
                         </div>
@@ -1439,7 +1480,6 @@
                                                         <div class="mockup__device__screen__content">
                                                             <div class="mockup__device__screen__content__img">
                                                                 <img src="arundathi.png" alt="" class="w-100">
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1453,11 +1493,6 @@
                                             you’re not looking.
                                         </p>
                                     </div>
-                                    <!-- <div class=" w-100 mt-3 text-start">
-                                            <a href="https://mywealth.fabits.com/" class="w-100">
-                                                <button class="about__fabits3 w-50">Experience the drive > ></button>
-                                            </a>
-                                        </div> -->
                                 </div>
                             </div>
                         </div>
@@ -1472,12 +1507,10 @@
                 </div>
             </div>
         </section>
-    </div>
-    <div class="container-fluid p-0 display__desktop position-relative text-dark bg-light">
+    </div> -->
+    <!-- <div class="container-fluid p-0 display__desktop position-relative text-dark bg-light">
         <div class="secure">
             <section class="fourth__slide fh p-0 w-100 m-0 position-relative " style="overflow-x: hidden;">
-                <!-- <img src="FabitsAssets/Images/AI/pexels-pixabay-164425.jpg"
-                    class="w-100 vertically__align video__tag oppp bull3 fhh" alt=""> -->
                 <div class="container-fluid p-0 m-0 fh  m-auto w-100">
                     <div class="container  fh d-flex justify-content-center position-relative"
                         style="max-width: 1000px;">
@@ -1493,12 +1526,7 @@
                                     <img src="money-padlock.png" alt="" class="w-50">
                                 </div>
                             </div>
-                            <!-- <div class="container d-flex justify-content-center pt-2">
-                                <div class=" d-flex justify-content-center" style="overflow: hidden;">
-                                    <img src="FabitsAssets/Images/AI/secure-online-payment-transaction.png" alt=""
-                                        class="w-25 my-3 ">
-                                </div>
-                            </div> -->
+                            
                             <div class="row p-0 w-100 d-flex justify-content-center mx-auto text-start mt-5"
                                 style="max-width: 1000px;">
                                 <div class="col-6 py-3 text-start go1">
@@ -1650,7 +1678,6 @@
                                                 class="w-100 d-flex justify-content-center">
                                                 <button class="about__fabits4 w-50">Start Here > ></button>
                                             </a>
-                                            <!-- <button class="about__fabits3 button__width w-100">Get started > ></button> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1660,51 +1687,29 @@
                 </div>
         </div>
         </section>
-    </div>
-    <div class="container-fluid p-0 m-0 partners" style="background-color: #fff;">
-        <section class="client" style="background-color: #fff;">
-            <div class="container">
-                <div class="row">
-                    <div class="carousel-client d-flex justify-content-center">
-                        <div class="slide"><img src="FabitsAssets/Partners/axis-bank-logo.jpg" class="color-burn"></div>
-                        <div class="slide"><img src="FabitsAssets/Partners/CDSL.jpg"></div>
-                        <div class="slide"><img src="FabitsAssets/Partners/download.png"></div>
-                        <div class="slide"><img src="FabitsAssets/Partners/HDFC.png"></div>
-                    </div>
-                    <div class="carousel-client d-flex justify-content-center mt-3">
-                        <div class="slide"><img src="FabitsAssets/Partners/inx.png"></div>
-                        <div class="slide"><img src="FabitsAssets/Partners/NSE.png"></div>
-                        <div class="slide"><img src="FabitsAssets/Partners/SEBI.png"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="container-fluid p-0 m-0 product__page signup__bg ">
+    </div> -->
+
+    <div class="container-fluid p-0 m-0 product__page full__purple ">
         <div class="container">
             <div class="py-5 p-0 m-0 display__desktop"></div>
             <div class="py-2 p-0 m-0 display__mobile"></div>
             <div class=" row siprow p-0 m-0">
                 <div class="ag-title">ETF Fees Vs Mutual Funds Fees</div>
-                <div class="row w-100 p-0 m-0">
-                    <div class="col-12 col-md-6 display__desktop">
+                <div class="row d-flex justify-content-center  w-100 p-0 m-0">
+                    <div class="col-12 d-flex justify-content-center  col-md-6 display__desktop">
                         <div class="w-100 d-flex justify-content-center sibs">
                             <div class="chart">
                             </div>
                         </div>
                         <p class="text-start"
-                            style="margin-top: -100px; font-size: small; line-height: 1.1; opacity: 0.7;">
+                            style="margin-top: -100px; font-size: 10px; line-height: 1.1; opacity: 0.7;">
                             *Assuming both yielded same returns.
                             <br>
-                            However, ETFs outperform mutual funds so the wealth creation is significantly more.
+                            <span style="margin-top: 100px; font-size: 12px; line-height: 1.1; opacity: 0.9;">
+                                However, ETFs outperform mutual funds so the wealth creation is significantly more.
+                            </span>
                             <br>
-                           
                         </p>
-                        <a href="https://fabits.com/etfs" class="w-100 d-flex justify-content-center pb-5">
-                            <button class="sb bg__green text-white">
-                                Explore the magic of ETFs
-                            </button>
-                        </a>
                     </div>
                     <div class="col-12 col-md-12 col-lg-6">
                         <div class="ag-calculators-block">
@@ -1794,6 +1799,11 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="https://fabits.com/etfs" class="w-100 mt-4 d-flex justify-content-center pb-5">
+                            <button class="sb bg__green text-white">
+                                Explore the magic of ETFs
+                            </button>
+                        </a>
                     </div>
                     <div class="col-12 col-md-6 display__mobile">
                         <div class="w-100 d-flex justify-content-center sibs">
@@ -1806,7 +1816,7 @@
                             <br>
                             However, ETFs outperform mutual funds so the wealth creation is significantly more.
                             <br>
-                           
+
                         </p>
                         <a href="https://fabits.com/etfs" class="w-100 d-flex justify-content-center pb-5">
                             <button class="sb bg__green text-white">
@@ -1820,7 +1830,6 @@
         <div class="py-5 p-0 m-0 display__desktop"></div>
         <div class="py-2 p-0 m-0 display__mobile"></div>
     </div>
-
     <div class="container-fluid p-0 display__desktop customers bg-light">
         <section class=" p-0 w-100 m-0 position-relative fhh  " style="overflow-x: hidden; height: fit-content;">
             <div class="container-fluid p-0 m-0  w-100" style="overflow-x: hidden; height: fit-content;">
@@ -2071,6 +2080,86 @@
             </div>
         </section>
     </div>
+    <div class="container-fluid p-0 m-0 partners" style="background-color: #fff;">
+        <section class="client" style="background-color: #fff;">
+            <div class="container">
+                <div class="row">
+                    <div class="carousel-client d-flex justify-content-center">
+                        <div class="slide"><img src="FabitsAssets/Partners/axis-bank-logo.jpg" class="color-burn"></div>
+                        <div class="slide"><img src="FabitsAssets/Partners/CDSL.jpg"></div>
+                        <div class="slide"><img src="FabitsAssets/Partners/download.png"></div>
+                        <div class="slide"><img src="FabitsAssets/Partners/HDFC.png"></div>
+                    </div>
+                    <div class="carousel-client d-flex justify-content-center mt-3">
+                        <div class="slide"><img src="FabitsAssets/Partners/inx.png"></div>
+                        <div class="slide"><img src="FabitsAssets/Partners/NSE.png"></div>
+                        <div class="slide"><img src="FabitsAssets/Partners/SEBI.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 m-0 full__purple display__mobile">
+        <section class="client full__purple">
+            <div class="container full__purple">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <h4 class="mt-2 me-5 text-white">
+                            Now Available!
+                        </h4>
+                        <div class="row">
+                       
+                                <!-- App Store button -->
+                                <a href="https://apps.apple.com/in/app/fabits/id1600230367" target="_blank"
+                                    class="market-btn apple-btn my-2" role="button">
+                                    <span class="market-button-subtitle">Download on the</span>
+                                    <span class="market-button-title">App Store</span>
+                                </a>
+          
+                            <!-- Google Play button -->
+        
+                                <a href="https://play.google.com/store/apps/details?id=com.fabits.mywealth"
+                                    target="_blank" class="market-btn google-btn" role="button">
+                                    <span class="market-button-subtitle">Download on the</span>
+                                    <span class="market-button-title">Google Play</span>
+                                </a>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid p-0 m-0 full__purple display__desktop">
+        <section class="client full__purple">
+            <div class="container full__purple">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <h4 class="mt-2 me-5 text-white">
+                            Now Available!
+                        </h4>
+                        <div class="row">
+                                <!-- App Store button -->
+                                <a href="https://apps.apple.com/in/app/fabits/id1600230367" target="_blank"
+                                    class="market-btn apple-btn me-2" role="button">
+                                    <span class="market-button-subtitle">Download on the</span>
+                                    <span class="market-button-title">App Store</span>
+                                </a>
+                            <!-- Google Play button -->
+                                <a href="https://play.google.com/store/apps/details?id=com.fabits.mywealth"
+                                    target="_blank" class="market-btn google-btn" role="button">
+                                    <span class="market-button-subtitle">Download on the</span>
+                                    <span class="market-button-title">Google Play</span>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <div class="container-fluid p-0   position-relative " style="background-color: #fff;">
         <section class="fifth__slide  " style="overflow-x: hidden;">
             <div class="container-fluid p-0 m-0 ">
@@ -2405,6 +2494,38 @@
                                         + 91 8050030909
                                         <br /> support@fabits.com
                                     </p>
+                                    <div class="d-flex">
+                                        <div class="instagram me-1">
+                                            <a href="https://www.instagram.com/fabits.social/" target="_blank"
+                                                style="color: white;">
+                                                <ion-icon style="font-size: 24px;" name="logo-instagram"></ion-icon>
+                                            </a>
+                                        </div>
+                                        <div class="facebook mx-1">
+                                            <a href="https://www.facebook.com/fabits.social/" target="_blank"
+                                                style="color: white;">
+                                                <ion-icon style="font-size: 24px;" name="logo-facebook"></ion-icon>
+                                            </a>
+                                        </div>
+                                        <div class="linkedin mx-1">
+                                            <a href="https://in.linkedin.com/company/fabits" target="_blank"
+                                                style="color: white;">
+                                                <ion-icon style="font-size: 24px;" name="logo-linkedin"></ion-icon>
+                                            </a>
+                                        </div>
+                                        <div class="twitter mx-1">
+                                            <a href="https://twitter.com/fabitssocial" target="_blank"
+                                                style="color: white;">
+                                                <ion-icon style="font-size: 24px;" name="logo-twitter"></ion-icon>
+                                            </a>
+                                        </div>
+                                        <div class="youtube mx-1">
+                                            <a href="https://www.youtube.com/@fabits.social" target="_blank"
+                                                style="color: white;">
+                                                <ion-icon style="font-size: 24px;" name="logo-youtube"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2422,7 +2543,7 @@
                         <div class=" d-flex w-100 justify-content-center">
                             <div
                                 class="row footerlinks  d-flex justify-content-center  text-dark w-100 links grad__width">
-                                <div class="col-6 col-md-3 text-start content__paragraph2    ">
+                                <div class="col-6 col-md-3 text-start content__paragraph2  ">
                                     <ul>
                                         <li>
                                             <a href="https://fabits.com/team" class="text-dark">
@@ -2469,7 +2590,16 @@
                                                     Disclosure
                                                 </a>
                                             </li>
-
+                                            <li>
+                                                <a href="https://fabits.com/annexure" class="text-dark">
+                                                    Annexure
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://fabits.com/downloads" class="text-dark">
+                                                    Downloads
+                                                </a>
+                                            </li>
                                             <li>
                                                 <a href="https://fabits.com/terms" class="text-dark">
                                                     Terms and Conditions
